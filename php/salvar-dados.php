@@ -30,6 +30,7 @@
    }
    $in_json2 = pg_fetch_all($result);
    $in_json2 = json_encode($in_json2);
+   echo "<br> <h3>TO JSON</h3> <br>";
    echo $in_json2;
 
  }
@@ -47,8 +48,8 @@
   $escreve = fwrite($fp, json_encode($in_json));
 
   if($escreve){
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/admin.php'>";
-    echo "<br>";
+    //echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/admin.php'>";
+    //echo "<br>";
     echo json_encode($in_json);
   }
   else echo 'falha';
