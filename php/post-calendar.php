@@ -33,25 +33,5 @@ if(pg_num_rows($result)){
 
 //fechar conexão
 pg_close($pg_conn);
-/*$con = pg_connect(pg_connection_string_from_database_url());
-if ($con->connect_error) {
-    die("Connection failed: " . $con->connect_error);
-}else{
-  //echo '<h1> SUCESSO AO ABRIR CONEXAO </h1>';
-}
-$sql = "INSERT INTO calendar (titulo, data, local, hora) VALUES ('$titulo', '$data', '$local', '$hora')";
-$result = pg_query($con, $sql);
 
-if(!pg_num_rows($result)){
-  Atualiza a página redirecionando para a mesma
-  //após submeter o formulário.
-  //header('Location: test-json/salvar-dados.php');
-  header('Location: ../admin.php');
-}else{
-  echo '<h1> erro ao inserir ' . $sql . '</h1>';
-}
-
-//fechar conexão
-pg_close($con);
-*/
 ?>
