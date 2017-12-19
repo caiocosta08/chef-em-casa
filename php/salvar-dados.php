@@ -15,7 +15,7 @@
  # Now let's use the connection for something silly just to prove it works:
  $result = pg_query($pg_conn, $sql);
  $in_json = [];
- $in_json2 = [];
+ $in_json2 = {};
  $i = 0;
  print "<pre>\n";
  if (!pg_num_rows($result)) {
