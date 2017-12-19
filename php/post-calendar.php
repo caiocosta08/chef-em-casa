@@ -15,7 +15,7 @@ $sql = "INSERT INTO calendar (titulo, data, local, hora) VALUES ('$titulo', '$da
 $con = pg_connect(pg_connection_string_from_database_url());
 $result = pg_query($con, $sql);
 
-if(pg_num_rows($result)){
+if($result){
   /*Atualiza a página redirecionando para a mesma
   //após submeter o formulário.*/
   header('Location: ../admin.php');
