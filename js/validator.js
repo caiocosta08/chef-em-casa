@@ -18,7 +18,7 @@ function validaAula(aula){
   let titulo = aula.titulo.value
   let local = aula.local.value
   let hora = aula.hora.value
-  let links = aula.linksUteis.value
+  let links = aula.linksuteis.value
   let topicos = aula.topicos.value
   let referencias = aula.referencias.value
   let resumo = aula.resumo.value
