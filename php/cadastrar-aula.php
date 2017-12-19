@@ -22,7 +22,7 @@ $con = pg_connect(pg_connection_string_from_database_url());
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }else{
-  //echo '<h1> SUCESSO AO ABRIR CONEXAO </h1>';
+  echo '<h1> SUCESSO AO ABRIR CONEXAO </h1>';
 }
 //str_replace(procurar, substituto, origem, $ocorrencias)
 $resumo = str_replace(';', '<br>', $resumo);
