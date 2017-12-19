@@ -7,7 +7,7 @@ $hora = $_POST['hora'];
 include('conexao.php');
 $consulta = "SELECT id FROM news ORDER BY id";
 $resultado = pg_query($pg_conn, $consulta);
-$id = pg_num_rows($resultado)
+$id = pg_num_rows($resultado);
 $id++;
 //---------------------------------
 
