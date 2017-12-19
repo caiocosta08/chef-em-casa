@@ -22,7 +22,7 @@ if ($pg_conn->connect_error) {
 $sql = "INSERT INTO calendar (titulo, data, local, hora) VALUES ('$titulo', '$data', '$local', '$hora')";
 $result = pg_query($pg_conn, $sql);
 
-if(!pg_num_rows($result)){
+if(pg_num_rows($result)){
   /*Atualiza a página redirecionando para a mesma
   //após submeter o formulário.*/
   //header('Location: test-json/salvar-dados.php');
