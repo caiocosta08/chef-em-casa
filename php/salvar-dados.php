@@ -35,11 +35,9 @@
 
   $escreve = fwrite($fp, $in_json2);
 
-  if($escreve){
-    //echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/admin.php'>";
-    //echo "<br>";
-    //echo json_encode($in_json);
-  }
+    if($escreve){
+      echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/admin.php'>";
+    }
   else echo 'falha';
 
   fclose($fp);
