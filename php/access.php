@@ -9,14 +9,14 @@ $senha = $_POST['senha'];
 $in_json = [];
 
 $sql = "SELECT * FROM usuarios WHERE login = '$login' AND senha ='$senha'";
-$result = $conn->query($sql);
+$result = pg_query($conn, $sql);
 
-if($result->num_rows > 0 )
+if($result)
 {
 $_SESSION['login'] = $login;
 $_SESSION['senha'] = $senha;
 $i = 0;
-    while($row = $result->fetch_assoc()) {
+    while($row = pg_fetch_row($result)) {
         $in_json[$i] = $row;
         $i++;
     }
