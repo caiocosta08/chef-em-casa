@@ -12,7 +12,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
     echo 'variavel dir: ' . $dir . '<br>';
     echo $_SERVER['PHP_SELF'];
     echo '<br>';
-  if(($dir != '/index.php') && ($dir != 'index.php')){
+  if(($dir != '/index.php') && ($dir != 'index.php') && ($_SERVER['PHP_SELF'] != '/index.php') && ($_SERVER['PHP_SELF'] != 'index.php')){
     unset($_SESSION['login']);
     unset($_SESSION['senha']);
     echo '<br> reconheceu que o dir nao e index';
