@@ -13,11 +13,7 @@ $resultado = pg_query($pg_conn, $consulta);
 echo 'resultados: ' . pg_get_result($resultado);
 echo 'erros: ' . pg_last_error($resultado);
 echo 'numero de linhas: ' . pg_num_rows($resultado);
-if ($resultado) {
-  while($row = pg_fetch_row($resultado)) {
-    $id = $row["id"];
-  }
-}
+$id = pg_num_rows($resultado);
 $id++;
 $link = "aula.php?id=".$id;
 //---------------------------------
