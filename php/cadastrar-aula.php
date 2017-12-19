@@ -18,7 +18,7 @@ if (!pg_num_rows($resultado)) {
 $id++;
 $link = "aula.php?id=".$id;
 //---------------------------------
-$con = pg_connect("host=$servername port=$porta dbname=$dbname " + "user=$username password=$password");
+$con = pg_connect(pg_connection_string_from_database_url());
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }else{
