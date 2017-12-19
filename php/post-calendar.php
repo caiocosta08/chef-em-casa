@@ -25,5 +25,6 @@ if(pg_num_rows($result)){
 
 //fechar conexão
 pg_close($pg_conn);
+pg_close($con);
 
 ?>
