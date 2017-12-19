@@ -28,7 +28,7 @@ if(pg_num_rows($result)){
   header('Location: edit-dados.php?id='. $id . "'");
 }else{
   echo '<h1> erro ao inserir ' . $sql . '</h1>';
-  header('Location: error.php');
+  //header('Location: error.php');
 }
 
 pg_close($con);
