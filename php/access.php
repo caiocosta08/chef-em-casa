@@ -23,21 +23,19 @@ if(pg_num_rows($result))
 {
 $_SESSION['login'] = $login;
 $_SESSION['senha'] = $senha;
-echo 'login: ' . $login;
-echo ' senha: ' . $senha;
 $i = 0;
     while($row = pg_fetch_row($result)) {
         $in_json[$i] = $row;
         $i++;
     }
-$_SESSION['firstName'] = $in_json[0]['firstName'];
+//$_SESSION['firstName'] = $in_json[0]['firstName'];
 
-//header('location: ../index.php');
+header('location: ../index.php');
 }
 else{
-  unset ($_SESSION['login']);
+    unset ($_SESSION['login']);
 	unset ($_SESSION['senha']);
-	//header('location: ../index.php');
+	header('location: ../index.php');
 
 }
 pg_close($pg_conn);
