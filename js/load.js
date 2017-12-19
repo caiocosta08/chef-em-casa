@@ -88,6 +88,7 @@ function loadAula(){
        texto += '<h4> O resumo da carreira desse chef não foi disponibilizado </h4><hr>'
      }
        if(linksUteis != ''){
+          console.log(linksUteis)
          linksUteis = linksUteis.split(',') //extrai os links que estão separados por vírgula
          texto += '<h3><span class="glyphicon glyphicon-link"></span> Links úteis: </h3>'
          for(let i=0; i<linksUteis.length; i++)
