@@ -9,7 +9,7 @@ $dir = explode('/', $dir);
 $dir = $dir[2];
 if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
 {   echo "entrou<br>";
-    echo $dir . '<br>';
+    echo 'variavel dir: ' . $dir . '<br>';
     echo $_SERVER['PHP_SELF'];
     echo '<br>';
   if($dir != 'index.php'){
