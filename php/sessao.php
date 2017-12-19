@@ -6,7 +6,7 @@ if(!isset($_SESSION)){
 
 $dir = $_SERVER['PHP_SELF'];
 $dir = explode('/', $dir);
-$dir = $dir[2];
+$dir = $dir[1];
 if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
 {   echo "entrou<br>";
     echo 'variavel dir: ' . $dir . '<br>';
@@ -15,7 +15,6 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
   if(($dir != '/index.php') && ($dir != 'index.php') && ($_SERVER['PHP_SELF'] != '/index.php') && ($_SERVER['PHP_SELF'] != 'index.php')){
     unset($_SESSION['login']);
     unset($_SESSION['senha']);
-    echo '<br> reconheceu que o dir nao e index';
     //header('location: index.php');
   }else{
     echo $_SERVER['PHP_SELF'];
