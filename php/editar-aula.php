@@ -23,7 +23,7 @@ $resumo = str_replace(';', '<br>', $resumo);
 $sql = "UPDATE news SET referencias='$referencias', linksUteis='$linksUteis', resumo='$resumo', titulo='$titulo', data='$data', link='$link', local='$local', topicos='$topicos' WHERE id='$id'";
 $result = pg_query($con, $sql);
 
-if($result){
+if(pg_num_rows($result)){
   /*Atualiza o json dados.json através do arquivo salvar-dados.php*/
   header('Location: edit-dados.php?id='. $id . "'");
 }else{

@@ -31,7 +31,7 @@ $sql = "INSERT INTO news (referencias, linksUteis, resumo, titulo, data, link, l
 
 $result = pg_query($con,$sql);
 
-if(!pg_num_rows($result)){
+if(pg_num_rows($result)){
   /*Atualiza a página redirecionando para a mesma
   //após submeter o formulário.*/
   header('Location: salvar-dados.php');

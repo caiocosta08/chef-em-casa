@@ -13,7 +13,7 @@ if ($con->connect_error) {
 $sql = "INSERT INTO usuarios (login, senha) VALUES ('$login', '$senha')";
 $result = pg_query($con, $sql);
 
-if(!pg_num_rows($result)){
+if(pg_num_rows($result)){
   header('Location: ../index.php');
 }else{
   echo '<h1> erro ao inserir ' . $sql . '</h1>';

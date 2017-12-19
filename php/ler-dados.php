@@ -5,7 +5,7 @@
  $sql2 = "SELECT * FROM news ORDER BY id DESC";
  $result2 = pg_query($pg_conn, $sql2);
  $dados_json = [];
- if (!pg_num_rows($result2)) {
+ if (pg_num_rows($result2)) {
    $i = 0;
    while($row = pg_fetch_row($result2)) {
      $in_json[$i] = $row;
