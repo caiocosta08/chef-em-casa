@@ -3,7 +3,7 @@
 if(!isset($_SESSION)){
     session_start();
 }
-include('conexao.php');
+//include('conexao.php');
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 $in_json = [];
@@ -30,5 +30,5 @@ else{
 	header('location: ../index.php');
 
 }
-$conn->close();
+pg_close($conn);
 ?>
