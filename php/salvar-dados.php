@@ -28,8 +28,9 @@
        $i++;
        echo json_encode($in_json);
    }
-   $in_json2 = pg_fetch_all($result);
-   $in_json2 = json_encode($in_json2);
+   //$in_json2 = pg_fetch_all($result);
+   $in_json2 = json_encode($result);
+   //$in_json2 = json_encode($in_json2);
    echo "<br> <h3>TO JSON</h3> <br>";
    echo $in_json2;
    echo "<br> <h3>TO JSON</h3> <br>";
