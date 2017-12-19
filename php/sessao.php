@@ -8,7 +8,7 @@ $dir = $_SERVER['PHP_SELF'];
 $dir = explode('/', $dir);
 $dir = $dir[2];
 if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
-{
+{   echo "entrou";
   if($dir != 'index.php'){
     unset($_SESSION['login']);
     unset($_SESSION['senha']);
