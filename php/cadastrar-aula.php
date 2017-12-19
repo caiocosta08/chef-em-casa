@@ -37,6 +37,7 @@ if(pg_num_rows($result)){
   header('Location: salvar-dados.php');
 }else{
   echo '<h1> erro ao inserir ' . $sql . '</h1>';
+  echo pg_result_error($result);
 }
 
 $query = "INSERT INTO arquivos (nome, tipo, tamanho, conteudo ) "."VALUES ('$fileName', '$fileType', '$fileSize', '$content')";
