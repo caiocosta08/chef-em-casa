@@ -1,4 +1,4 @@
-<?php/* include_once('php/sessao.php') */?>
+<?php include_once('php/sessao.php') ?>
 <!DOCTYPE html>
 <!-- ESTA PÁGINA ESTÁ FUNCIONANDO COMO UM FORMULÁRIO PARA ADICIONAR AULAS AO SITE-->
 <head>
@@ -72,7 +72,7 @@
 			<li><a href="sobre.php"><span class="glyphicon glyphicon-info-sign"></span> Sobre</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<?php/* if($logado == '' || $logado == null) echo '<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'*/?>
+			<?php if($logado == '' || $logado == null) echo '<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'?>
 		</ul>
 	</div>
 	</nav>
@@ -80,14 +80,14 @@
 <div class="container-fluid text-center">
   <div class="row content">
 		<div class="col-sm-2 sidenav well">
-			<?php/*
+			<?php
                 //$logado = $_SESSION['login'];
 				if($logado != '' && $logado != null){
 					echo '<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>';
 					echo '<h3>Olá, <b>' . $logado . '</b>!</h3>';
 					echo '<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>';
 				}else include('forms/login.php');
-			*/?>
+			?>
 		</div>
     <div class="col-sm-8 text-left">
       <h1>Bem-vindo!</h1>
