@@ -19,7 +19,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
   }
   $logado = null;
 }else{
-    $logado = $_SESSION['firstName'];
-    //$logado = $_SESSION['login'];
+    //$logado = $_SESSION['firstName'];
+    $logado = $_SESSION['login'];
 }
 ?>
