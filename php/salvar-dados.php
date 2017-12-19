@@ -21,24 +21,11 @@
  if (!pg_num_rows($result)) {
    print("Your connection is working, but your database is empty.\nFret not. This is expected for new apps.\n");
  } else {
-   /*print "Tables in your database:\n";
-   while ($row = pg_fetch_row($result)) {
-       print("- $row[0]\n");
-       $in_json[$i] = $row;
-       $i++;
-       echo json_encode($in_json);
-   }*/
+
    $in_json2 = pg_fetch_all($result);
    $in_json2 = json_encode($in_json2);
-   // echo "<br> <h3>TO JSON</h3> <br>";
-   // echo $in_json2;
-   // echo "<br> <h3>TO JSON</h3> <br>";
-
  }
  print "\n";
-
-
-
 
   $fp = fopen("../json/dados.json", "w");
   if($fp){
