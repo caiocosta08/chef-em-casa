@@ -15,7 +15,7 @@ include('conexao.php');
      $titulo = $row["titulo"];
      $local = $row["local"];
      $topicos = $row["topicos"];
-     $linksUteis = $row["linksUteis"];
+     $linksuteis = $row["linksuteis"];
      $referencias = $row["referencias"];
      $download = $row["download"];
      $resumo = $row["resumo"];
@@ -46,11 +46,11 @@ include('conexao.php');
   echo '<h3> Resumo da aula: </h3>';
   echo '<h4>'.$resumo.'</h4>';
 
-  $linksUteis = explode(',', $linksUteis); //extrai os links que estão separados por vírgula
-  if(count($linksUteis)>0){
+  $linksuteis = explode(',', $linksuteis); //extrai os links que estão separados por vírgula
+  if(count($linksuteis)>0){
     echo '<h3> Links úteis: </h3><br>';
-    for($i=0; $i<count($linksUteis); $i++)
-      echo '<h4> - <a href="' . $linksUteis[$i] . '">'. $linksUteis[$i] . '</a></h4>';
+    for($i=0; $i<count($linksuteis); $i++)
+      echo '<h4> - <a href="' . $linksuteis[$i] . '">'. $linksuteis[$i] . '</a></h4>';
     echo '<br>';
   }else{
     echo '<h4> Sem links úteis </h4><br>';

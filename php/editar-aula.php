@@ -2,7 +2,7 @@
 $titulo = $_POST['titulo'];
 $data = $_POST['data'];
 $local = $_POST['local'];
-$linksUteis = $_POST['linksUteis'];
+$linksuteis = $_POST['linksuteis'];
 $topicos = $_POST['topicos'];
 $resumo = $_POST['resumo'];
 $referencias = $_POST['referencias'];
@@ -20,7 +20,7 @@ if ($con->connect_error) {
 //str_replace(procurar, substituto, origem, $ocorrencias)
 $resumo = str_replace(';', '<br>', $resumo);
 
-$sql = "UPDATE news SET referencias='$referencias', linksUteis='$linksUteis', resumo='$resumo', titulo='$titulo', data='$data', link='$link', local='$local', topicos='$topicos' WHERE id='$id'";
+$sql = "UPDATE news SET referencias='$referencias', linksuteis='$linksuteis', resumo='$resumo', titulo='$titulo', data='$data', link='$link', local='$local', topicos='$topicos' WHERE id='$id'";
 $result = pg_query($con, $sql);
 
 if(pg_num_rows($result)){

@@ -1,1 +1,1 @@
-echo <h1>ERRO</h1>
+<?php echo '<h1>ERRO</h1>'; ?>

@@ -2,7 +2,7 @@
 $titulo = $_POST['titulo'];
 $data = $_POST['data'];
 $local = $_POST['local'];
-$linksUteis = $_POST['linksUteis'];
+$linksuteis = $_POST['linksuteis'];
 $topicos = $_POST['topicos'];
 $resumo = $_POST['resumo'];
 $referencias = $_POST['referencias'];
@@ -27,7 +27,7 @@ if ($con->connect_error) {
 //str_replace(procurar, substituto, origem, $ocorrencias)
 $resumo = str_replace(';', '<br>', $resumo);
 
-$sql = "INSERT INTO news (referencias, linksUteis, resumo, titulo, data, link, local, topicos) VALUES ('$referencias', '$linksUteis', '$resumo','$titulo','$data', '$link','$local', '$topicos')";
+$sql = "INSERT INTO news (referencias, linksuteis, resumo, titulo, data, link, local, topicos) VALUES ('$referencias', '$linksuteis', '$resumo','$titulo','$data', '$link','$local', '$topicos')";
 
 $result = pg_query($pg_conn,$sql);
 

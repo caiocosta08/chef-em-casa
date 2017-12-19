@@ -15,7 +15,7 @@
     </div>
     <div class="form-group">
       <label>Links úteis: </label>
-      <input class="form-control" id="linksUteis" type="text" name="linksUteis" placeholder="DIGITE OS LINKS ÚTEIS DA AULA" required/>
+      <input class="form-control" id="linksuteis" type="text" name="linksuteis" placeholder="DIGITE OS LINKS ÚTEIS DA AULA" required/>
     </div>
     <div class="form-group">
       <label>Tópicos: </label>
