@@ -10,10 +10,9 @@ $referencias = $_POST['referencias'];
 include('conexao.php');
 $consulta = "SELECT id FROM news ORDER BY id";
 $resultado = pg_query($pg_conn, $consulta);
-if (pg_num_rows($resultado)) {
+if ($resultado) {
   while($row = pg_fetch_row($resultado)) {
     $id = $row["id"];
-    echo $row["id"];
   }
 }
 $id++;
