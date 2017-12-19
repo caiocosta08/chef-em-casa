@@ -26,7 +26,7 @@ $id = $_GET['id'];
   $escreve = fwrite($fp, json_encode($in_json));
 
   if($escreve){
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/chef/aula.php?id=". $id .">";
+    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/aula.php?id=". $id .">";
   }
   else echo 'falha';
 
