@@ -13,6 +13,7 @@ $resultado = pg_query($pg_conn, $consulta);
 if (pg_num_rows($resultado)) {
   while($row = pg_fetch_row($resultado)) {
     $id = $row["id"];
+    echo $row["id"];
   }
 }
 $id++;
