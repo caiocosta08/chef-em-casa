@@ -15,6 +15,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
   if($dir != 'index.php'){
     unset($_SESSION['login']);
     unset($_SESSION['senha']);
+    echo '<br> reconheceu que o dir nao e index';
     //header('location: index.php');
   }else{
     echo $_SERVER['PHP_SELF'];
