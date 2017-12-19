@@ -29,7 +29,7 @@ $resumo = str_replace(';', '<br>', $resumo);
 
 $sql = "INSERT INTO news (referencias, linksUteis, resumo, titulo, data, link, local, topicos) VALUES ('$referencias', '$linksUteis', '$resumo','$titulo','$data', '$link','$local', '$topicos')";
 
-$result = pg_query($con,$sql);
+$result = pg_query($pg_conn,$sql);
 
 if(pg_num_rows($result)){
   /*Atualiza a página redirecionando para a mesma
@@ -60,5 +60,5 @@ if(!get_magic_quotes_gpc())
 }
 
 }
-pg_close($con);
+pg_close($pg_conn);
 ?>
