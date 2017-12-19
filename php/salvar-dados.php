@@ -4,18 +4,18 @@ include_once('conexao.php');
 
  $sql = "SELECT * FROM news ORDER BY id DESC";
 
- $result = $conn->query($sql);
+ $result = pg_query($conn, $sql);
  $in_json = [];
- if ($result->num_rows > 0) {
+ if ($result) {
    $i = 0;
-   while($row = $result->fetch_assoc()) {
+   while($row = pg_fetch_row($result)) {
      $in_json[$i] = $row;
      $i++;
      }
  } else {
      echo " - 0 resultados de aulas no BD - ";
  }
- $conn->close();
+ pg_close($conn);
 
   $fp = fopen("../json/dados.json", "w");
   if($fp){
