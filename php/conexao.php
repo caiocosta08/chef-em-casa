@@ -1,6 +1,23 @@
 <?php
 
-# This function reads your DATABASE_URL config var and returns a connection
+$host = "ec2-23-21-236-249.compute-1.amazonaws.com";
+$dbname = "d7reg9fb1vjb28";
+$user = "ppyvghrixhzopj";
+$password = "54d844fde52d69f80f688e44dd089c1407be01dcdd00c7381e84f09f60ca5094";
+$port = "5432";
+
+$dsn = "pgsql:host=$host;dbname=$dbname;user=$user;port=$port;password=$password";
+
+$db = new PDO($dsn);
+
+if($db){
+  echo "Connected <br />".$db;
+}else {
+  echo "Not connected";
+}
+
+
+/*# This function reads your DATABASE_URL config var and returns a connection
 # string suitable for pg_connect. Put this in your app.
 function pg_connection_string_from_database_url() {
   extract(parse_url($_ENV["DATABASE_URL"]));
@@ -18,7 +35,7 @@ if (!pg_num_rows($result)) {
   while ($row = pg_fetch_row($result)) { print("- $row[0]\n"); }
 }
 print "\n";
-
+*/
 
 /*
 $servername = "ec2-23-21-236-249.compute-1.amazonaws.com";
