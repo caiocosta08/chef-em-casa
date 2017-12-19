@@ -56,7 +56,7 @@ function loadAula(){
       let titulo = current[indice].titulo
       let local = current[indice].local
       let topicos = current[indice].topicos
-      let linksteis = current[indice].linksuteis
+      let linksuteis = current[indice].linksuteis
       let referencias = current[indice].referencias
       let download = current[indice].download
       let resumo = current[indice].resumo
