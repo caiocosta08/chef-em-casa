@@ -12,8 +12,9 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
   if($dir != 'index.php'){
     unset($_SESSION['login']);
     unset($_SESSION['senha']);
-    header('location: index.php');
+    //header('location: index.php');
   }else{
+     
     unset($_SESSION['login']);
     unset($_SESSION['senha']);
   }
