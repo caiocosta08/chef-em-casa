@@ -19,7 +19,7 @@ $in_json = [];
 $sql = "SELECT * FROM usuarios WHERE login = '$login' AND senha ='$senha'";
 $result = pg_query($pg_conn, $sql);
 
-if($result)
+if(pg_num_rows($result))
 {
 $_SESSION['login'] = $login;
 $_SESSION['senha'] = $senha;
