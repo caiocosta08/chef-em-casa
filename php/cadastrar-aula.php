@@ -9,12 +9,12 @@ $referencias = $_POST['referencias'];
 
 include('conexao.php');
 $consulta = "SELECT id FROM news ORDER BY id";
-/*$resultado = pg_query($pg_conn, $consulta);
+$resultado = pg_query($pg_conn, $consulta);
 if (pg_num_rows($resultado)) {
   while($row = pg_fetch_row($resultado)) {
     $id = $row["id"];
   }
-}*/
+}
 $id++;
 $link = "aula.php?id=".$id;
 //---------------------------------
