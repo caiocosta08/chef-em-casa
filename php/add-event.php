@@ -6,7 +6,7 @@
   echo ' SQL ---> ' . $sql . ' - ';
   $result = pg_query($conn, $sql);
   $in_json = [];
-  if ($result) {
+  if (pg_num_rows($result)) {
    $i = 0;
    while($row = pg_fetch_row($result)) {
      $in_json[$i] = $row;

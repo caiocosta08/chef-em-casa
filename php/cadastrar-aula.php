@@ -9,8 +9,8 @@ $referencias = $_POST['referencias'];
 
 include('conexao.php');
 $consulta = "SELECT id FROM news ORDER BY id";
-$resultado = pg_query($conn, $consulta);
-if ($resultado) {
+$resultado = pg_query($pg_conn, $consulta);
+if (!pg_num_rows($resultado)) {
   while($row = pg_fetch_row($resultado)) {
     $id = $row["id"];
   }
@@ -31,7 +31,7 @@ $sql = "INSERT INTO news (referencias, linksUteis, resumo, titulo, data, link, l
 
 $result = pg_query($con,$sql);
 
-if($result){
+if(!pg_num_rows($result)){
   /*Atualiza a página redirecionando para a mesma
   //após submeter o formulário.*/
   header('Location: salvar-dados.php');
