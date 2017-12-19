@@ -6,7 +6,7 @@ if(!isset($_SESSION)){
 
 $dir = $_SERVER['PHP_SELF'];
 $dir = explode('/', $dir);
-$dir = $dir[1];
+$dir = $dir[0];
 if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
 {   echo "entrou<br>";
     echo 'variavel dir: ' . $dir . '<br>';
