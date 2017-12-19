@@ -56,7 +56,7 @@ function loadAula(){
       let titulo = current[indice].titulo
       let local = current[indice].local
       let topicos = current[indice].topicos
-      let linksUteis = current[indice].linksUteis
+      let linksteis = current[indice].linksuteis
       let referencias = current[indice].referencias
       let download = current[indice].download
       let resumo = current[indice].resumo
@@ -87,12 +87,12 @@ function loadAula(){
      }else{
        texto += '<h4> O resumo da carreira desse chef não foi disponibilizado </h4><hr>'
      }
-       if(linksUteis != ''){
-          console.log(linksUteis)
-         linksUteis = linksUteis.split(',') //extrai os links que estão separados por vírgula
+       if(linksuteis != ''){
+          console.log(linksuteis)
+         linksuteis = linksuteis.split(',') //extrai os links que estão separados por vírgula
          texto += '<h3><span class="glyphicon glyphicon-link"></span> Links úteis: </h3>'
-         for(let i=0; i<linksUteis.length; i++)
-           texto += '<h4> - <a href="' + linksUteis[i] + '">'+ linksUteis[i] + '</a></h4>'
+         for(let i=0; i<linksuteis.length; i++)
+           texto += '<h4> - <a href="' + linksuteis[i] + '">'+ linksuteis[i] + '</a></h4>'
          texto += '<hr>'
        }else{
          texto += '<h4> Não foram disponibilizados links úteis para esse chef </h4><hr>'
@@ -143,7 +143,7 @@ function editAula(){
       let titulo = current[indice].titulo
       let local = current[indice].local
       let topicos = current[indice].topicos
-      let linksUteis = current[indice].linksUteis
+      let linksuteis = current[indice].linksuteis
       let referencias = current[indice].referencias
       let resumo = current[indice].resumo
       let form = ''
@@ -165,7 +165,7 @@ function editAula(){
               + '</div>'
               + '<div class="form-group">'
               + '  <label>Links úteis: </label>'
-              + '  <input class="form-control" id="linksUteis" type="text" name="linksUteis" value="'+ linksUteis +'" required/>'
+              + '  <input class="form-control" id="linksuteis" type="text" name="linksuteis" value="'+ linksuteis +'" required/>'
               + '</div>'
               + '<div class="form-group">'
               + '  <label>Tópicos: </label>'
