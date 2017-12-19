@@ -1,5 +1,5 @@
 function loadAulas(){
-  $.getJSON( "/chef/json/dados.json", function() {
+  $.getJSON( "/json/dados.json", function() {
   })
   .done(function(dados){ //se pegar o json corretamente essa função done escreve
     //no id contentNews os dados que recebeu do servidor no dados.json
@@ -44,7 +44,7 @@ function loadAulas(){
 
 function loadAula(){
   $(document).ready(function(){
-    $.getJSON("/chef/json/dados.json", function(){
+    $.getJSON("/json/dados.json", function(){
     })
     .done(function(current){//ADICIONA OS DADOS DO JSON dados.json PARA A PAGINA DA AULA
       current.reverse()//inverte o json para ficar na ordem normal
@@ -130,7 +130,7 @@ function loadAula(){
 
 function editAula(){
   $(document).ready(function(){
-    $.getJSON("/chef/json/dados.json", function(){
+    $.getJSON("/json/dados.json", function(){
     })
     .done(function(current){//ADICIONA OS DADOS DO JSON dados.json PARA A PAGINA DA AULA
       current.reverse()//inverte o json para ficar na ordem normal
@@ -193,7 +193,7 @@ function editAula(){
 
 
 function loadCalendar(){
-  $.getJSON("/chef/json/calendario.json", function(){
+  $.getJSON("/json/calendario.json", function(){
   })
     .done(function(calendario){
       let texto = ''
