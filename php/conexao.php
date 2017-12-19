@@ -12,7 +12,7 @@ $servername = "ec2-23-21-236-249.compute-1.amazonaws.com";
  if ($conn->connect_error) {
    die("Connection failed: " . $conn->connect_error);
  }else{
-   //echo 'CONNECTION OK! ';
+   echo 'CONNECTION OK! ';
    //echo $conn;
  }
 
