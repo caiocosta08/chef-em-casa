@@ -30,9 +30,9 @@
    }*/
    $in_json2 = pg_fetch_all($result);
    $in_json2 = json_encode($in_json2);
-   echo "<br> <h3>TO JSON</h3> <br>";
-   echo $in_json2;
-   echo "<br> <h3>TO JSON</h3> <br>";
+   // echo "<br> <h3>TO JSON</h3> <br>";
+   // echo $in_json2;
+   // echo "<br> <h3>TO JSON</h3> <br>";
 
  }
  print "\n";
@@ -46,7 +46,7 @@
   } //echo ' - sucesso ao abrir o arquivo dados.json para escrita ';
   else echo 'falha ao abrir';
 
-  $escreve = fwrite($fp, json_encode($in_json));
+  $escreve = fwrite($fp, $in_json2);
 
   if($escreve){
     //echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/admin.php'>";
