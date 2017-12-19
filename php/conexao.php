@@ -5,7 +5,18 @@ $servername = "ec2-23-21-236-249.compute-1.amazonaws.com";
  $password = "54d844fde52d69f80f688e44dd089c1407be01dcdd00c7381e84f09f60ca5094";
  $dbname = "d7reg9fb1vjb28";
  $porta = 5432;
+ $dburl = "postgres://uqahcioaoktplr:321ad2c23bf722fbeffc77c919e7a5d31dc37bef735bd4486f6f653b6ebc1f31@ec2-23-21-236-249.compute-1.amazonaws.com:5432/d7reg9fb1vjb28";
 
+ $dbopts = parse_url(getenv($dburl));
+ $app->register(new Herrera\Pdo\PdoServiceProvider(),
+                array(
+                    'pdo.dsn' => 'pgsql:dbname='.ltrim($dbopts["path"],'/').';host='.$dbopts[$servername] . ';port=' . $dbopts["5432"],
+                    'pdo.username' => $dbopts[$username],
+                    'pdo.password' => $dbopts[$password]
+                )
+ );
+
+/*
  // Create connection
  $conn = pg_connect("host=$servername port=$porta dbname=$dbname " + "user=$username password=$password");
  // Check connection
@@ -14,6 +25,6 @@ $servername = "ec2-23-21-236-249.compute-1.amazonaws.com";
  }else{
    //echo 'CONNECTION OK! ';
    //echo $conn;
- }
+}*/
 
 ?>
