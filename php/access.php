@@ -4,12 +4,20 @@ if(!isset($_SESSION)){
     session_start();
 }
 //include('conexao.php');
+function pg_connection_string_from_database_url() {
+  extract(parse_url($_ENV["DATABASE_URL"]));
+  return "user=$user password=$pass host=$host dbname=" . substr($path, 1); # <- you may want to add sslmode=require there too
+}
+# Here we establish the connection. Yes, that's all.
+$pg_conn = pg_connect(pg_connection_string_from_database_url());
+
+
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 $in_json = [];
 
 $sql = "SELECT * FROM usuarios WHERE login = '$login' AND senha ='$senha'";
-$result = pg_query($conn, $sql);
+$result = pg_query($pg_conn, $sql);
 
 if($result)
 {
@@ -30,5 +38,5 @@ else{
 	header('location: ../index.php');
 
 }
-pg_close($conn);
+pg_close($pg_conn);
 ?>
