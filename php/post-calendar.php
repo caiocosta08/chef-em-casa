@@ -10,13 +10,10 @@ $resultado = pg_query($pg_conn, $consulta);
 $id = pg_num_rows($resultado)
 $id++;
 //---------------------------------
-if ($pg_conn->connect_error) {
-    die("Connection failed: " . $pg_conn->connect_error);
-}else{
-  //echo '<h1> SUCESSO AO ABRIR CONEXAO </h1>';
-}
+
 $sql = "INSERT INTO calendar (titulo, data, local, hora) VALUES ('$titulo', '$data', '$local', '$hora')";
-$result = pg_query($pg_conn, $sql);
+$con = pg_connect(pg_connection_string_from_database_url());
+$result = pg_query($con, $sql);
 
 if(pg_num_rows($result)){
   /*Atualiza a página redirecionando para a mesma
