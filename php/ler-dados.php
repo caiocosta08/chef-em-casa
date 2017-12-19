@@ -3,11 +3,11 @@
   include('conexao.php');
 
  $sql2 = "SELECT * FROM news ORDER BY id DESC";
- $result2 = $conn->query($sql2);
+ $result2 = pg_query($conn, $sql2);
  $dados_json = [];
- if ($result2->num_rows > 0) {
+ if ($result2) {
    $i = 0;
-   while($row = $result2->fetch_assoc()) {
+   while($row = pg_fetch_row($result2)) {
      $in_json[$i] = $row;
      $i++;
      }
@@ -27,5 +27,5 @@ $fp2 = fopen("../json/dados.json", "w");
   else echo 'falha';
 
   fclose($fp2);
-  $conn->close();
+  pg_close($conn);
  ?>

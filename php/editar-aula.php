@@ -11,7 +11,7 @@ include('conexao.php');
 
 $link = "aula.php?id=".$id;
 //---------------------------------
-$con = new mysqli($servername, $username, $password, $dbname);
+$con = pg_connect("host=$servername port=$porta dbname=$dbname " + "user=$username password=$password");
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }else{
@@ -21,7 +21,7 @@ if ($con->connect_error) {
 $resumo = str_replace(';', '<br>', $resumo);
 
 $sql = "UPDATE news SET referencias='$referencias', linksUteis='$linksUteis', resumo='$resumo', titulo='$titulo', data='$data', link='$link', local='$local', topicos='$topicos' WHERE id='$id'";
-$result = $con->query($sql);
+$result = pg_query($con, $sql);
 
 if($result){
   /*Atualiza o json dados.json através do arquivo salvar-dados.php*/
@@ -31,5 +31,5 @@ if($result){
   header('Location: error.php');
 }
 
-$con->close();
+pg_close($con);
 ?>

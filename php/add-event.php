@@ -4,18 +4,18 @@
 
   $sql = "SELECT * FROM calendar ORDER BY id DESC";
   echo ' SQL ---> ' . $sql . ' - ';
-  $result = $conn->query($sql);
+  $result = pg_query($conn, $sql);
   $in_json = [];
-  if ($result->num_rows > 0) {
+  if ($result) {
    $i = 0;
-   while($row = $result->fetch_assoc()) {
+   while($row = pg_fetch_row($result)) {
      $in_json[$i] = $row;
      $i++;
      }
   } else {
      echo "A consulta obteve 0 resultados na tabela calendar. ";
   }
-  $conn->close();
+  pg_close($conn);
 
   $fp = fopen("../json/calendario.json", "w");
   if($fp) echo ' - Sucesso ao abrir o arquivo calendario.json para escrita. - ';

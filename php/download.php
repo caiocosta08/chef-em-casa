@@ -6,10 +6,10 @@ $id = $_GET['id'];
 
 $query = "SELECT * FROM arquivos WHERE id = $id";
 
-$result = $conn->query($query);
-if ($result->num_rows > 0) {
+$result = pg_query($conn, $query);
+if ($result) {
   $i = 0;
-  while($row = $result->fetch_assoc()) {
+  while($row = pg_fetch_row($result)) {
     $tipo = $row["tipo"];
     $nome = $row["nome"];
     $tamanho = $row["tamanho"];
@@ -25,6 +25,6 @@ header("Content-type: $tipo");
 header("Content-Disposition: attachment; filename=$nome");
 echo $content;
 
-$conn->close();
+pg_close($conn);
 
 ?>

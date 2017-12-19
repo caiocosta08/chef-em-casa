@@ -9,17 +9,16 @@ $referencias = $_POST['referencias'];
 
 include('conexao.php');
 $consulta = "SELECT id FROM news ORDER BY id";
-$resultado = $conn->query($consulta);
-if ($resultado->num_rows > 0) {
-  while($row = $resultado->fetch_assoc()) {
+$resultado = pg_query($conn, $consulta);
+if ($resultado) {
+  while($row = pg_fetch_row($resultado)) {
     $id = $row["id"];
   }
 }
-//$conn->close();
 $id++;
 $link = "aula.php?id=".$id;
 //---------------------------------
-$con = new mysqli($servername, $username, $password, $dbname);
+$con = pg_connect("host=$servername port=$porta dbname=$dbname " + "user=$username password=$password");
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }else{
@@ -30,7 +29,7 @@ $resumo = str_replace(';', '<br>', $resumo);
 
 $sql = "INSERT INTO news (referencias, linksUteis, resumo, titulo, data, link, local, topicos) VALUES ('$referencias', '$linksUteis', '$resumo','$titulo','$data', '$link','$local', '$topicos')";
 
-$result = $con->query($sql);
+$result = pg_query($con,$sql);
 
 if($result){
   /*Atualiza a página redirecionando para a mesma
@@ -41,7 +40,7 @@ if($result){
 }
 
 $query = "INSERT INTO arquivos (nome, tipo, tamanho, conteudo ) "."VALUES ('$fileName', '$fileType', '$fileSize', '$content')";
-$res = $con->query($query);
+$res = pg_query($con, $query);
 if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
 {
 $fileName = $_FILES['userfile']['name'];
@@ -60,5 +59,5 @@ if(!get_magic_quotes_gpc())
 }
 
 }
-$con->close();
+pg_close($con);
 ?>

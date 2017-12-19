@@ -26,7 +26,7 @@ include_once('conexao.php');
   $escreve = fwrite($fp, json_encode($in_json));
 
   if($escreve){
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/chef/admin.php'>";
+    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/admin.php'>";
     echo "<br>";
     echo json_encode($in_json);
   }

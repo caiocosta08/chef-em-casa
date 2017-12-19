@@ -5,12 +5,12 @@ include('conexao.php');
  $id = $_GET["id"];
 
  $sql = "SELECT * FROM news WHERE id = $id";
- $result = $conn->query($sql);
+ $result = pg_query($conn, $sql);
  $in_json = [];
- if ($result->num_rows > 0) {
+ if ($result) {
    $i = 0;
 
-   while($row = $result->fetch_assoc()) {
+   while($row = pg_fetch_row($result) {
      $data = $row["data"];
      $titulo = $row["titulo"];
      $local = $row["local"];
@@ -24,7 +24,7 @@ include('conexao.php');
  } else {
      echo "0 results";
  }
- $conn->close();
+ pg_close($conn);
  //coloca a quebra de linha na variável resumo
  $resumo = str_replace(';', '<br>', $resumo);
 

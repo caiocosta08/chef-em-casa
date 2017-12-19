@@ -6,22 +6,22 @@ $hora = $_POST['hora'];
 
 include('conexao.php');
 $consulta = "SELECT id FROM news ORDER BY id";
-$resultado = $conn->query($consulta);
-if ($resultado->num_rows > 0) {
-  while($row = $resultado->fetch_assoc()) {
+$resultado = pg_query($conn, $consulta);
+if ($resultado) {
+  while($row = pg_fetch_row($resultado) {
     $id = $row["id"];
   }
 }
 $id++;
 //---------------------------------
-$con = new mysqli($servername, $username, $password, $dbname);
+$con = pg_connect("host=$servername port=$porta dbname=$dbname " + "user=$username password=$password");
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }else{
   //echo '<h1> SUCESSO AO ABRIR CONEXAO </h1>';
 }
 $sql = "INSERT INTO calendar (titulo, data, local, hora) VALUES ('$titulo', '$data', '$local', '$hora')";
-$result = $con->query($sql);
+$result = pg_query($con, $sql);
 
 if($result){
   /*Atualiza a página redirecionando para a mesma
@@ -33,5 +33,5 @@ if($result){
 }
 
 //fechar conexão
-$con->close();
+pg_close($con);
 ?>
