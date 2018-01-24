@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    
+    let loginField = document.querySelector("#login")
+    loginField.addEventListener('blur', () => {
+   // let loginloginlogin = loginField.value
+    })
     loadAula();
     loadAulas();
     atualizarAulas();
