@@ -87,7 +87,6 @@
     <div class="col-sm-8 text-left">
 			<div id="aulaAtual"></div>
 			<hr>
-			<button type="button" class="btn btn-success btn-lg">Contratar <span class="glyphicon glyphicon-ok"></span></button>
 			<!-- Botão que abre o modal -->
 			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Editar <span class="glyphicon glyphicon-pencil"></span></button>
 			<!-- Modal -->
@@ -103,7 +102,23 @@
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
 			      </div>
 			    </div>
-
+			  </div>
+			</div>
+			<!-- Botão que abre o modal -->
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalContato">Contratar <span class="glyphicon glyphicon-success"></span></button>
+			<!-- Modal -->
+			<div id="modalContato" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+			    <!-- Conteúdo do modal-->
+			    <div class="modal-content">
+			      <div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h2>TITULO DO MODAL</h2>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+			      </div>
+			    </div>
 			  </div>
 			</div>
 			<hr>
