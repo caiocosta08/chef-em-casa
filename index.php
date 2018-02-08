@@ -98,12 +98,7 @@
 				terem acesso a todo conteúdo formativo disponibilizado por nós. Para ter
 				acesso você precisa possuir um <kbd>login</kbd> e uma <kbd>senha</kbd>.
 			</p>
-			<p>
-				Dessa forma nós podemos ter um maior controle daqueles que participam
-				das nossas aulas e formações religiosamente. Além disso, podemos proporcionar
-				uma maior experiência com as Sagradas Escrituras, o Sagrado Magistério e
-				a Sagrada Tradição da Santa Igreja Católica.
- 			</p>
+			
       <hr>
 			<h2>Instruções</h2>
 				<h4>Login</h4>
