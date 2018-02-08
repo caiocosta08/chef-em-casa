@@ -73,7 +73,7 @@ function loadAula(){
       +'</div>'
       topicos = topicos.split(',')
       if(topicos.length>0){
-        texto += '<h3><span class="glyphicon glyphicon-th-list"></span> Tópicos principais: </h3>'
+        texto += '<h3><span class="glyphicon glyphicon-th-list"></span> Especialidades: </h3>'
         for(let i=0; i<topicos.length; i++){
           texto += '<h4> - ' + topicos[i] + '</h4>'
         }
