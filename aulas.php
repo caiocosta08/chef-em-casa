@@ -85,7 +85,7 @@
 			<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>
 		</div>
     <div class="col-sm-8 text-left">
-      <h1>Aulas <span class="glyphicon glyphicon-pencil"></span></h1>
+      <h1>Chefs <span class="glyphicon glyphicon-pencil"></span></h1>
 			<hr>
 			<p>
 				Nesta página você pode encontrar a lista completa de <code>todos</code>
