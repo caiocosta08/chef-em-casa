@@ -25,7 +25,8 @@ $result = pg_query($con, $sql);
 
 if($result){
   /*Atualiza o json dados.json através do arquivo salvar-dados.php*/
-  header('Location: edit-dados.php?id='. $id . "'");
+  //header('Location: edit-dados.php?id='. $id . "'");
+  header('Location: salvar-dados.php');
 }else{
   echo '<h1> erro ao inserir ' . $sql . '</h1>';
   //header('Location: error.php');
