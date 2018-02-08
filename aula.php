@@ -87,6 +87,7 @@
     <div class="col-sm-8 text-left">
 			<div id="aulaAtual"></div>
 			<hr>
+			<button type="button" class="btn btn-info btn-lg">Contratar <span class="glyphicon glyphicon-pencil"></span></button>
 			<!-- Botão que abre o modal -->
 			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Editar <span class="glyphicon glyphicon-pencil"></span></button>
 			<!-- Modal -->
