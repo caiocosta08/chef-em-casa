@@ -133,6 +133,9 @@
 							            <label>Descrição</label>
 							            <input class="form-control" type="text" name="desc">
 							        </div>
+									<div class="input-group-btn">
+										<button type="submit" class="btn btn-success">Contratar <span class="glyphicon glyphicon-success"></span></button>
+									</div>
 							    </form>
 							</div>
 				  </div>
