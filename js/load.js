@@ -37,7 +37,7 @@ function loadChefs(){
 
     document.getElementById('contentNews').innerHTML = feed;
     if(document.title == 'Chef em Casa - CHEFS'){
-      document.getElementById('chefsRegistrados').innerHTML = chefs;
+      document.querySelector('#chefsRegistrados').innerHTML = chefs;
     }
   })
 }
