@@ -65,7 +65,7 @@
 		</div>
 		<ul class="nav navbar-nav">
 			<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			<li class="active"><a href="aulas.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
+			<li class="active"><a href="chefs.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
 			<li><a href="calendario.php"><span class="glyphicon glyphicon-calendar"></span> Calendário</a></li>
 			<li><a href="admin.php"><span class="glyphicon glyphicon-cog"></span> Admin</a></li>
 			<li><a href="sobre.php"><span class="glyphicon glyphicon-info-sign"></span> Sobre</a></li>

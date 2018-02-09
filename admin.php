@@ -65,7 +65,7 @@
 		</div>
 		<ul class="nav navbar-nav">
 			<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			<li><a href="aulas.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
+			<li><a href="chefs.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
 			<li><a href="calendario.php"><span class="glyphicon glyphicon-calendar"></span> Calendário</a></li>
 			<li class="active"><a href="admin.php"><span class="glyphicon glyphicon-cog"></span> Admin</a></li>
 			<li><a href="sobre.php"><span class="glyphicon glyphicon-info-sign"></span> Sobre</a></li>
@@ -92,12 +92,6 @@
 				terem acesso a todo conteúdo formativo disponibilizado por nós. Para ter
 				acesso você precisa possuir um <kbd>login</kbd> e uma <kbd>senha</kbd>.
 			</p>
-			<p>
-				Dessa forma nós podemos ter um maior controle daqueles que participam
-				das nossas aulas e formações religiosamente. Além disso, podemos proporcionar
-				uma maior experiência com as Sagradas Escrituras, o Sagrado Magistério e
-				a Sagrada Tradição da Santa Igreja Católica.
- 			</p>
       <hr>
 			<ul class="nav nav-tabs">
 				<li id="id1" class="active"><a id="linkAula">Cadastrar Aula</a></li>
