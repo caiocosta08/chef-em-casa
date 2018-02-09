@@ -83,7 +83,7 @@
 	<?php include('modal/modal-add-user.php'); ?>
 <div class="container-fluid text-center">
   <div class="row content">
-		<div class="col-sm-2 sidenav well">
+		<div class="col-sm-8 text-left">
 			<?php
                 //$logado = $_SESSION['login'];
 				if($logado != '' && $logado != null){
@@ -93,38 +93,6 @@
 				}else include('forms/login.php');
 			?>
 		</div>
-    <div class="col-sm-8 text-left">
-      <h1>Bem-vindo!</h1>
-      <p>
-				Olá! Nós somos o <code>CHEF EM CASA</code> e damos a você as boas vindas ao
-				nosso website oficial! Após muitas orações e dedicação de muitos, nós
-				alcançamos a graça de publicar o nosso portal para os nossos membros
-				terem acesso a todo conteúdo formativo disponibilizado por nós. Para ter
-				acesso você precisa possuir um <kbd>login</kbd> e uma <kbd>senha</kbd>.
-			</p>
-
-      <hr>
-			<h2>Instruções</h2>
-				<h4>Login</h4>
-					<blockquote>
-						<p><small>
-							Digite o <kbd>login</kbd> e a <kbd>senha</kbd> na barra de navegação que
-							está no topo da página. Após isso, aperte na tecla <code>ENTER</code> no
-							seu teclado ou no botão <span class="glyphicon glyphicon-log-in"></span>
-							que está ao lado das caixas de digitação.
-						</small></p>
-					</blockquote>
-				<h4>Cadastro</h4>
-					<blockquote>
-						<p><small>
-							Clique em <kbd>Cadastrar</kbd> na barra de navegação que está no topo
-							da página. Após isso, você será redirecionado para a página de cadastro
-							e deverá preencher corretament os campos com suas informações para
-							finalizar o	cadastro e possuir acesso ao site.
-						</small></p>
-					</blockquote>
-			<hr>
-    </div>
 		<div class="col-sm-2 sidenav">
 			<ul id="contentNews" style="list-style: none; padding: 0;">
 			</ul>
