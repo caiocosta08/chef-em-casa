@@ -258,7 +258,7 @@ function searchCalendar(){
 function searchChef(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#chefsRegistradas li").filter(function() {
+    $("#chefsRegistrados li").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
