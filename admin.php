@@ -1,7 +1,5 @@
 <?php include_once('php/sessao.php') ?>
 <!DOCTYPE html>
-<!-- ESTA PÁGINA ESTÁ FUNCIONANDO COMO UM FORMULÁRIO PARA ADICIONAR AULAS AO SITE-->
-
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
