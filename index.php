@@ -98,6 +98,7 @@
 				terem acesso a todo conteúdo formativo disponibilizado por nós. Para ter
 				acesso você precisa possuir um <kbd>login</kbd> e uma <kbd>senha</kbd>.
 			</p>
+
       <hr>
 			<h2>Instruções</h2>
 				<h4>Login</h4>
