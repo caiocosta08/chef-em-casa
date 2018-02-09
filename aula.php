@@ -158,4 +158,6 @@
 	<p>Copyright &copy; 2017 Chef em Casa. All Rights Reserved.</p>
 	<p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
 </footer>
+
+<script type="text/javascript" src="js/img.js"></script>
 </html>
