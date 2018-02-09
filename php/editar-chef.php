@@ -9,7 +9,7 @@ $referencias = $_POST['referencias'];
 $id = $_POST['id'];
 include('conexao.php');
 
-$link = "aula.php?id=".$id;
+$link = "chef.php?id=".$id;
 //---------------------------------
 $con = pg_connect(pg_connection_string_from_database_url());
 if ($con->connect_error) {

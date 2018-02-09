@@ -1,10 +1,10 @@
-function loadAulas(){
+function loadChefs(){
   $.getJSON( "/json/dados.json", function() {
   })
   .done(function(dados){ //se pegar o json corretamente essa função done escreve
     //no id contentNews os dados que recebeu do servidor no dados.json
     let feed = ''
-    let aulas = ''
+    let chefs = ''
     for (var x of Object.keys(dados)) {
       let titulo = dados[x].titulo
       let data = dados[x].data
@@ -12,17 +12,17 @@ function loadAulas(){
       let local = dados[x].local
       let topicos = dados[x].topicos
       let id = dados[x].id
-      aulas += '<li class="list-group-item"><a href="'
-      aulas += link + '"><h3>'
-      aulas += titulo + '</h3></a>'
-      aulas += data
-      aulas += ' - Chef '
-      aulas += id
-      aulas += '</h6><br> Local: '
-      aulas += local
-      aulas += '<br> Tópicos: '
-      aulas += topicos
-      aulas += '</p></li>'
+      chefs += '<li class="list-group-item"><a href="'
+      chefs += link + '"><h3>'
+      chefs += titulo + '</h3></a>'
+      chefs += data
+      chefs += ' - Chef '
+      chefs += id
+      chefs += '</h6><br> Local: '
+      chefs += local
+      chefs += '<br> Tópicos: '
+      chefs += topicos
+      chefs += '</p></li>'
       if(x<3){
         feed += '<li class="well"><h6>'
         feed += data
@@ -37,20 +37,20 @@ function loadAulas(){
 
     document.getElementById('contentNews').innerHTML = feed;
     if(document.title == 'Chef em Casa - CHEFS'){
-      document.getElementById('aulasRegistradas').innerHTML = aulas;
+      document.getElementById('chefsRegistrados').innerHTML = chefs;
     }
   })
 }
 
-function loadAula(){
+function loadChef(){
   $(document).ready(function(){
     $.getJSON("/json/dados.json", function(){
     })
-    .done(function(current){//ADICIONA OS DADOS DO JSON dados.json PARA A PAGINA DA AULA
+    .done(function(current){//ADICIONA OS DADOS DO JSON dados.json PARA A PAGINA DA CHEF
       current.reverse()//inverte o json para ficar na ordem normal
       //pega o ID pela URL
       let id = location.search.split('=')//divide a url pelo '='
-      id = id[1] //pega o indice 1 que é o id da pagina(aula)
+      id = id[1] //pega o indice 1 que é o id da pagina(chef)
       let indice = id-1
       let data = current[indice].data
       let titulo = current[indice].titulo
@@ -65,7 +65,7 @@ function loadAula(){
 
       let texto = ''//variavel para receber todo o texto
 
-      texto += '<div class="jumbotron">' //construindo banner de cada aula
+      texto += '<div class="jumbotron">' //construindo banner de cada chef
       //+ '<img src="img/crucifixo-1.jpg" alt="">' //imagem do banner
       + ' <h1><span style="font-size: 100px;" class="glyphicon glyphicon-user"></span>'
       +' Chef ' /*+ id + ' - ' */+ titulo + '</h1>'
@@ -79,7 +79,7 @@ function loadAula(){
         }
         texto += '<hr>'
       }else{
-          texto += '<h4> Os tópicos dessa aula não foram disponibilizados </h4>'
+          texto += '<h4> As especialidades desse chef não foram disponibilizados </h4>'
       }
       if(resumo.length>0){
        texto += '<h3><span class="glyphicon glyphicon-list-alt"></span> Resumo da carreira: </h3>'
@@ -117,10 +117,10 @@ function loadAula(){
          texto += '<h3><span class="glyphicon glyphicon-tags"></span> Referências: </h3>'
                   + '<h4>' + referencias + '</h4>'
        else {
-         texto += '<h4> As referências dessa aula não foram disponibilizadas </h4>'
+         texto += '<h4> As referências desse chef não foram disponibilizadas </h4>'
        }
 
-       document.getElementById('aulaAtual').innerHTML = texto;//coloca todo o texto na div com id informado
+       document.getElementById('chefAtual').innerHTML = texto;//coloca todo o texto na div com id informado
     })
     .fail(function(){
       console.log('erro')
@@ -128,15 +128,15 @@ function loadAula(){
   })
 }
 
-function editAula(){
+function editChef(){
   $(document).ready(function(){
     $.getJSON("/json/dados.json", function(){
     })
-    .done(function(current){//ADICIONA OS DADOS DO JSON dados.json PARA A PAGINA DA AULA
+    .done(function(current){//ADICIONA OS DADOS DO JSON dados.json PARA A PAGINA DO CHEF
       current.reverse()//inverte o json para ficar na ordem normal
       //pega o ID pela URL
       let id = location.search.split('=')//divide a url pelo '='
-      id = id[1] //pega o indice 1 que é o id da pagina(aula)
+      id = id[1] //pega o indice 1 que é o id da pagina(chef)
       let indice = id-1
       let data = current[indice].data
       let titulo = current[indice].titulo
@@ -146,9 +146,9 @@ function editAula(){
       let referencias = current[indice].referencias
       let resumo = current[indice].resumo
       let form = ''
-      form += '<div class="post-aula">'
+      form += '<div class="post-chef">'
               + '<h3>Editar Chef ' + id + '</h3><hr>'
-              + '<form method="post" action="php/editar-aula.php" enctype="multipart/form-data" onsubmit="return validaAula(this);">'
+              + '<form method="post" action="php/editar-chef.php" enctype="multipart/form-data" onsubmit="return validaChef(this);">'
               + '<div class="form-group"> <input class="form-control" id="id" type="text" name="id" value="'+ id +'" readonly/>'
               + '<div class="form-group">'
               + '  <label>Título do Chef: </label>'
@@ -183,7 +183,7 @@ function editAula(){
               +  '<button type="submit" class="btn btn-default">Editar <span class="glyphicon glyphicon-plus"></span></button>'
               + '</div></form></div>'
 
-       document.getElementById('edit-aula').innerHTML = form;//coloca todo o texto na div com id informado
+       document.getElementById('edit-chef').innerHTML = form;//coloca todo o texto na div com id informado
     })
     .fail(function(){
       console.log('erro')
@@ -216,7 +216,7 @@ function loadCalendar(){
     })
 }
 
-function atualizarAulas() {
+function atualizarChefs() {
   $.ajax({
       url: "php/salvar-dados.php",
       method: 'POST',
@@ -225,7 +225,7 @@ function atualizarAulas() {
           console.log(data);
       },
       complete: function(){
-          setTimeout(atualizarAulas, 3000);
+          setTimeout(atualizarChefs, 3000);
       }
   });
 }
@@ -254,11 +254,11 @@ function searchCalendar(){
   });
 }
 
-//Barra de pesquisa para filtrar a aula na pag aulas.php
-function searchAula(){
+//Barra de pesquisa para filtrar o chef na pag chefs.php
+function searchChef(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#aulasRegistradas li").filter(function() {
+    $("#chefsRegistradas li").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });

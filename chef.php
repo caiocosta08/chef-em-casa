@@ -84,7 +84,7 @@
 			<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>
 		</div>
     <div class="col-sm-8 text-left">
-			<div id="aulaAtual"></div>
+			<div id="chefAtual"></div>
 			<hr>
 			<!-- Botão que abre o modal -->
 			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Editar <span class="glyphicon glyphicon-pencil"></span></button>
@@ -95,7 +95,7 @@
 			    <div class="modal-content">
 			      <div class="modal-body">
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<?php include('forms/edit-aula-form.php'); ?>
+							<?php include('forms/edit-chef-form.php'); ?>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>

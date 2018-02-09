@@ -99,7 +99,7 @@
       <hr>
 			<div>
 				<input class="form-control" id="myInput" type="text" placeholder="Pesquisar...">
-				<ul style="list-style:none;" class="list-group" id="aulasRegistradas"></ul>
+				<ul style="list-style:none;" class="list-group" id="chefsRegistrados"></ul>
 			</div>
 			<hr>
 		</div>

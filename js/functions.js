@@ -1,15 +1,15 @@
 $(document).ready(function(){
-    loadAula();
-    loadAulas();
-    atualizarAulas();
+    loadChef();
+    loadChefs();
+    atualizarChefs();
     atualizarEventos();
-    //Faz com que a função loadAulas seja chamada a cada 3s(3000ms)
-    setInterval(loadAulas, 3000);
+    //Faz com que a função loadChefs seja chamada a cada 3s(3000ms)
+    setInterval(loadChefs, 3000);
     //carregar eventos regitrados no calendario
     loadCalendar();
     searchCalendar();
-    searchAula();
-    editAula();
+    searchChefs();
+    editChef();
 })
 
 $(document).ready(function(){

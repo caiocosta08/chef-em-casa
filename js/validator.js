@@ -12,16 +12,16 @@ function validaEvento(evento){
 
 }
 
-function validaAula(aula){
+function validachef(chef){
 
-  let data = aula.data.value
-  let titulo = aula.titulo.value
-  let local = aula.local.value
-  let hora = aula.hora.value
-  let links = aula.linksuteis.value
-  let topicos = aula.topicos.value
-  let referencias = aula.referencias.value
-  let resumo = aula.resumo.value
+  let data = chef.data.value
+  let titulo = chef.titulo.value
+  let local = chef.local.value
+  let hora = chef.hora.value
+  let links = chef.linksuteis.value
+  let topicos = chef.topicos.value
+  let referencias = chef.referencias.value
+  let resumo = chef.resumo.value
 
   if(!validLinks(links)) return false;
   if(!validTopics(topicos)) return false;
