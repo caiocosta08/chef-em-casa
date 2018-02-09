@@ -22,7 +22,7 @@ $fp2 = fopen("../json/dados.json", "w");
 
   if($escreve2){
     echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../json/dados.json'>";
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../aulas.php'>";
+    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../chefs.php'>";
   }
   else echo 'falha';
 

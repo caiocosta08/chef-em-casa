@@ -13,7 +13,7 @@ $id = $_GET['id'];
      $i++;
      }
  } else {
-     echo " - 0 resultados de aulas no BD - ";
+     echo " - 0 resultados de chefs no BD - ";
  }
  pg_close($pg_conn);
 
@@ -26,7 +26,7 @@ $id = $_GET['id'];
   $escreve = fwrite($fp, json_encode($in_json));
 
   if($escreve){
-    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/aula.php?id=". $id .">";
+    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/chef.php?id=". $id .">";
   }
   else echo 'falha';
 
