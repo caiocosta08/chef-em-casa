@@ -3,6 +3,24 @@
 if(!isset($_SESSION)){
     session_start();
 }
+if (isset($_POST['g-recaptcha-response'])) {
+    $captcha_data = $_POST['g-recaptcha-response'];
+}
+
+// Se nenhum valor foi recebido, o usuário não realizou o captcha
+if (!$captcha_data) {
+    echo "Por favor, confirme o captcha.";
+    exit;
+}
+
+$resposta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LfmhEUUAAAAAK9QTn89wV-svlorn2yM2sez4YVj&response=".$captcha_data."&remoteip=".$_SERVER['REMOTE_ADDR']);
+if ($resposta.success) {
+    echo "Obrigado por deixar sua mensagem!";
+} else {
+    echo "Usuário mal intencionado detectado. A mensagem não foi enviada.";
+    exit;
+}
+
 //include('conexao.php');
 function pg_connection_string_from_database_url() {
   extract(parse_url($_ENV["DATABASE_URL"]));
