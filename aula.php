@@ -160,4 +160,10 @@
 </footer>
 
 <script type="text/javascript" src="js/img.js"></script>
+<script type="text/javascript">
+if(titulo.value == 'Bela Gil')
+	alert('Bela Gil')
+else
+	alert('no')
+</script>
 </html>
