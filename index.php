@@ -15,6 +15,10 @@
 <script src="js/validator.js" type="text/javascript"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <style rel="stylesheet" type="text/css">
+	iframe{
+		width: 100px;
+		margin: auto;
+	}
 	.navbar {
 		background-color: #fff353;
 		border-color: #8a6d3b;
