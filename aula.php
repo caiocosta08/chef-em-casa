@@ -115,9 +115,6 @@
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
 							<h2>Contrate o Chef para o seu evento!</h2>
 							<!--<?php/* include('forms/contact-chef.php');*/ ?>-->
-							<div id="contact-chef">
-							    
-							</div>
 				  </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
