@@ -32,3 +32,21 @@ $(document).ready(function(){
 
 
 });
+
+$(document).ready(function(){
+		$('#contact-chef').submit(function(){
+			var dados = $( this ).serialize();
+
+			$.ajax({
+				type: "POST",
+				url: "",
+				data: dados,
+				success: function()
+				{
+					alert('CONTRATADO COM SUCESSO');
+				}
+			});
+
+			return false;
+		});
+	});
