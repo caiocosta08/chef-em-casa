@@ -8,7 +8,7 @@ $(document).ready(function(){
     //carregar eventos regitrados no calendario
     loadCalendar();
     searchCalendar();
-    searchChefs();
+    searchChef();
     editChef();
 })
 
