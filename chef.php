@@ -78,7 +78,7 @@
 							<h5 class="card-title">Bem vindo</h5>
 							<h6 class="card-subtitle mb-2 text-muted"></h6>
 							<p class="card-text">
-							<a href="#"><h3>Olá, <b><?php echo $logado ?></b>!</h3></a>
+								<h3>Olá, <b><a><?php echo $logado ?></b></a>!</h3>
 							</p>
 							<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>		
 						</div>
