@@ -152,14 +152,14 @@
   if($fp){
 
   } //echo ' - sucesso ao abrir o arquivo dados.json para escrita ';
-  else echo 'falha ao abrir';
+  else echo 'Falha ao abrir';
 
   $escreve = fwrite($fp, $in_json2);
 
     if($escreve){
 //      echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/admin.php'>";
     }
-  else echo 'falha';
+  else echo 'Falha ao escrever';
 
   fclose($fp);
 
