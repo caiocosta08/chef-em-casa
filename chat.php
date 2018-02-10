@@ -123,7 +123,7 @@
 
 //include_once('conexao.php');
 
- $sql = "SELECT * FROM messages WHERE user=" . $user . " ORDER BY id DESC";
+ $sql = "SELECT * FROM messages ORDER BY id DESC";
 
  # This function reads your DATABASE_URL config var and returns a connection
  # string suitable for pg_connect. Put this in your app.
