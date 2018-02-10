@@ -1,7 +1,7 @@
 <?php
 $mensagem = $_POST['message-to-send'];
 
-include('conexao.php');
+include('php/conexao.php');
 $user = 'caioba';
 //---------------------------------
 $con = pg_connect(pg_connection_string_from_database_url());
