@@ -57,7 +57,7 @@ function lerJSON(){
         let mensagens = dados[x].message
         let autor = dados[x].name
         let autorAnterior        
-        if((x-1)<0) autorAnterior = dados[x-1].name
+        if((x-1)>0) autorAnterior = dados[x-1].name
         
         if(autor != autorAnterior){
             if(autor == userlogado)
