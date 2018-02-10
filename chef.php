@@ -61,7 +61,6 @@
 </head>
 <body style="margin: 1%;">
 	<nav class="navbar navbar-expand-sm bg-light navbar-light">
-	<div class="container-fluid">
 		<ul class="navbar-nav">
 			<li class="nav-item"><a class="nav-link" href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 			<li class="nav-item active"><a class="nav-link" href="chefs.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
@@ -72,7 +71,6 @@
 		<ul class="nav navbar-nav navbar-right">
 			<?php if($logado == '' || $logado == null) echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'?>
 		</ul>
-	</div>
 	</nav>
 
 <div class="container-fluid text-center">
