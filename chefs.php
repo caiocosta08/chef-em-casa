@@ -7,12 +7,15 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="css/default.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-<script src="js/jquery-3.2.1.js" type="text/javascript"></script>
-<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="js/load.js" type="text/javascript"></script>
 <script src="js/functions.js" type="text/javascript"></script>
 <script src="js/validator.js" type="text/javascript"></script>
+<script src="js/img.js" type="text/javascript"></script>
+
 <style rel="stylesheet" type="text/css">
 	.navbar {
 		background-color: #fff353;
@@ -57,25 +60,39 @@
 	}
 </style>
 </head>
-<body style="margin: 1%;">
-	<nav class="navbar navbar-inverse">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Chef em Casa</a>
-		</div>
-		<ul class="nav navbar-nav">
-			<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			<li class="active"><a href="chefs.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
-			<li><a href="calendario.php"><span class="glyphicon glyphicon-calendar"></span> Calendário</a></li>
-			<li><a href="admin.php"><span class="glyphicon glyphicon-cog"></span> Admin</a></li>
-			<li><a href="sobre.php"><span class="glyphicon glyphicon-info-sign"></span> Sobre</a></li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<?php if($logado == '' || $logado == null) echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'?>
-		</ul>
-	</div>
-	</nav>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background: coral; margin-bottom: 20px;">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
 
+		<!-- Brand/Título -->
+		<a class="navbar-brand" href="index.php">Chef em Casa</a>
+
+		<!-- Links -->
+		<div class="collapse navbar-collapse" id="nav-content">   
+		<ul class="navbar-nav">
+		<li class="nav-item">
+		<a class="nav-link" href="index.php">Home</a>
+		</li>
+		<li class="nav-item active">
+		<a class="nav-link" href="chefs.php">Chefs</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="calendario.php">Calendário</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="admin.php">Admin</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="sobre.php">Sobre</a>
+		</li>
+		</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<?php if($logado == '' || $logado == null) echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'?>
+				</ul>
+
+		</nav>
 <div class="container-fluid text-center">
   <div class="row content">
 		<div class="col-sm-2 sidenav well">

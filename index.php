@@ -3,16 +3,18 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chef em Casa - ADMIN</title>
+<title>Chef em Casa - INÍCIO</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="css/default.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-<script src="js/jquery-3.2.1.js" type="text/javascript"></script>
-<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="js/load.js" type="text/javascript"></script>
 <script src="js/functions.js" type="text/javascript"></script>
 <script src="js/validator.js" type="text/javascript"></script>
+<script src="js/img.js" type="text/javascript"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <style rel="stylesheet" type="text/css">
 	.navbar {
