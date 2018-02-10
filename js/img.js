@@ -20,12 +20,15 @@ function atualizarMensagens() {
             type: "POST",
             url: "send.php",
             data: dados,
+            beforeSend: function(data){
+
+            },
             cache: false,
-            success: function()
+            success: function(data)
             {
                 alert('ENVIADO COM SUCESSO');
             },
-            complete: function(){}
+            complete: function(data){}
         });
     });
         return false;
