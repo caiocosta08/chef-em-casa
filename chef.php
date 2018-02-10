@@ -105,12 +105,17 @@
 			<!-- Botão que abre o modal -->
 			<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#modalContato">Contratar <span class="glyphicon glyphicon-success"></span></button>
 			<!-- Modal -->
-			<div id="modalContato" class="modal fade" role="dialog">
+			<div id="modalContato" class="modal fade">
 			  <div class="modal-dialog">
 			    <!-- Conteúdo do modal-->
 			    <div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">CONTATO</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- Modal body -->
 			      <div class="modal-body">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
 							<h2>Contrate o Chef para o seu evento!</h2>
 							<?php include('forms/contact-chef.php'); ?>
 				  </div>
