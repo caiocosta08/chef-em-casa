@@ -50,7 +50,7 @@ function lerJSON(){
     $.getJSON("json/messages.json", function(){
     })
     .done(function(dados){
-        let msgs = '<ul class="well" style="list-style:none;">'
+        let msgs = '<ul class="well" style="color:#555555; background-color:#ffffff;  list-style:none;">'
     for (var x of Object.keys(dados)) {
         let id = dados[x].id
         let idAnterior = dados[1].id
@@ -59,14 +59,14 @@ function lerJSON(){
         
         if(id != idAnterior){
             if(autor == userlogado)
-                msgs += '<li style="background-color: #CCC;"> >' + autor + ': ' + mensagens + horario + '</li>'
+                msgs += '<li style="background-color: #dddddd;"> >' + autor + ': ' + mensagens + horario + '</li>'
             else
-                msgs += '<li style="background-color: #EEE;"> >' + autor + ': ' + mensagens + horario + '</li>'
+                msgs += '<li style="background-color: #eeeeee;"> >' + autor + ': ' + mensagens + horario + '</li>'
         }else{
             if(autor == userlogado)
-                msgs += '<li style="background-color: #CCC;">   >'+ mensagens + horario + '</li>'
+                msgs += '<li style="background-color: #dddddd;">   >'+ mensagens + horario + '</li>'
             else
-                msgs += '<li style="background-color: #EEE;">   >'+ mensagens + horario + '</li>'
+                msgs += '<li style="background-color: #eeeeee;">   >'+ mensagens + horario + '</li>'
             
         }
 
