@@ -14,7 +14,7 @@ function atualizarMensagens() {
   //enviar formulario sem refresh
 
   $(document).ready(function(){
-    $('.send-message).submit(function(){
+    $('.send-message').submit(function(){
         var dados = $( this ).serialize();
         $.ajax({
             type: "POST",
@@ -25,6 +25,7 @@ function atualizarMensagens() {
                 alert('CONTRATADO COM SUCESSO');
             }
         });
+    });
 
         return false;
-    });}
+    }
