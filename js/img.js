@@ -8,7 +8,6 @@ function atualizarMensagens() {
         },
         complete: function(){
             setTimeout(atualizarMensagens, 1000);
-            setTimeout(lerJSON(), 1000);
         }
     });
   }
@@ -16,7 +15,7 @@ function atualizarMensagens() {
   //enviar formulario sem refresh
 
   $(document).ready(function(){
-    lerJSON();
+    setInterval(lerJSON(), 3000);
 
     $('.send-message').submit(function(e){
         e.preventDefault();
