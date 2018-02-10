@@ -58,7 +58,7 @@ function lerJSON(){
         let mensagens = dados[x].message
         let autor = dados[x].name
         
-        if(id != idAnterior){
+        if(id == idAnterior){
             if(autor == userlogado)
                 msgs += '<li style="background-color: #dddddd;"> >' + autor + ': ' + mensagens + horario + '</li>'
             else
