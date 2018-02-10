@@ -66,7 +66,7 @@
 						</div>
 					</div>				
 									</div>
-				<div class="col-sm-8 text-left">
+				<div class="col-8 text-left">
 					<div id="chefAtual"></div>
 					<hr>
 					<!-- Botão que abre o modal -->
@@ -119,7 +119,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-2 sidenav">
+				<div class="col-2 sidenav">
 					<ul id="contentNews" style="list-style: none; padding: 0;">
 					</ul>
 				</div>
