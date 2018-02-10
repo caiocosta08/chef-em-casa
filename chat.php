@@ -92,19 +92,7 @@
 		<div class="col-sm-8 text-left">
 			
 
-			<div class="chat">
-				<div class="show-chat">
-				<h1>CHAT</h1>
-				</div>
-
-				<div class="input-chat">
-					<form class="send-message" method="post" action="send.php">
-						<input name="message-to-send" id="message-to-send" type="text">
-						<input type="hidden" name="loged-user" id="loged-user" value="<?php echo $logado; ?>">
-						<button id="btn-send-message" type="submit">ENVIAR</button>
-					</form>
-				</div>
-			</div>
+			
 		</div>
 		<div class="col-sm-2 sidenav">
 			<ul id="contentNews" style="list-style: none; padding: 0;">
