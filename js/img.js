@@ -43,7 +43,7 @@ var data = new Date();
 var hora    = data.getHours();          // 0-23
 var min     = data.getMinutes();        // 0-59
 
-var str_hora = hora + ':' + min + ':' + seg;
+var str_hora = hora + ':' + min;
 let horario = '<h6>'+ str_hora +'</h6>'
                 
 // Mostra o resultado
