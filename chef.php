@@ -26,12 +26,12 @@
 </head>
 	<body style="margin: 1%;">
 		
-		<nav class="navbar navbar-expand-sm navbar-dark" style="background: coral;">
+		<nav class="navbar navbar-expand-sm navbar-dark" style="background: coral; margin-bottom: 20px;">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<!-- Brand -->
+		<!-- Brand/Título -->
 		<a class="navbar-brand" href="index.php">Chef em Casa</a>
 
 		<!-- Links -->
@@ -40,7 +40,7 @@
 		<li class="nav-item">
 		<a class="nav-link" href="index.php">Home</a>
 		</li>
-		<li class="nav-item">
+		<li class="nav-item active">
 		<a class="nav-link" href="chefs.php">Chefs</a>
 		</li>
 		<li class="nav-item">
