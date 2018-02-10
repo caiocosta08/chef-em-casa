@@ -7,15 +7,21 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="css/default.css" rel="stylesheet" type="text/css" />
-<script src="js/jquery-3.2.1.js" type="text/javascript"></script>
 <script src="js/load.js" type="text/javascript"></script>
 <script src="js/functions.js" type="text/javascript"></script>
 <script src="js/validator.js" type="text/javascript"></script>
 <script src="js/img.js" type="text/javascript"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<style rel="stylesheet" type="text/css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script<style rel="stylesheet" type="text/css">
 	.navbar {
 		background-color: #fff353;
 		border-color: #8a6d3b;
@@ -60,27 +66,32 @@
 </style>
 </head>
 <body style="margin: 1%;">
-	<nav class="navbar navbar-expand-sm bg-light navbar-light">
-		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			<li class="nav-item active"><a class="nav-link" href="chefs.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
-			<li class="nav-item"><a class="nav-link" href="calendario.php"><span class="glyphicon glyphicon-calendar"></span> Calendário</a></li>
-			<li class="nav-item"><a class="nav-link" href="admin.php"><span class="glyphicon glyphicon-cog"></span> Admin</a></li>
-			<li class="nav-item"><a class="nav-link" href="sobre.php"><span class="glyphicon glyphicon-info-sign"></span> Sobre</a></li>
+	<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Chef em Casa</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			<li class="active"><a href="chefs.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
+			<li><a href="calendario.php"><span class="glyphicon glyphicon-calendar"></span> Calendário</a></li>
+			<li><a href="admin.php"><span class="glyphicon glyphicon-cog"></span> Admin</a></li>
+			<li><a href="sobre.php"><span class="glyphicon glyphicon-info-sign"></span> Sobre</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<?php if($logado == '' || $logado == null) echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'?>
 		</ul>
+	</div>
 	</nav>
 
 <div class="container-fluid text-center">
-  <div class="row">
-		<div class="col-2 sidenav well">
+  <div class="row content">
+		<div class="col-sm-2 sidenav well">
 			<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>
 			<h3>Olá, <b><?php echo $logado ?></b>! </h3>
 			<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>
 		</div>
-    <div class="col-8 text-left">
+    <div class="col-sm-8 text-left">
 			<div id="chefAtual"></div>
 			<hr>
 			<!-- Botão que abre o modal -->
@@ -103,26 +114,21 @@
 			<!-- Botão que abre o modal -->
 			<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#modalContato">Contratar <span class="glyphicon glyphicon-success"></span></button>
 			<!-- Modal -->
-			<div id="modalContato" class="modal" tabindex="-1" role="dialog">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title">Modal title</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<p>Modal body text goes here.</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-primary">Save changes</button>
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
+			<div id="modalContato" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+			    <!-- Conteúdo do modal-->
+			    <div class="modal-content">
+			      <div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h2>Contrate o Chef para o seu evento!</h2>
+							<?php include('forms/contact-chef.php'); ?>
+				  </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+			      </div>
+			    </div>
+			  </div>
 			</div>
-			
 			<hr>
 			<div class="chat">
 				<div class="show-chat">
@@ -138,7 +144,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-2 sidenav">
+		<div class="col-sm-2 sidenav">
 			<ul id="contentNews" style="list-style: none; padding: 0;">
 			</ul>
 		</div>
