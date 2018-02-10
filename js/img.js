@@ -32,3 +32,24 @@ function atualizarMensagens() {
     });
         return false;
 });
+
+function lerJSON(){
+    $.getJSON("json/messages.json", function(){
+    })
+    .done(function(dados){
+        let msgs = '<ul>'
+    for (var x of Object.keys(dados)) {
+        let id = dados[x].id
+        let mensagens = dados[x].message
+        let autor = dados[x].name
+        
+        msgs += '<li> ID: ' + id + ' '
+        msgs += 'AUTOR: ' + autor + ' '
+        msgs += 'MENSAGEM: ' + mensagens + ' '
+        msgs += '</li>'
+    }
+
+    msgs += '</ul>'
+    document.querySelector(".showChat").insertAdjacentHTML('afterend', msgs);
+    });
+}
