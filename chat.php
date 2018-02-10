@@ -80,6 +80,10 @@
 	<?php include('modal/modal-add-user.php'); ?>
 <div class="container-fluid text-center">
   <div class="row content">
+  <div class="col-sm-2 sidenav">
+			<ul id="contentNews" style="list-style: none; padding: 0;">
+			</ul>
+		</div>
 		<div class="col-sm-8 text-left">
 			<?php
                 if($logado != '' && $logado != null){
