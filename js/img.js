@@ -1,6 +1,6 @@
 function atualizarMensagens() {
     $.ajax({
-        url: "json/messages.json",
+        url: "salvar-msg.php",
         method: 'POST',
         dataType: 'json',
         success: function (data) {
@@ -24,7 +24,8 @@ function atualizarMensagens() {
             success: function()
             {
                 alert('ENVIADO COM SUCESSO');
-            }
+            },
+            complete: function(){}
         });
     });
         return false;

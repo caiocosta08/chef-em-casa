@@ -101,7 +101,7 @@
 				<div class="input-chat">
 					<form class="send-message" method="post" action="send.php">
 						<input name="message-to-send" id="message-to-send" type="text">
-						<button id="btn-send-message" type="submit"></button>
+						<button id="btn-send-message" type="submit">ENVIAR</button>
 					</form>
 				</div>
 			</div>
