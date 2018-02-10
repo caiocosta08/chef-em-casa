@@ -15,6 +15,8 @@ function atualizarMensagens() {
   //enviar formulario sem refresh
 
   $(document).ready(function(){
+    lerJSON();
+
     $('.send-message').submit(function(e){
         e.preventDefault();
         var dados = $( this ).serialize();
@@ -25,7 +27,6 @@ function atualizarMensagens() {
             cache: false,
             success: function(data)
             {
-                alert('ENVIADO COM SUCESSO');
                 atualizarMensagens();
                 lerJSON();
             },
