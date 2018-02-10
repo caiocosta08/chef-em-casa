@@ -45,9 +45,6 @@ var min     = data.getMinutes();        // 0-59
 
 var str_hora = hora + ':' + min;
 let horario = '<h6>'+ str_hora +'</h6>'
-                
-// Mostra o resultado
-alert('Hoje é ' + str_data + ' às ' + str_hora);
 
 function lerJSON(){
     $.getJSON("json/messages.json", function(){
