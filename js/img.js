@@ -59,11 +59,10 @@ function lerJSON(){
 
 function addToJSON(info){
     let dados
-    //let id = info
-alert(info);
-//    dados += '<li> ID: ' + id + ' '
+    dados = document.querySelector("#message-to-send").value
+    //    dados += '<li> ID: ' + id + ' '
   //  dados += 'AUTOR: ' + autor + ' '
     //dados += 'MENSAGEM: ' + mensagens + ' '
     //dados += '</li>'
-    //document.querySelector(".show-chat").insertAdjacentHTML('afterend', dados);
+    document.querySelector(".show-chat").insertAdjacentHTML('afterend', dados);
 }
