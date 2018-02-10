@@ -28,7 +28,7 @@ function atualizarMensagens() {
             success: function(data)
             {
                 atualizarMensagens();
-                lerJSON();
+                addToJSON(data);
             },
         });
     });
@@ -54,4 +54,16 @@ function lerJSON(){
     msgs += '</ul>'
     document.querySelector(".show-chat").insertAdjacentHTML('afterend', msgs);
     });
+}
+
+
+function addToJSON(info){
+    let dados
+    //let id = info
+alert(info);
+//    dados += '<li> ID: ' + id + ' '
+  //  dados += 'AUTOR: ' + autor + ' '
+    //dados += 'MENSAGEM: ' + mensagens + ' '
+    //dados += '</li>'
+    //document.querySelector(".show-chat").insertAdjacentHTML('afterend', dados);
 }
