@@ -60,17 +60,14 @@
 </style>
 </head>
 <body style="margin: 1%;">
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-expand-sm bg-light navbar-light">
 	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Chef em Casa</a>
-		</div>
-		<ul class="nav navbar-nav">
-			<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			<li class="active"><a href="chefs.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
-			<li><a href="calendario.php"><span class="glyphicon glyphicon-calendar"></span> Calendário</a></li>
-			<li><a href="admin.php"><span class="glyphicon glyphicon-cog"></span> Admin</a></li>
-			<li><a href="sobre.php"><span class="glyphicon glyphicon-info-sign"></span> Sobre</a></li>
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			<li class="nav-item active"><a class="nav-link" href="chefs.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
+			<li class="nav-item"><a class="nav-link" href="calendario.php"><span class="glyphicon glyphicon-calendar"></span> Calendário</a></li>
+			<li class="nav-item"><a class="nav-link" href="admin.php"><span class="glyphicon glyphicon-cog"></span> Admin</a></li>
+			<li class="nav-item"><a class="nav-link" href="sobre.php"><span class="glyphicon glyphicon-info-sign"></span> Sobre</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<?php if($logado == '' || $logado == null) echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'?>
