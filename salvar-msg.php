@@ -27,7 +27,7 @@
  }
  print "\n";
 
-  $fp = fopen("../json/messages.json", "w");
+  $fp = fopen("json/messages.json", "w");
   if($fp){
 
   } //echo ' - sucesso ao abrir o arquivo dados.json para escrita ';
