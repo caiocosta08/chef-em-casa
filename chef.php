@@ -7,9 +7,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="css/default.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
-<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/load.js" type="text/javascript"></script>
 <script src="js/functions.js" type="text/javascript"></script>
 <script src="js/validator.js" type="text/javascript"></script>
