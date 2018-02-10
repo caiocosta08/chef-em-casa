@@ -27,6 +27,7 @@ function atualizarMensagens() {
             {
                 alert('ENVIADO COM SUCESSO');
                 atualizarMensagens();
+                showChat();
             },
         });
     });
