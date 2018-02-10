@@ -54,11 +54,11 @@ function lerJSON(){
         let msgs = '<ul class="well" style="color:#555555; background-color:#ffffff;  list-style:none;">'
     for (var x of Object.keys(dados)) {
         let id = dados[x].id
-        let idAnterior = dados[x].id
+        let idAnterior = dados[x+1].id
         let mensagens = dados[x].message
         let autor = dados[x].name
         
-        if(id == idAnterior){
+        if(id != idAnterior){
             if(autor == userlogado)
                 msgs += '<li style="background-color: #dddddd;"> >' + autor + ': ' + mensagens + horario + '</li>'
             else
