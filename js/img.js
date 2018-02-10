@@ -51,6 +51,6 @@ function lerJSON(){
     }
 
     msgs += '</ul>'
-    document.querySelector(".showChat").insertAdjacentHTML('afterend', msgs);
+    document.querySelector(".show-chat").insertAdjacentHTML('afterend', msgs);
     });
 }
