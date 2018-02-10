@@ -30,8 +30,8 @@
   $fp = fopen("json/messages.json", "w");
   if($fp){
 
-  } //echo ' - sucesso ao abrir o arquivo dados.json para escrita ';
-  else echo 'falha ao abrir';
+   echo ' - sucesso ao abrir o arquivo dados.json para escrita ';
+  }else echo 'falha ao abrir';
 
   $escreve = fwrite($fp, $in_json2);
 
