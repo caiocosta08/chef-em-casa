@@ -28,7 +28,8 @@ function atualizarMensagens() {
             success: function(data)
             {
                 atualizarMensagens();
-                addToJSON(data);
+                lerJSON();
+                //addToJSON(data);
             },
         });
     });
@@ -52,17 +53,17 @@ function lerJSON(){
     }
 
     msgs += '</ul>'
-    document.querySelector(".show-chat").insertAdjacentHTML('afterend', msgs);
+    document.querySelector(".show-chat").innerHTML = msgs;
     });
 }
 
 
 function addToJSON(info){
-    let dados
+  /*  let dados
     dados = document.querySelector("#message-to-send").value
     //    dados += '<li> ID: ' + id + ' '
   //  dados += 'AUTOR: ' + autor + ' '
     //dados += 'MENSAGEM: ' + mensagens + ' '
     //dados += '</li>'
     document.querySelector(".show-chat").insertAdjacentHTML('afterend', dados);
-}
+*/}
