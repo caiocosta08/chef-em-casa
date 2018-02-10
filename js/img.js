@@ -26,6 +26,5 @@ function atualizarMensagens() {
             }
         });
     });
-
         return false;
-    }
+});
