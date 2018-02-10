@@ -18,7 +18,8 @@ $result = pg_query($pg_conn,$sql);
 if($result){
   /*Atualiza a página redirecionando para a mesma
   //após submeter o formulário.*/
-  header('Location: salvar-dados.php');
+  echo "alert('Mensagem enviada com sucesso')";
+  header('Location: chat.php');
 }else{
   echo '<h1> erro ao inserir ' . $sql . '</h1>';
   echo pg_result_error($result);
