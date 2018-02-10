@@ -31,6 +31,7 @@ function atualizarMensagens() {
             {
                 atualizarMensagens();
                 lerJSON();
+                document.querySelector("#message-to-send").value = ""
             },
         });
     });
