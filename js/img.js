@@ -43,10 +43,8 @@ var data = new Date();
 var hora    = data.getHours();          // 0-23
 var min     = data.getMinutes();        // 0-59
 
-// Formata a data e a hora (note o mês + 1)
-var str_data = dia + '/' + (mes+1) + '/' + ano4;
 var str_hora = hora + ':' + min + ':' + seg;
-let horario = '<h6>'+ str_hora + ' - ' + str_data +'</h6>'
+let horario = '<h6>'+ str_hora +'</h6>'
                 
 // Mostra o resultado
 alert('Hoje é ' + str_data + ' às ' + str_hora);
@@ -58,7 +56,7 @@ function lerJSON(){
         let msgs = '<ul class="well" style="list-style:none;">'
     for (var x of Object.keys(dados)) {
         let id = dados[x].id
-        let idAnterior = dados[x-1].id
+        let idAnterior = dados[1].id
         let mensagens = dados[x].message
         let autor = dados[x].name
         
