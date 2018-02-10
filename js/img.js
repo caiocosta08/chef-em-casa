@@ -15,7 +15,8 @@ function atualizarMensagens() {
   //enviar formulario sem refresh
 
   $(document).ready(function(){
-    setInterval(lerJSON(), 3000);
+      lerJSON();
+    setInterval(lerJSON, 3000);
 
     $('.send-message').submit(function(e){
         e.preventDefault();
