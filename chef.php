@@ -80,12 +80,12 @@
 
 <div class="container-fluid text-center">
   <div class="row">
-		<div class="col-sm-2 sidenav well">
+		<div class="col-2 sidenav well">
 			<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>
 			<h3>Olá, <b><?php echo $logado ?></b>! </h3>
 			<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>
 		</div>
-    <div class="col-sm-8 text-left">
+    <div class="col-8 text-left">
 			<div id="chefAtual"></div>
 			<hr>
 			<!-- Botão que abre o modal -->
@@ -138,7 +138,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-2 sidenav">
+		<div class="col-2 sidenav">
 			<ul id="contentNews" style="list-style: none; padding: 0;">
 			</ul>
 		</div>
