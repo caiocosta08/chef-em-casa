@@ -14,6 +14,7 @@
 <script src="js/functions.js" type="text/javascript"></script>
 <script src="js/validator.js" type="text/javascript"></script>
 <script src="js/img.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <style rel="stylesheet" type="text/css">
 	.navbar {
 		background-color: #fff353;
