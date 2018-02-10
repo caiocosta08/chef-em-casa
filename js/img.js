@@ -11,6 +11,7 @@ function atualizarMensagens() {
         }
     });
   }
+
   //enviar formulario sem refresh
 
   $(document).ready(function(){
@@ -25,6 +26,7 @@ function atualizarMensagens() {
             success: function(data)
             {
                 alert('ENVIADO COM SUCESSO');
+                atualizarMensagens();
             },
         });
     });
