@@ -8,6 +8,7 @@ function atualizarMensagens() {
         },
         complete: function(){
             setTimeout(atualizarMensagens, 1000);
+            setTimeout(lerJSON(), 1000);
         }
     });
   }
@@ -55,7 +56,6 @@ function lerJSON(){
     msgs += '</ul>'
     document.querySelector(".show-chat").innerHTML = msgs;
     });
-    //setTimeout(lerJSON(), 1000);
 }
 
 
