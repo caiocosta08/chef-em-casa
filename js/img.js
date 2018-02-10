@@ -55,6 +55,7 @@ function lerJSON(){
     msgs += '</ul>'
     document.querySelector(".show-chat").innerHTML = msgs;
     });
+    setTimeout(lerJSON(), 1000);
 }
 
 
