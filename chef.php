@@ -79,7 +79,7 @@
 	</nav>
 
 <div class="container-fluid text-center">
-  <div class="row content">
+  <div class="row">
 		<div class="col-sm-2 sidenav well">
 			<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>
 			<h3>Olá, <b><?php echo $logado ?></b>! </h3>
