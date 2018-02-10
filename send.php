@@ -19,7 +19,7 @@ if($result){
   /*Atualiza a página redirecionando para a mesma
   //após submeter o formulário.*/
   echo "alert('Mensagem enviada com sucesso')";
-  header('Location: chat.php');
+  header('Location: salvar-msg.php');
 }else{
   echo '<h1> erro ao inserir ' . $sql . '</h1>';
   echo pg_result_error($result);
