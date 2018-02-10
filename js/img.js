@@ -36,6 +36,21 @@ function atualizarMensagens() {
         return false;
 });
 
+// Obtém a data/hora atual
+var data = new Date();
+
+// Guarda cada pedaço em uma variável
+var hora    = data.getHours();          // 0-23
+var min     = data.getMinutes();        // 0-59
+
+// Formata a data e a hora (note o mês + 1)
+var str_data = dia + '/' + (mes+1) + '/' + ano4;
+var str_hora = hora + ':' + min + ':' + seg;
+let horario = '<h6>'+ str_hora + ' - ' + str_data +'</h6>'
+                
+// Mostra o resultado
+alert('Hoje é ' + str_data + ' às ' + str_hora);
+
 function lerJSON(){
     $.getJSON("json/messages.json", function(){
     })
@@ -43,14 +58,23 @@ function lerJSON(){
         let msgs = '<ul class="well" style="list-style:none;">'
     for (var x of Object.keys(dados)) {
         let id = dados[x].id
+        let idAnterior = dados[x-1].id
         let mensagens = dados[x].message
         let autor = dados[x].name
         
-        if(autor == userlogado)
-            msgs += '<li style="background-color: #CCC;"> >' + autor + ': ' + mensagens + '</li>'
-        else
-            msgs += '<li style="background-color: #EEE;"> >' + autor + ': ' + mensagens + '</li>'
+        if(id != idAnterior){
+            if(autor == userlogado)
+                msgs += '<li style="background-color: #CCC;"> >' + autor + ': ' + mensagens + horario + '</li>'
+            else
+                msgs += '<li style="background-color: #EEE;"> >' + autor + ': ' + mensagens + horario + '</li>'
+        }else{
+            if(autor == userlogado)
+                msgs += '<li style="background-color: #CCC;">   >'+ mensagens + horario + '</li>'
+            else
+                msgs += '<li style="background-color: #EEE;">   >'+ mensagens + horario + '</li>'
             
+        }
+
     }
 
     msgs += '</ul>'
