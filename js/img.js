@@ -18,11 +18,12 @@ function atualizarMensagens() {
         var dados = $( this ).serialize();
         $.ajax({
             type: "POST",
-            url: "",
+            url: "send.php",
             data: dados,
+            cache: false,
             success: function()
             {
-                alert('CONTRATADO COM SUCESSO');
+                alert('ENVIADO COM SUCESSO');
             }
         });
     });
