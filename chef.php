@@ -53,7 +53,7 @@
 		</nav>
 		<div class="container-fluid text-center">
 			<div class="row">
-				<div class="col-sm-2 sidenav">
+				<div class="col-2 sidenav">
 					<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>
 					<div class="card" style="width: 100%;">
 						<div class="card-body">
