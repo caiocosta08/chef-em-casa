@@ -23,14 +23,25 @@ function loadChefs(){
       chefs += '<br> Tópicos: '
       chefs += topicos
       chefs += '</p></li>'
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
       if(x<3){
-        feed += '<li class="well"><h6>'
-        feed += data
-        feed += '</h6><p><a href="'
+        feed += '<div class="card" style="width: 18rem;"> <div class="card-body">'
+        feed += '<h5 class="card-title">'+titulo+'</h5>'
+        feed += '<h6 class="card-subtitle mb-2 text-muted">' + data + '</h6>'
+        feed += '</h6><p class="card-text"><a href="'
         feed += link
         feed += '">'
-        feed += titulo
-        feed += '</a></p></li>'
+        feed += 'BLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLA'
+        feed += '</a></p></div></div>'
       }
 
     }
