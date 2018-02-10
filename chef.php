@@ -70,12 +70,20 @@
 
 
 		<div class="container-fluid text-center">
-			<div class="row content">
-				<div class="col-sm-2 sidenav well">
+			<div class="row">
+				<div class="col-sm-2 sidenav">
 					<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>
-					<h3>Olá, <b><?php echo $logado ?></b>! </h3>
-					<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>
-				</div>
+					<div class="card" style="width: 100%;">
+						<div class="card-body">
+							<h5 class="card-title">Bem vindo</h5>
+							<h6 class="card-subtitle mb-2 text-muted"></h6>
+							<p class="card-text">
+							<a href="#"><h3>Olá, <b><?php echo $logado ?></b>!</h3></a>
+							</p>
+							<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>		
+						</div>
+					</div>				
+									</div>
 				<div class="col-sm-8 text-left">
 					<div id="chefAtual"></div>
 					<hr>
