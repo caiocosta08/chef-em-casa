@@ -105,26 +105,26 @@
 			<!-- Botão que abre o modal -->
 			<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#modalContato">Contratar <span class="glyphicon glyphicon-success"></span></button>
 			<!-- Modal -->
-			<div id="modalContato" class="modal fade">
-			  <div class="modal-dialog">
-			    <!-- Conteúdo do modal-->
-			    <div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">CONTATO</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<div id="modalContato" class="modal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Modal title</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>Modal body text goes here.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary">Save changes</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
 					</div>
-
-					<!-- Modal body -->
-			      <div class="modal-body">
-							<h2>Contrate o Chef para o seu evento!</h2>
-							<?php include('forms/contact-chef.php'); ?>
-				  </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-			      </div>
-			    </div>
-			  </div>
+				</div>
 			</div>
+			
 			<hr>
 			<div class="chat">
 				<div class="show-chat">
