@@ -23,68 +23,51 @@
 <script src="js/validator.js" type="text/javascript"></script>
 <script src="js/img.js" type="text/javascript"></script>
 
-<style rel="stylesheet" type="text/css">
-	.navbar {
-		background-color: #fff353;
-		border-color: #8a6d3b;
-	}
-	.navbar-inverse .navbar-nav>li>a{
-		color: #8a6d3b;
-	}
-	.navbar-inverse .navbar-nav>li>a:hover{
-		color: #333333;
-	}
-	.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
-		background-color: #8a6d3b;
-	}
-	.navbar-inverse .navbar-brand{
-		color: #8a6d3b;
-	}
-	.navbar-inverse .navbar-brand:hover{
-		color: #333333;
-	}
-	body {
-		color: #8a6d3b;
-	}
-	blockquote small {
-		color: #8a6d3b;
-	}
-	.content {
-		/*background-color: #fff1a8;
-	*/}
-	.well {
-		background-color: #b99c6b;
-		border-color: #8a6d3b;
-		color: #d5c4a1;
-	}
-	.well a{
-		color: white;
-	}
-	.page-header {
-		color: gray;
-		background-color: yellow;
-		border-color: yellow;
-	}
-</style>
 </head>
 <body style="margin: 1%;">
-	<nav class="navbar navbar-inverse">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Chef em Casa</a>
-		</div>
-		<ul class="nav navbar-nav">
-			<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			<li class="active"><a href="chefs.php"><span class="glyphicon glyphicon-pencil"></span> Chefs</a></li>
-			<li><a href="calendario.php"><span class="glyphicon glyphicon-calendar"></span> Calendário</a></li>
-			<li><a href="admin.php"><span class="glyphicon glyphicon-cog"></span> Admin</a></li>
-			<li><a href="sobre.php"><span class="glyphicon glyphicon-info-sign"></span> Sobre</a></li>
-		</ul>
+	
+<nav class="navbar navbar-expand-sm navbar-dark" style="background: coral;">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Brand -->
+<a class="navbar-brand" href="index.php">Chef em Casa</a>
+
+<!-- Links -->
+<div class="collapse navbar-collapse" id="nav-content">   
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="index.php">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="chefs.php">Chefs</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="calendario.php">Calendário</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="admin.php">Admin</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="sobre.php">Sobre</a>
+</li>
+</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<?php if($logado == '' || $logado == null) echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'?>
 		</ul>
-	</div>
-	</nav>
+
+</nav>
+
+
+
+
+
+
+
+
+
+
 
 <div class="container-fluid text-center">
   <div class="row content">
