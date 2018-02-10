@@ -47,10 +47,11 @@ function lerJSON(){
         let mensagens = dados[x].message
         let autor = dados[x].name
         
-        msgs += '<li> ID: ' + id + ' '
-        msgs += 'AUTOR: ' + autor + ' '
-        msgs += 'MENSAGEM: ' + mensagens + ' '
-        msgs += 'USER LOGADO: ' + userlogado + '</li>'
+        if(autor == userlogado)
+            msgs += '<li style="background-color: #555;">' + autor + ': ' + mensagens + '</li>'
+        else
+            msgs += '<li>' + autor + ': ' + mensagens + '</li>'
+            
     }
 
     msgs += '</ul>'
