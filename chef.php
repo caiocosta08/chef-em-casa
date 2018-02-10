@@ -24,7 +24,7 @@
 <script src="js/img.js" type="text/javascript"></script>
 
 </head>
-	<body style="margin: 1%;">
+	<body style="margin: 0 1% 0 1%;">
 		
 		<nav class="navbar navbar-expand-sm navbar-dark" style="background: coral; margin-bottom: 20px;">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
