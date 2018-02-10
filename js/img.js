@@ -50,7 +50,7 @@ function lerJSON(){
         msgs += '<li> ID: ' + id + ' '
         msgs += 'AUTOR: ' + autor + ' '
         msgs += 'MENSAGEM: ' + mensagens + ' '
-        msgs += '</li>'
+        msgs += 'USER LOGADO: ' + user-logado + '</li>'
     }
 
     msgs += '</ul>'
