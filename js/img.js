@@ -16,6 +16,7 @@ function atualizarMensagens() {
 
   $(document).ready(function(){
       lerJSON();
+      atualizarMensagens();
     setInterval(lerJSON, 2000);
 
     $('.send-message').submit(function(e){
