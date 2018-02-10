@@ -81,10 +81,6 @@
 <div class="container-fluid text-center">
   <div class="row content">
   <div class="col-sm-2 sidenav">
-			<ul id="contentNews" style="list-style: none; padding: 0;">
-			</ul>
-		</div>
-		<div class="col-sm-8 text-left">
 			<?php
                 if($logado != '' && $logado != null){
 					echo '<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>';
@@ -92,6 +88,9 @@
 					echo '<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>';
 				}else include('forms/login.php');
 			?>
+  </div>
+		<div class="col-sm-8 text-left">
+			
 
 			<div class="chat">
 				<div class="show-chat">
