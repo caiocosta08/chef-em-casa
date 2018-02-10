@@ -10,8 +10,6 @@ if ($con->connect_error) {
 }else{
   echo '<h1> SUCESSO AO ABRIR CONEXAO </h1>';
 }
-//str_replace(procurar, substituto, origem, $ocorrencias)
-$resumo = str_replace(';', '<br>', $resumo);
 
 $sql = "INSERT INTO messages (name, message) VALUES ('$user','$mensagem')";
 
