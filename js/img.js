@@ -30,7 +30,6 @@ function atualizarMensagens() {
             {
                 atualizarMensagens();
                 lerJSON();
-                //addToJSON(data);
             },
         });
     });
@@ -41,16 +40,16 @@ function lerJSON(){
     $.getJSON("json/messages.json", function(){
     })
     .done(function(dados){
-        let msgs = '<ul>'
+        let msgs = '<ul style="list-style:none;">'
     for (var x of Object.keys(dados)) {
         let id = dados[x].id
         let mensagens = dados[x].message
         let autor = dados[x].name
         
         if(autor == userlogado)
-            msgs += '<li style="background-color: #CCC;">' + autor + ': ' + mensagens + '</li>'
+            msgs += '<li style="background-color: #CCC;"> >' + autor + ': ' + mensagens + '</li>'
         else
-            msgs += '<li>' + autor + ': ' + mensagens + '</li>'
+            msgs += '<li style="background-color: #EEE;"> >' + autor + ': ' + mensagens + '</li>'
             
     }
 
@@ -58,14 +57,3 @@ function lerJSON(){
     document.querySelector(".show-chat").innerHTML = msgs;
     });
 }
-
-
-function addToJSON(info){
-  /*  let dados
-    dados = document.querySelector("#message-to-send").value
-    //    dados += '<li> ID: ' + id + ' '
-  //  dados += 'AUTOR: ' + autor + ' '
-    //dados += 'MENSAGEM: ' + mensagens + ' '
-    //dados += '</li>'
-    document.querySelector(".show-chat").insertAdjacentHTML('afterend', dados);
-*/}
