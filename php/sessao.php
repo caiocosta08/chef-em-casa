@@ -21,6 +21,6 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 }else{
     //$logado = $_SESSION['firstName'];
     $logado = $_SESSION['login'];
-    echo '<script type="text/javascript"> let user-logado ='. $logado .' </script>';
+    echo '<script type="text/javascript"> let userlogado ='. $logado .' </script>';
 }
 ?>
