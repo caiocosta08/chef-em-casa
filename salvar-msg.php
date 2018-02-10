@@ -36,7 +36,7 @@
   $escreve = fwrite($fp, $in_json2);
 
     if($escreve){
-      echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/chef.php'>";
+      echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/chat.php'>";
     }
   else echo 'falha';
 
