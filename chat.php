@@ -90,7 +90,9 @@
 			?>
   </div>
 		<div class="col-sm-8 text-left">
-			<div id="chat_div"></div>
+			<div id="chat_div">
+				<h1>CHATCHATCHATCHAT</h1>
+			</div>
 
 			
 		</div>

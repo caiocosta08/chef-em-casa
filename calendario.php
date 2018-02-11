@@ -96,7 +96,7 @@
 
 <div class="container-fluid text-center">
   <div class="row">
-  <div class="col-md-2 sidenav">
+  <div class="col-sm-2 sidenav">
 					<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>
 					<div class="card" style="width: 100%;">
 						<div class="card-body">
@@ -108,7 +108,7 @@
 							<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>		
 						</div>
 					</div>
-    <div class="col-md-8 text-left">
+    <div class="col-sm-8 text-left">
       <h1>Calendário <span class="glyphicon glyphicon-calendar"></span></h1>
 			<hr>
 			<p>
@@ -128,7 +128,7 @@
 			</div>
 			<hr>
 		</div>
-		<div class="col-md-2 sidenav">
+		<div class="col-sm-2 sidenav">
 			<ul id="contentNews" style="list-style: none; padding: 0;">
 			</ul>
 		</div>

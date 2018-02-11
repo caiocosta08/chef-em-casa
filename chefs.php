@@ -95,7 +95,7 @@
 		</nav>
 <div class="container-fluid text-center">
   <div class="row">
-  <div class="col-lg-2 sidenav">
+  <div class="col-sm-2 sidenav">
 					<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>
 					<div class="card" style="width: 100%;">
 						<div class="card-body">
@@ -107,12 +107,12 @@
 							<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>		
 						</div>
 					</div>
-    <div class="col-lg-8 text-left">
+    <div class="col-sm-8 text-left">
       <h1>Chefs <span class="glyphicon glyphicon-pencil"></span></h1>
 			<hr>
 			<p>
 				Nesta página você pode encontrar a lista completa de <code>todos</code>
-				os Chefs registradas! Ao digitar algum texto no campo <code>Pesquisar</code>
+				os Chefs registradas! Ao digitar asmum texto no campo <code>Pesquisar</code>
 				abaixo você pode encontrar a aula desejada a partir de <code>qualquer</code>
 				informação sobre o Chef.
 			</p>
@@ -127,7 +127,7 @@
 			</div>
 			<hr>
 		</div>
-		<div class="col-lg-2 sidenav">
+		<div class="col-sm-2 sidenav">
 			<ul id="contentNews" style="list-style: none; padding: 0;">
 			</ul>
 		</div>

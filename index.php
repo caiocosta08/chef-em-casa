@@ -96,12 +96,12 @@
 	<?php include('modal/modal-add-user.php'); ?>
 <div class="container-fluid text-center">
   <div class="row">
-		<div class="col-xl-2 sidenav">
+		<div class="col-sm-2 sidenav">
 			<ul id="contentNews" style="list-style: none; padding: 0;">
 			</ul>
 		</div>
 
-		<div class="col-xl-8 text-left">
+		<div class="col-sm-8 text-left">
 			<?php
                 //$logado = $_SESSION['login'];
 				if($logado != '' && $logado != null){
@@ -111,7 +111,7 @@
 				}else include('forms/login.php');
 			?>
 		</div>
-		<div class="col-xl-2 sidenav">
+		<div class="col-sm-2 sidenav">
 			<ul id="contentNews" style="list-style: none; padding: 0;">
 			</ul>
 		</div>
