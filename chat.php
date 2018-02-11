@@ -43,8 +43,9 @@
 			}
 			#message-to-send{
 				font-size: 16px;
-				padding: 3px;
-				margin:	2px;				
+				padding: 3px;		
+				width: 100%; 
+				height:30px;	
 			}
 			.userMessage{
 				border: solid 1px #000000;
@@ -167,7 +168,7 @@
 						<div class="userMessage">subtitle</div>
 						<div class="input-chat">
 							<form class="send-message" method="post" action="send.php">
-								<input name="message-to-send" id="message-to-send" type="text" style="width: 100%; height:30px;">
+								<input name="message-to-send" id="message-to-send" type="text" placeholder=" Digite sua mensagem...">
 								<input type="hidden" name="loged-user" id="loged-user" value="<?php echo $logado; ?>">
 								<!--<button id="btn-send-message" type="submit" style="width: 20%">ENVIAR</button>-->
 							</form>
