@@ -30,6 +30,9 @@
 				background-color: #f8f8ff;
 				padding-left: 10px;
 			}
+			h6{
+				color: #000000;
+			}
 		</style>
 	</head>
 	
@@ -128,15 +131,15 @@
 						</div>
 					</div>
 					<div id="live-chat">
-						<h3 id="chatTitle">CHAT</h3>
+						<h3 id="chatTitle"><b>CHAT</b></h3>
 						<hr>
-						<h6><b>subtitle</b></h6>
-						<h6><b>subtitle</b></h6>
-						<h6><b>subtitle</b></h6>
-						<h6><b>subtitle</b></h6>
-						<h6><b>subtitle</b></h6>
-						<h6><b>subtitle</b></h6>
-						<h6><b>subtitle</b></h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
 					</div>
 				</div>
 				<div class="col-md-2 sidenav">
