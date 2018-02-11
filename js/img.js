@@ -21,10 +21,15 @@ function atualizarMensagens() {
 
     $("#message-to-send").keyup(function(){
         document.querySelector("#digitando").style.display = ""
+    }).stop(function(){
+        document.querySelector("#digitando").style.display = "none"
+        
     })
-  //  $("#message-to-send").keydown(function(){
-    //    document.querySelector("#digitando").style.display = "none"
-    //})
+
+/*
+    $("#message-to-send").keydown(function(){
+        document.querySelector("#digitando").style.display = "none"
+    })*/
     
 
 
