@@ -24,7 +24,11 @@
 				z-index: 100;
 				border: solid 2px #555555;
 				padding: 5px;
-
+				background-color: #dae0e5;
+			}
+			#chatTitle{
+				background-color: #f8f8ff;
+				padding-left: 10px;
 			}
 		</style>
 	</head>
@@ -124,9 +128,9 @@
 						</div>
 					</div>
 					<div id="live-chat">
-						<h3>CHAT</h3>
+						<h3 id="chatTitle">CHAT</h3>
 						<hr>
-						subtitle
+						<h6>subtitle</h6>
 					</div>
 				</div>
 				<div class="col-md-2 sidenav">
