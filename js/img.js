@@ -79,3 +79,16 @@ function lerJSON(){
     document.querySelector(".show-chat").innerHTML = msgs;
     });
 }
+
+$(document).ready(function(){
+    // to create
+    $("#chat_div").chatbox({id : "chat_div",
+                            title : "Title",
+                            user : "can be anything"
+                            offset: 200,
+                            messageSent: function(id, user, msg){
+                                 alert("DOM " + id + " just typed in " + msg);
+                            }});
+    // to insert a message
+    $("#chat_div").chatbox("option", "boxManager").addMsg("Mr. Foo", "Barrr!");
+});
