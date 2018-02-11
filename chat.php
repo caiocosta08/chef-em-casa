@@ -17,7 +17,7 @@
 		<style>
 			#live-chat {
 				bottom: 0;
-				font-size: 12px;
+				font-size: 14px;
 				right: 24px;
 				position: fixed;
 				width: 300px;
@@ -48,10 +48,12 @@
 			.userMessage{
 				border: solid 1px #000000;
 				border-radius: 50px;
+				padding: 5px;
 			}
 			.visitMessage{
 				border: solid 1px #FFFFFF;				
 				border-radius: 50px;
+				padding: 5px;				
 			}
 		</style>
 	</head>
