@@ -95,8 +95,9 @@
 									<h2>Contrate o Chef para o seu evento!</h2>
 									<?php include('forms/contact-chef.php'); ?>
 								</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+								</div>
 							</div>
 						</div>
 					</div>
