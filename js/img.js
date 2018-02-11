@@ -18,15 +18,6 @@ function atualizarMensagens() {
       lerJSON();
       atualizarMensagens();
     setInterval(lerJSON, 2000);
-    
-    $("#message-to-send").keyup(function(){
-        document.querySelector("#digitando").style.display = "none"
-    })
-    
-    $("#message-to-send").keydown(function(){
-        document.querySelector("#digitando").style.display = ""
-    })
-    
 
 
     $('.send-message').submit(function(e){

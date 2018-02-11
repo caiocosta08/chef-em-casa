@@ -53,7 +53,7 @@
 		</nav>
 		<div class="container-fluid text-center">
 			<div class="row">
-				<div class="col-2 sidenav">
+				<div class="col-sm-2 sidenav">
 					<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>
 					<div class="card" style="width: 100%;">
 						<div class="card-body">
@@ -66,7 +66,7 @@
 						</div>
 					</div>				
 									</div>
-				<div class="col-8 text-left">
+				<div class="col-sm-8 text-left">
 					<div id="chefAtual"></div>
 					<hr>
 					<!-- Botão que abre o modal -->
@@ -116,11 +116,10 @@
 								<input type="hidden" name="loged-user" id="loged-user" value="<?php echo $logado; ?>">
 								<button id="btn-send-message" type="submit">ENVIAR</button>
 							</form>
-							<h6 id="digitando" color: green">digitando...</h6>
 						</div>
 					</div>
 				</div>
-				<div class="col-2 sidenav">
+				<div class="col-sm-2 sidenav">
 					<ul id="contentNews" style="list-style: none; padding: 0;">
 					</ul>
 				</div>
