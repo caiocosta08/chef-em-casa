@@ -22,6 +22,10 @@ function atualizarMensagens() {
     $("#message-to-send").keyup(function(){
         document.querySelector("#digitando").style.display = ""
     })
+    $("#message-to-send").keydown(function(){
+        document.querySelector("#digitando").style.display = "none"
+    })
+    
 
 
     $('.send-message').submit(function(e){
