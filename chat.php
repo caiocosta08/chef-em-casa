@@ -130,13 +130,13 @@
 					<div id="live-chat">
 						<h3 id="chatTitle">CHAT</h3>
 						<hr>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
+						<h6><b>subtitle</b></h6>
+						<h6><b>subtitle</b></h6>
+						<h6><b>subtitle</b></h6>
+						<h6><b>subtitle</b></h6>
+						<h6><b>subtitle</b></h6>
+						<h6><b>subtitle</b></h6>
+						<h6><b>subtitle</b></h6>
 					</div>
 				</div>
 				<div class="col-md-2 sidenav">
