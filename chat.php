@@ -23,6 +23,8 @@
 				width: 300px;
 				z-index: 100;
 				border: solid 2px #555555;
+				border-bottom: 0;
+				border-radius: 10px;
 				padding: 5px;
 				background-color: #dae0e5;
 			}
