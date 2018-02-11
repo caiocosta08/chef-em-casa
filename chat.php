@@ -42,8 +42,16 @@
 				margin: 0;
 			}
 			#message-to-send{
-				font-size: 18px;
+				font-size: 16px;
 				padding: 3px;
+			}
+			.userMessage{
+				border: solid 1px #000000;
+				border-radius: 50px;
+			}
+			.visitMessage{
+				border: solid 1px #FFFFFF;				
+				border-radius: 50px;
 			}
 		</style>
 	</head>
@@ -145,13 +153,13 @@
 					<div id="live-chat">
 						<h3 id="chatTitle"><b>CHAT</b></h3>
 						<hr>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
-						<h6>subtitle</h6>
+						<div class="userMessage">subtitle</div>
+						<div class="userMessage">subtitle</div>
+						<div class="visitMessage">subtitle</div>
+						<div class="userMessage">subtitle</div>
+						<div class="visitMessage">subtitle</div>
+						<div class="visitMessage">subtitle</div>
+						<div class="userMessage">subtitle</div>
 						<div class="input-chat">
 							<form class="send-message" method="post" action="send.php">
 								<input name="message-to-send" id="message-to-send" type="text" style="width: 100%; height:30px;">
