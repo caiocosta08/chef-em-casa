@@ -142,9 +142,9 @@
 						<h6>subtitle</h6>
 						<div class="input-chat">
 							<form class="send-message" method="post" action="send.php">
-								<input name="message-to-send" id="message-to-send" type="text">
+								<input name="message-to-send" id="message-to-send" type="text" style="width: 70%;">
 								<input type="hidden" name="loged-user" id="loged-user" value="<?php echo $logado; ?>">
-								<button id="btn-send-message" type="submit">ENVIAR</button>
+								<button id="btn-send-message" type="submit" style="width: 20%;">ENVIAR</button>
 							</form>
 						</div>
 					</div>
