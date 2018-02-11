@@ -116,7 +116,7 @@
 								<input type="hidden" name="loged-user" id="loged-user" value="<?php echo $logado; ?>">
 								<button id="btn-send-message" type="submit">ENVIAR</button>
 							</form>
-							<h6 id="digitando" style="display:none; color: green">digitando...</h6>
+							<h6 id="digitando" color: green">digitando...</h6>
 						</div>
 					</div>
 				</div>
