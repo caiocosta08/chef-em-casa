@@ -77,7 +77,8 @@ function lerJSON(){
     }
 
     msgs += '</ul>'
-    document.querySelector(".show-chat").innerHTML = msgs;
+    if(document.title == 'Chef em Casa - CHEF')
+        document.querySelector(".show-chat").innerHTML = msgs;
     });
 }
 
