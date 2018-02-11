@@ -33,6 +33,14 @@
 			h6{
 				color: #000000;
 			}
+			input {
+				border: 0;
+				color: inherit;
+				font-family: inherit;
+				font-size: 100%;
+				line-height: normal;
+				margin: 0;
+			}
 		</style>
 	</head>
 	
@@ -142,9 +150,9 @@
 						<h6>subtitle</h6>
 						<div class="input-chat">
 							<form class="send-message" method="post" action="send.php">
-								<input name="message-to-send" id="message-to-send" type="text" style="width: 70%;">
+								<input name="message-to-send" id="message-to-send" type="text" style="width: 100%;">
 								<input type="hidden" name="loged-user" id="loged-user" value="<?php echo $logado; ?>">
-								<button id="btn-send-message" type="submit" style="width: 20%;">ENVIAR</button>
+								<!--<button id="btn-send-message" type="submit" style="width: 20%">ENVIAR</button>-->
 							</form>
 						</div>
 					</div>
