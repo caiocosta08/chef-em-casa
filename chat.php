@@ -45,19 +45,20 @@
 				font-size: 16px;
 				padding: 3px;		
 				width: 100%; 
-				height:30px;	
+				height:30px;
+				border-radius: 5px	
 			}
 			.userMessage{
-				border: solid 1px #000000;
 				border-radius: 50px;
 				padding: 5px;
 				margin:	3px;
+				background-color: #ffffff;
 			}
 			.visitMessage{
-				border: solid 1px #FFFFFF;				
 				border-radius: 50px;
 				padding: 5px;
-				margin:	3px;								
+				margin:	3px;			
+				background-color: #ffffff;									
 			}
 		</style>
 	</head>
