@@ -19,6 +19,11 @@ function atualizarMensagens() {
       atualizarMensagens();
     setInterval(lerJSON, 2000);
 
+    $("#message-to-send").keyup(function(){
+        document.querySelector("#digitando").style.display = ""
+    })
+
+
     $('.send-message').submit(function(e){
         e.preventDefault();
         var dados = $( this ).serialize();
@@ -79,3 +84,4 @@ function lerJSON(){
     document.querySelector(".show-chat").innerHTML = msgs;
     });
 }
+
