@@ -21,6 +21,10 @@
 				right: 24px;
 				position: fixed;
 				width: 300px;
+				z-index: 100;
+				border: solid 2px #555555;
+				padding: 5px;
+
 			}
 		</style>
 	</head>
@@ -120,9 +124,9 @@
 						</div>
 					</div>
 					<div id="live-chat">
-						<h1>CHAT BOX</h1>
+						<h3>CHAT</h3>
 						<hr>
-						<h2>subtitle</h2>
+						subtitle
 					</div>
 				</div>
 				<div class="col-md-2 sidenav">
