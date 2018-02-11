@@ -44,16 +44,19 @@
 			#message-to-send{
 				font-size: 16px;
 				padding: 3px;
+				margin:	2px;				
 			}
 			.userMessage{
 				border: solid 1px #000000;
 				border-radius: 50px;
 				padding: 5px;
+				margin:	3px;
 			}
 			.visitMessage{
 				border: solid 1px #FFFFFF;				
 				border-radius: 50px;
-				padding: 5px;				
+				padding: 5px;
+				margin:	3px;								
 			}
 		</style>
 	</head>
