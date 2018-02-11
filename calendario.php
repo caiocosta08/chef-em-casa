@@ -95,7 +95,7 @@
 		</nav>
 
 <div class="container-fluid text-center">
-  <div class="row content">
+  <div class="row">
   <div class="col-md-2 sidenav">
 					<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>
 					<div class="card" style="width: 100%;">
