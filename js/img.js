@@ -18,14 +18,14 @@ function atualizarMensagens() {
       lerJSON();
       atualizarMensagens();
     setInterval(lerJSON, 2000);
-
-    $("#message-to-send").keypress(function(){
-        document.querySelector("#digitando").style.display = ""
+    
+    $("message-to-send").keyup(function(){
+        document.querySelector("h3").style.display = "none"
     })
-/*
-    $("#message-to-send").keydown(function(){
-        document.querySelector("#digitando").style.display = "none"
-    })*/
+    
+    $("message-to-send").keydown(function(){
+        document.querySelector("h3").style.display = ""
+    })
     
 
 
