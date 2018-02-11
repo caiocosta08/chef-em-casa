@@ -19,13 +19,9 @@ function atualizarMensagens() {
       atualizarMensagens();
     setInterval(lerJSON, 2000);
 
-    $("#message-to-send").keyup(function(){
+    $("#message-to-send").keypress(function(){
         document.querySelector("#digitando").style.display = ""
-    }).stop(function(){
-        document.querySelector("#digitando").style.display = "none"
-        
     })
-
 /*
     $("#message-to-send").keydown(function(){
         document.querySelector("#digitando").style.display = "none"
