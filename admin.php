@@ -15,50 +15,6 @@
 		<script src="js/functions.js" type="text/javascript"></script>
 		<script src="js/validator.js" type="text/javascript"></script>
 		<script src="js/img.js" type="text/javascript"></script>
-
-		<style rel="stylesheet" type="text/css">
-			.navbar {
-				background-color: #fff353;
-				border-color: #8a6d3b;
-			}
-			.navbar-inverse .navbar-nav>li>a{
-				color: #8a6d3b;
-			}
-			.navbar-inverse .navbar-nav>li>a:hover{
-				color: #333333;
-			}
-			.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
-				background-color: #8a6d3b;
-			}
-			.navbar-inverse .navbar-brand{
-				color: #8a6d3b;
-			}
-			.navbar-inverse .navbar-brand:hover{
-				color: #333333;
-			}
-			body {
-				color: #8a6d3b;
-			}
-			blockquote small {
-				color: #8a6d3b;
-			}
-			.content {
-				/*background-color: #fff1a8;
-			*/}
-			.well {
-				background-color: #b99c6b;
-				border-color: #8a6d3b;
-				color: #d5c4a1;
-			}
-			.well a{
-				color: white;
-			}
-			.page-header {
-				color: gray;
-				background-color: yellow;
-				border-color: yellow;
-			}
-		</style>
 	</head>
 	
 	<body>
@@ -95,7 +51,7 @@
 		</nav>
 		<div class="container-fluid text-center">
 			<div class="row">
-				<div class="col-sm-2 sidenav">
+				<div class="col-md-2 sidenav">
 					<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>
 					<div class="card" style="width: 100%;">
 						<div class="card-body">
@@ -108,7 +64,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-8 text-left">
+				<div class="col-md-8 text-left">
 					<h1>Bem-vindo!</h1>
 					<p>
 						Olá! Nós somos o <code>CENTRO DE ESTUDOS</code> e damos a você as boas vindas ao
@@ -127,7 +83,7 @@
 					</ul>
 					<hr>
 				</div>
-				<div class="col-sm-2 sidenav">
+				<div class="col-md-2 sidenav">
 					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
 				</div>
 			</div>
