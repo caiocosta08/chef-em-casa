@@ -20,11 +20,11 @@ function atualizarMensagens() {
     setInterval(lerJSON, 2000);
     
     $("message-to-send").keyup(function(){
-        document.querySelector("h3").style.display = "none"
+        document.querySelector("#digitando").style.display = "none"
     })
     
     $("message-to-send").keydown(function(){
-        document.querySelector("h3").style.display = ""
+        document.querySelector("#digitando").style.display = ""
     })
     
 
