@@ -131,6 +131,12 @@
 						<h3 id="chatTitle">CHAT</h3>
 						<hr>
 						<h6>subtitle</h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
+						<h6>subtitle</h6>
 					</div>
 				</div>
 				<div class="col-md-2 sidenav">
