@@ -120,7 +120,9 @@
 						</div>
 					</div>
 					<div id="live-chat">
-					
+						<h1>CHAT BOX</h1>
+						<hr>
+						<h2>subtitle</h2>
 					</div>
 				</div>
 				<div class="col-md-2 sidenav">
