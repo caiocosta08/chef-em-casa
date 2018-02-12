@@ -18,8 +18,7 @@ function atualizarMensagens() {
       lerJSON();
       atualizarMensagens();
     setInterval(lerJSON, 2000);
-          var altura = document.querySelector(".live-chat").style.height
-      
+     
       //abrir ou fechar chat
       $(".chatTitle").click(function(){
         $(".show-chat").toggle()
@@ -62,12 +61,12 @@ function lerJSON(){
     $.getJSON("json/messages.json", function(){
     })
     .done(function(dados){
-        let msgs = '<ul>'
-    for (var x of Object.keys(dados)) {
-        let id = dados[x].id
-        let mensagens = dados[x].message
-        let autor = dados[x].name
-        let autorAnterior        
+        var msgs = '<ul>'
+    for(var x of Object.keys(dados)) {
+        var id = dados[x].id
+        var mensagens = dados[x].message
+        var autor = dados[x].name
+        var autorAnterior        
         if((x-1)>=0) autorAnterior = dados[x-1].name
         
         if(autor != autorAnterior){
