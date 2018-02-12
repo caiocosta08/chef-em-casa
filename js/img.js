@@ -24,14 +24,7 @@ function atualizarMensagens() {
       $(".chatTitle").click(function(){
           //$(".show-chat").toggle()
           //$(".input-chat").toggle()
-         //$(".live-chat").toggle()
-          if(altura ==""){
-            altura = '10px' 
-           }else{
-             altura = ''
-             }
-          
-          
+         $(".live-chat").toggle()          
           
       })
 

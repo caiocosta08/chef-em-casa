@@ -103,7 +103,7 @@
 					</div>
 					<hr>
                     <div class="live-chat">
-                        <div class="chatTitle"><a class="chatTitle" href="">CHAT TITLE</a></div>
+                        <div class="chatTitle">CHAT</div>
 						<div class="show-chat"></div>
 						<div class="input-chat">
 							<form class="send-message" method="post" action="send.php">
