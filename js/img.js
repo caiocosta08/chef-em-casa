@@ -23,11 +23,11 @@ function atualizarMensagens() {
       
       //abrir ou fechar chat
       $(".chatTitle").click(function(){
-        //$(".show-chat").toggle()
-        //$(".input-chat").toggle()
+        $(".show-chat").toggle()
+        $(".input-chat").toggle()
         //$(".live-chat").toggle()          
           if(tam.style.height == ""){
-              tam.style.height = "10px"
+              tam.style.height = "30px"
             console.log("diminuiu")
           }else{
               tam.style.height = ""
