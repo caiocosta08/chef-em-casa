@@ -19,12 +19,17 @@ function atualizarMensagens() {
       atualizarMensagens();
     setInterval(lerJSON, 2000);
      
+      var tam = document.querySelector(".live-chat").style.height
+      
       //abrir ou fechar chat
       $(".chatTitle").click(function(){
-        $(".show-chat").toggle()
-        $(".input-chat").toggle()
+        //$(".show-chat").toggle()
+        //$(".input-chat").toggle()
         //$(".live-chat").toggle()          
-          
+          if(tam == "")
+              tam = "10px"
+          else
+              tam = ""
       })
 
 
