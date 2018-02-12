@@ -23,7 +23,7 @@ function atualizarMensagens() {
       $(".chatTitle").click(function(){
           $(".show-chat").toggle()
           $(".input-chat").toggle()
-          $(".live-chat").style.height = '8%'
+         // $(".live-chat").style.height = '8%'
       })
 
 
