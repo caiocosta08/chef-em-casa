@@ -38,13 +38,11 @@ img {
     border-radius: 10px; 
     padding: 5px;
     background-color: #dae0e5;
+    overflow: auto;
 }
 .chatTitle{
     background-color: #f8f8ff;
     padding-left: 10px;
-}
-.show-chat{
-    overflow: auto;
 }
 h6{
     color: #000000;
