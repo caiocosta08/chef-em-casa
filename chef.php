@@ -109,7 +109,7 @@
 							<form class="send-message" method="post" action="send.php">
 								<input name="message-to-send" id="message-to-send" type="text">
 								<input type="hidden" name="loged-user" id="loged-user" value="<?php echo $logado; ?>">
-								<button id="btn-send-message" type="submit">ENVIAR</button>
+								<button id="btn-send-message" type="submit"></button>
 							</form>
 						</div>
 					</div>
