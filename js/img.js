@@ -21,9 +21,9 @@ function atualizarMensagens() {
       
       //abrir ou fechar chat
       $(".chatTitle").click(function(){
-          $(".show-chat").toggle()
-          $(".input-chat").toggle()
-         // $(".live-chat").style.height = '8%'
+          //$(".show-chat").toggle()
+          //$(".input-chat").toggle()
+         $(".live-chat").toggle()
       })
 
 
