@@ -22,9 +22,9 @@ function atualizarMensagens() {
       
       //abrir ou fechar chat
       $(".chatTitle").click(function(){
-          //$(".show-chat").toggle()
-          //$(".input-chat").toggle()
-         $(".live-chat").toggle()          
+        $(".show-chat").toggle()
+        $(".input-chat").toggle()
+        //$(".live-chat").toggle()          
           
       })
 
