@@ -24,22 +24,6 @@ img {
 #linkAula:hover,#linkEvento:hover{
   cursor: pointer;
 }
-.chat{
-    padding: 5px;
-    border-radius: 10px;
-    display: flex;
-    background-color: cyan;
-}
-
-.chat .show-chat li{
-  margin: 3px;
-  padding: 5px 5px 1px 5px;
-  font-size: 14px;
-  border-radius: 15px;
-}
-.chat .show-chat li:hover{
-  border-color:  #FFA500;
-}
 
 #live-chat { 
     bottom: 0;

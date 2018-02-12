@@ -102,7 +102,8 @@
 						</div>
 					</div>
 					<hr>
-					<div class="live-chat chat">
+					<div class="live-chat">
+                        <div class="chatTitle">CHAT</div>
 						<div class="show-chat">
 							<h1>CHAT</h1>
 						</div>
