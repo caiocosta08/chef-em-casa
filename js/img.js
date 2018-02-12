@@ -79,14 +79,14 @@ function lerJSON(){
         
         if(autor != autorAnterior){
             if(autor == userlogado)
-                msgs += '<li class="userMessage"><i class="fas fa-comment-alt"></i> ' + /*autor*/'' + ': ' + mensagens + horario + '</li>'
+                msgs += '<li class="userMessage"><i class="fas fa-comment-alt"></i> ' + /*autor*/'' + ' ' + mensagens + horario + '</li>'
             else
-                msgs += '<li class="visitMessage">' + /*autor*/'' + ': ' + mensagens + ' <i class="fas fa-comment-alt"></i>' +horario+'</li>'
+                msgs += '<li class="visitMessage">' + /*autor*/'' + ' ' + mensagens + ' <i class="fas fa-comment-alt"></i>' +horario+'</li>'
         }else{
             if(autor == userlogado)
-                msgs += '<li class="userMessage">   >'+ mensagens + horario + '</li>'
+                msgs += '<li class="userMessage">   '+ mensagens + horario + '</li>'
             else
-                msgs += '<li class="visitMessge">'+ mensagens + horario + '<    </li>'
+                msgs += '<li class="visitMessge">'+ mensagens + horario + '    </li>'
             
         }
 
