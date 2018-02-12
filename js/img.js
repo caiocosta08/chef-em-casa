@@ -63,7 +63,7 @@ var hora    = data.getHours();          // 0-23
 var min     = data.getMinutes();        // 0-59
 
 var str_hora = hora + ':' + min;
-var horario = '<h6>'+ str_hora +'</h6>'
+var horario = '<h6 style="font-size: 10px;">'+ str_hora +'</h6>'
 
 function lerJSON(){
     $.getJSON("json/messages.json", function(){
@@ -81,7 +81,7 @@ function lerJSON(){
             if(autor == userlogado)
                 msgs += '<li class="userMessage"><i class="fas fa-comment-alt"></i> ' + autor + ': ' + mensagens + horario + '</li>'
             else
-                msgs += '<li class="visitMessage">' + autor + ': ' + mensagens + horario + ' <i class="fas fa-comment-alt"></i></li>'
+                msgs += '<li class="visitMessage">' + autor + ': ' + mensagens + ' <i class="fas fa-comment-alt"></i>' +horario+'</li>'
         }else{
             if(autor == userlogado)
                 msgs += '<li class="userMessage">   >'+ mensagens + horario + '</li>'
