@@ -15,7 +15,7 @@
 		<script src="js/validator.js" type="text/javascript"></script>
 		<script src="js/img.js" type="text/javascript"></script>
 		<style>
-			#live-chat {
+			#live-chat { 
 				bottom: 0;
 				font-size: 14px;
 				right: 24px;
@@ -24,7 +24,7 @@
 				z-index: 100;
 				border: solid 2px #555555;
 				border-bottom: 0;
-				border-radius: 10px;
+				border-radius: 10px; 
 				padding: 5px;
 				background-color: #dae0e5;
 			}
