@@ -44,6 +44,9 @@ img {
     background-color: #f8f8ff;
     padding-left: 10px;
 }
+.show-chat ul{
+    padding: 0;
+}
 h6{
     color: #000000;
 }
