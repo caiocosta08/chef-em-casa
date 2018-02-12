@@ -63,14 +63,14 @@ function lerJSON(){
         
         if(autor != autorAnterior){
             if(autor == userlogado)
-                msgs += '<li style="background-color: #dddddd;"> >' + autor + ': ' + mensagens + horario + '</li>'
+                msgs += '<li class="userMessage"> >' + autor + ': ' + mensagens + horario + '</li>'
             else
-                msgs += '<li style="background-color: #eeeeee;"> >' + autor + ': ' + mensagens + horario + '</li>'
+                msgs += '<li class="visitMessage"> >' + autor + ': ' + mensagens + horario + '</li>'
         }else{
             if(autor == userlogado)
-                msgs += '<li style="background-color: #dddddd;">   >'+ mensagens + horario + '</li>'
+                msgs += '<li class="userMessage">   >'+ mensagens + horario + '</li>'
             else
-                msgs += '<li style="background-color: #eeeeee;">   >'+ mensagens + horario + '</li>'
+                msgs += '<li class="visitMessge">   >'+ mensagens + horario + '</li>'
             
         }
 
