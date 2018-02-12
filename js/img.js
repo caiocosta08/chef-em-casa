@@ -53,7 +53,7 @@ function lerJSON(){
     $.getJSON("json/messages.json", function(){
     })
     .done(function(dados){
-        let msgs = '<ul Slist-style:none;">'
+        let msgs = '<ul list-style:none;">'
     for (var x of Object.keys(dados)) {
         let id = dados[x].id
         let mensagens = dados[x].message
