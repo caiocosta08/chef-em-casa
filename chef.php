@@ -104,9 +104,7 @@
 					<hr>
 					<div class="live-chat">
                         <div class="chatTitle">CHAT</div>
-						<div class="show-chat">
-							<h1>CHAT</h1>
-						</div>
+						<div class="show-chat"></div>
 						<div class="input-chat">
 							<form class="send-message" method="post" action="send.php">
 								<input name="message-to-send" id="message-to-send" type="text">
