@@ -13,56 +13,8 @@
 		<script src="js/load.js" type="text/javascript"></script>
 		<script src="js/functions.js" type="text/javascript"></script>
 		<script src="js/validator.js" type="text/javascript"></script>
-		<script src="js/img.js" type="text/javascript"></script>
-		<style>
-			#live-chat { 
-				bottom: 0;
-				font-size: 14px;
-				right: 24px;
-				position: fixed;
-				width: 300px;
-				z-index: 100;
-				border: solid 2px #555555;
-				border-bottom: 0;
-				border-radius: 10px; 
-				padding: 5px;
-				background-color: #dae0e5;
-			}
-			#chatTitle{
-				background-color: #f8f8ff;
-				padding-left: 10px;
-			}
-			h6{
-				color: #000000;
-			}
-			input {
-				border: 0;
-				color: inherit;
-				font-family: inherit;
-				font-size: 100%;
-				line-height: normal;
-				margin: 0;
-			}
-			#message-to-send{
-				font-size: 16px;
-				padding: 3px;		
-				width: 100%; 
-				height:30px;
-				border-radius: 5px	
-			}
-			.userMessage{
-				border-radius: 50px;
-				padding: 5px;
-				margin:	3px;
-				background-color: #ffffff;
-			}
-			.visitMessage{
-				border-radius: 50px;
-				padding: 5px;
-				margin:	3px;			
-				background-color: #ffffff;									
-			}
-		</style>
+        <script src="js/img.js" type="text/javascript"></script>
+		
 	</head>
 	
 	<body>	

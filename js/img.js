@@ -18,6 +18,12 @@ function atualizarMensagens() {
       lerJSON();
       atualizarMensagens();
     setInterval(lerJSON, 2000);
+      
+      //abrir ou fechar chat
+      $(".chatTitle").click(function(){
+          document.querySelector(".show-chat").toggle()
+          document.querySelector(".input-chat").toggle()
+      })
 
 
     $('.send-message').submit(function(e){
