@@ -18,14 +18,13 @@ function atualizarMensagens() {
       lerJSON();
       atualizarMensagens();
     setInterval(lerJSON, 2000);
+          var alt = document.querySelector(".live-chat").style.height
       
       //abrir ou fechar chat
       $(".chatTitle").click(function(){
           //$(".show-chat").toggle()
           //$(".input-chat").toggle()
          //$(".live-chat").toggle()
-          var alt 
-          alt = document.querySelector(".live-chat").style.height
           if(alt ==""){
             alt = '10px' 
            }else{
