@@ -66,8 +66,8 @@ input {
     border-radius: 5px	
 }
 .userMessage{
-    color: #70ff68;
+    background-color: #70ff68;
 }
 .visitMessage{
-    color: #68e9ff;					
+    background-color: #68e9ff;					
 }
