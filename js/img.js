@@ -21,8 +21,8 @@ function atualizarMensagens() {
       
       //abrir ou fechar chat
       $(".chatTitle").click(function(){
-          document.querySelector(".show-chat").toggle()
-          document.querySelector(".input-chat").toggle()
+          $(".show-chat").toggle()
+          $(".input-chat").toggle()
       })
 
 
