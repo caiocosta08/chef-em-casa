@@ -26,11 +26,14 @@ function atualizarMensagens() {
         //$(".show-chat").toggle()
         //$(".input-chat").toggle()
         //$(".live-chat").toggle()          
-          if(tam == "")
+          if(tam == ""){
               tam = "10px"
-          else
+            console.log("diminuiu")
+          }else{
               tam = ""
-      })
+              console.log("aumentou")
+          }
+    })
 
 
     $('.send-message').submit(function(e){
