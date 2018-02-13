@@ -109,6 +109,8 @@
 						}else include('forms/login.php');
 					?>
                     <a href="#" id="ga">CLIQUE</a>
+                    <a href="#" id="g1">CLIQUE111</a>
+                    <a href="#" id="g2">CLIQUE222</a>
 				</div>
 				<div class="col-md-2 sidenav">
 					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
