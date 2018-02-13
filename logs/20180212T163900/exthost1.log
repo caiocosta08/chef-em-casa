@@ -1,0 +1,10 @@
+[2018-02-12 16:39:04.655] [exthost1] [info] extension host started
+[2018-02-12 16:39:04.682] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-02-12 16:39:04.683] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/out/extension
+[2018-02-12 16:39:04.751] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-02-12 16:39:04.751] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/out/main
+[2018-02-12 16:39:04.864] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-02-12 16:39:04.864] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/out/extension
+[2018-02-12 16:39:04.880] [exthost1] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2018-02-12 16:39:04.880] [exthost1] [info] ExtensionService#loadCommonJSModule /home/caio/.vscode/extensions/dbaeumer.vscode-eslint-1.4.5/client/out/extension
+[2018-02-12 16:39:04.926] [exthost1] [info] eager extensions activated
