@@ -33,8 +33,10 @@
 		<script src="js/load.js" type="text/javascript"></script>
 		<script src="js/functions.js" type="text/javascript"></script>
 		<script src="js/validator.js" type="text/javascript"></script>
-		<script src="js/img.js" type="text/javascript"></script>
-		<script src='https://www.google.com/recaptcha/api.js'></script>
+        <script src="js/img.js" type="text/javascript"></script>
+		<script src="js/ana.js" type="text/javascript"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        
 	
         <script>
             // Feature detects Navigation Timing API support.

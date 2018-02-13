@@ -25,6 +25,7 @@
 		<script src="js/functions.js" type="text/javascript"></script>
 		<script src="js/validator.js" type="text/javascript"></script>
 		<script src="js/img.js" type="text/javascript"></script>
+		<script src="js/ana.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-sm navbar-dark" style="background: coral; margin-bottom: 20px;">
