@@ -36,13 +36,16 @@ img {
     border: solid 2px #555555;
     border-bottom: 0;
     border-radius: 3px; 
-    padding: 5px;
     background-color: #dae0e5;
     overflow: auto;
 }
 .chatTitle{
     background-color: #f8f8ff;
     padding-left: 10px;
+    position: fixed;
+    top: auto;
+    width: 236px;
+    height: 6%;
 }
 .show-chat ul{
     padding: 0;
