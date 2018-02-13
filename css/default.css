@@ -46,6 +46,7 @@ img {
     top: auto;
     width: 236px;
     height: 6%;
+    font-weight: bold;
 }
 .show-chat ul{
     padding: 0;
