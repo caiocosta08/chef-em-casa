@@ -49,6 +49,9 @@ img {
     font-size: 16px;
     font-weight: bold;
 }
+.chatTitle:hover{
+    cursor: pointer;
+}
 .show-chat ul{
     padding: 0;
 }
