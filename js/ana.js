@@ -13,13 +13,14 @@ $(document).ready(function(){
     
 //------------------------------------------------------------------------------------------
         
-    $("a.chefLink").click(function(){
-        
-        /*gtag('event', 'click-na-propaganda-do-chef', {
-            'event_category': 'click-chef'/*,
+    $("a.chefLink").click(function(e){
+        e.preventDefault();
+        gtag('event', 'click-na-propaganda-do-chef', {
+            'event_category': 'click-chef',
             'link': this.href
-        });*/
+        });
         alert("clicou")
+        $("a.chefLink").load($(this).attr("href"));
     });
     
 //------------------------------------------------------------------------------------------
