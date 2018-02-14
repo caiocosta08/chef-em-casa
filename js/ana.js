@@ -3,18 +3,18 @@ $(document).ready(function(){
     var user
     
     $("#btnLogin").click(function(){
+        user = loginField.value
         gtag('event', 'login-no-site',{
-           'event_category': 'login' 
+            'event_category': 'login',
+            'value': user
         });
     });
     
     $("#ga").click(function(){
-       user = loginField.value
        gtag('event', 'info', {
           'info-name': 'tentando enviar informações',
-           'event_category': 'categoriaX',
-           'name': 'info_name',
-           'user_login': user
+           'event_category': 'click_ga',
+           'name': 'info_name'
        });
     });
     
