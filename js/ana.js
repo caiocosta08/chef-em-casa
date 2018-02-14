@@ -6,7 +6,8 @@ $(document).ready(function(){
         user = loginField.value
         gtag('event', 'login-no-site',{
             'event_category': 'login',
-            'value': user
+            'method': 'chef-server-login',
+            'user': user
         });
     });
     
@@ -20,7 +21,8 @@ $(document).ready(function(){
     
     $("#btnLogout").click(function(){
         gtag('event', 'logout-do-site', {
-           'event_category': 'logout' 
+           'event_category': 'logout', 
+            'user': userlogado
         });
     });
     
