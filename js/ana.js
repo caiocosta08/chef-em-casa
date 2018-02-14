@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $("#btnLogin").click(function(){
-        gtag('event', 'login-no-site')
+        gtag('event', 'login-no-site',{
+           'tipo-de-conta': 'basic' 
+        });
      gtag('event', 'timing_complete', {
             'name': 'load',
             'value': timeSincePageLoad,
