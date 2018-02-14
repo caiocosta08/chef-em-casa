@@ -9,11 +9,6 @@ $(document).ready(function(){
     });
     $("#btnLogout").click(function(){
         gtag('event', 'logout-do-site')
-     gtag('event', 'timing_complete', {
-            'name': 'load',
-            'value': timeSincePageLoad,
-            'event_category': 'JS Dependencies'
-        });
     });
     
     
