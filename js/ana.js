@@ -2,14 +2,13 @@ $(document).ready(function(){
     var loginField = document.querySelector("input#login.form-control")
     var user
     
-    $("#btnLogin").click(function(e){
-        e.preventDefault();
+    $("#btnLogin").click(function(){
         user = loginField.value
         gtag('event', 'login-no-site',{
             'event_category': 'login',
-            'method': 'chef-server-login'
+            'method': 'chef-server-login',
+            'user': user
         });
-        this.submit();
     });
     
 //------------------------------------------------------------------------------------------
