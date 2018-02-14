@@ -1,9 +1,6 @@
 $(document).ready(function(){
     $("#btnLogin").click(function(){
-        gtag('event', 'login', {
-            'event_category': 'login-no-site',
-            'usuario': user
-        })
+        gtag('event', 'login')
     });
     
     // Feature detects Navigation Timing API support.
