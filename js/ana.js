@@ -11,6 +11,8 @@ $(document).ready(function(){
         });
     });
     
+//------------------------------------------------------------------------------------------
+        
     $("#ga").click(function(){
        gtag('event', 'info', {
           'info-name': 'tentando enviar informações',
@@ -19,6 +21,8 @@ $(document).ready(function(){
        });
     });
     
+//------------------------------------------------------------------------------------------
+        
     $("#btnLogout").click(function(){
         gtag('event', 'logout-do-site', {
            'event_category': 'logout', 
@@ -26,7 +30,7 @@ $(document).ready(function(){
         });
     });
     
-    
+//------------------------------------------------------------------------------------------
     
     // Feature detects Navigation Timing API support.
     if (window.performance) {
@@ -38,8 +42,7 @@ $(document).ready(function(){
         gtag('event', 'timing_complete', {
             'name': 'load',
             'value': timeSincePageLoad,
-            'event_category': 'JS Dependencies',
-            'non_interaction': true
+            'event_category': 'JS Dependencies'
         });
     }
 });
