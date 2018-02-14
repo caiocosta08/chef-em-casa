@@ -37,9 +37,11 @@ function loadChefs(){
 
     }
 
-    document.getElementById('contentNews').innerHTML = feed;
+    //document.getElementById('contentNews').innerHTML = feed;
+    $('#contentNews').html(feed);
     if(document.title == 'Chef em Casa - CHEFS'){
-      document.querySelector('#chefsRegistrados').innerHTML = chefs;
+      //document.querySelector('#chefsRegistrados').innerHTML = chefs;
+      $('#chefsRegistrados').html(chefs);
     }
   })
 }
@@ -122,7 +124,8 @@ function loadChef(){
          texto += '<h4> As referências desse chef não foram disponibilizadas </h4>'
        }
 
-       document.getElementById('chefAtual').innerHTML = texto;//coloca todo o texto na div com id informado
+       //document.getElementById('chefAtual').innerHTML = texto;//coloca todo o texto na div com id informado
+       $('#chefAtual').html(texto);//coloca todo o texto na div com id informado
     })
     .fail(function(){
       console.log('erro')
@@ -185,7 +188,8 @@ function editChef(){
               +  '<button type="submit" class="btn btn-default">Editar <span class="glyphicon glyphicon-plus"></span></button>'
               + '</div></form></div>'
 
-       document.getElementById('edit-chef').innerHTML = form;//coloca todo o texto na div com id informado
+       //document.getElementById('edit-chef').innerHTML = form;//coloca todo o texto na div com id informado
+       $('#edit-chef').html(form);//coloca todo o texto na div com id informado
     })
     .fail(function(){
       console.log('erro')
@@ -214,7 +218,8 @@ function loadCalendar(){
 
     }
 
-      if(document.title == 'Chef em Casa - CALENDÁRIO') document.getElementById('calendar').innerHTML = texto;
+      //if(document.title == 'Chef em Casa - CALENDÁRIO') document.getElementById('calendar').innerHTML = texto;
+      if(document.title == 'Chef em Casa - CALENDÁRIO') $('#calendar').html(texto);
     })
 }
 
