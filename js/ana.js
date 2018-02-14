@@ -5,7 +5,7 @@ $(document).ready(function(){
         });
     });
     
-    $("ga").click(function(){
+    $("#ga").click(function(){
        gtag('event', 'info', {
           'info-name': 'tentando enviar informações',
            'event_category': 'categoriaX',
