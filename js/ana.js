@@ -1,15 +1,20 @@
 $(document).ready(function(){
+    var loginField = document.querySelector("input#login.form-control")
+    var user
+    
     $("#btnLogin").click(function(){
         gtag('event', 'login-no-site',{
-           'tipo-de-conta': 'basic' 
+           'event_category': 'login' 
         });
     });
     
     $("#ga").click(function(){
+       user = loginField.value
        gtag('event', 'info', {
           'info-name': 'tentando enviar informações',
            'event_category': 'categoriaX',
-           'name': 'info_name'
+           'name': 'info_name',
+           'user_login': user
        });
     });
     
