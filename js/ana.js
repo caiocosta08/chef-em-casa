@@ -6,13 +6,12 @@ $(document).ready(function(){
         user = loginField.value
         gtag('event', 'login-no-site',{
             'event_category': 'login',
-            'method': 'chef-server-login',
-            'user': user
+            'method': 'chef-server-login'
         });
     });
     
 //------------------------------------------------------------------------------------------
-        
+        /*
     $("a.chefLink").click(function(e){
         e.preventDefault();
         gtag('event', 'click-na-propaganda-do-chef', {
@@ -21,7 +20,7 @@ $(document).ready(function(){
         });
         alert("clicou")
         $("a.chefLink").load($(this).attr("href"));
-    });
+    });*/
     
 //------------------------------------------------------------------------------------------
         
