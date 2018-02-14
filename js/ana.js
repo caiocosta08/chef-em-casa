@@ -14,7 +14,9 @@ $(document).ready(function(){
     });
     
     $("#btnLogout").click(function(){
-        gtag('event', 'logout-do-site')
+        gtag('event', 'logout-do-site', {
+           'event_category': 'logout' 
+        });
     });
     
     
