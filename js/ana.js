@@ -1,14 +1,14 @@
 $(document).ready(function(){
+    $("#btnLogin").addEventListener("submit", function(e){
+       e.preventDefault(); 
+    });
     $("#btnLogin").click(function(){
         gtag('event', 'login-no-site',{
            'tipo-de-conta': 'basic' 
         });
-     gtag('event', 'timing_complete', {
-            'name': 'load',
-            'value': timeSincePageLoad,
-            'event_category': 'JS Dependencies'
-        });
     });
+
+    
     $("#btnLogout").click(function(){
         gtag('event', 'logout-do-site')
     });
@@ -25,7 +25,8 @@ $(document).ready(function(){
         gtag('event', 'timing_complete', {
             'name': 'load',
             'value': timeSincePageLoad,
-            'event_category': 'JS Dependencies'
+            'event_category': 'JS Dependencies',
+            'non_interaction': true
         });
     }
 });
