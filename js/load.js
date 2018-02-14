@@ -28,7 +28,7 @@ function loadChefs(){
         feed += '<div class="card" style="width: 100%;"> <div class="card-body">'
         feed += '<h5 class="card-title">'+titulo+'</h5>'
         feed += '<h6 class="card-subtitle mb-2 text-muted">' + data + '</h6>'
-        feed += '<p class="card-text"><a href="'
+        feed += '<p class="card-text"><a class="chefLink" href="'
         feed += link
         feed += '">'
         feed += 'BLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLA'

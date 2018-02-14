@@ -13,12 +13,12 @@ $(document).ready(function(){
     
 //------------------------------------------------------------------------------------------
         
-    $("#ga").click(function(){
-       gtag('event', 'info', {
-          'info-name': 'tentando enviar informações',
-           'event_category': 'click_ga',
-           'name': 'info_name'
-       });
+    $(".chefLink").click(function(){
+        
+        gtag('event', 'click-na-propaganda-do-chef', {
+            'event_category': 'click-chef',
+            'link': this.href
+        });
     });
     
 //------------------------------------------------------------------------------------------
