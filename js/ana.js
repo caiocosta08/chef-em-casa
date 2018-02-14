@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $("#btnLogin").click(function(){
         gtag('event', 'login')
-        gtag('event', 'login','set')
-        gtag('event', 'login','set','unset')
+        gtag('event', 'login2','set')
+        gtag('event', 'login3','set','unset')
     
     });
     
