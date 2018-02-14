@@ -90,7 +90,7 @@
 						if($logado != '' && $logado != null){
 							echo '<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>';
 							echo '<h3>Olá, <b>' . $logado . '</b>!</h3>';
-							echo '<button type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>';
+							echo '<button id="btnLogout" type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>';
 						}else include('forms/login.php');
 					?>
                     <a href="#" id="ga">CLIQUE</a>

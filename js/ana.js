@@ -7,6 +7,16 @@ $(document).ready(function(){
             'event_category': 'JS Dependencies'
         });
     });
+    $("#btnLogout").click(function(){
+        gtag('event', 'logout-do-site')
+     gtag('event', 'timing_complete', {
+            'name': 'load',
+            'value': timeSincePageLoad,
+            'event_category': 'JS Dependencies'
+        });
+    });
+    
+    
     
     // Feature detects Navigation Timing API support.
     if (window.performance) {
