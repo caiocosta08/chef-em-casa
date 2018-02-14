@@ -1,13 +1,17 @@
 $(document).ready(function(){
-    $("#btnLogin").addEventListener("submit", function(e){
-       e.preventDefault(); 
-    });
     $("#btnLogin").click(function(){
         gtag('event', 'login-no-site',{
            'tipo-de-conta': 'basic' 
         });
     });
-
+    
+    $("ga").click(function(){
+       gtag('event', 'info', {
+          'info-name': 'tentando enviar informações',
+           'event_category': 'categoriaX',
+           'name': 'info_name'
+       });
+    });
     
     $("#btnLogout").click(function(){
         gtag('event', 'logout-do-site')
