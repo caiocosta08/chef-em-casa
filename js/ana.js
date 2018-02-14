@@ -1,8 +1,7 @@
 $(document).ready(function(){
     $("#btnLogin").click(function(e){
         gtag('event', 'login', {
-            'event_category': 'login-no-site',
-            'usuario': user
+            'event_category': 'login-no-site'
         })
     });
     
