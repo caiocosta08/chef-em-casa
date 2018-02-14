@@ -1,6 +1,11 @@
 $(document).ready(function(){
     $("#btnLogin").click(function(){
         gtag('event', 'login-no-site')
+     gtag('event', 'timing_complete', {
+            'name': 'load',
+            'value': timeSincePageLoad,
+            'event_category': 'JS Dependencies'
+        });
     });
     
     // Feature detects Navigation Timing API support.
