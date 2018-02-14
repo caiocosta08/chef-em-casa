@@ -16,8 +16,8 @@ $(document).ready(function(){
     $("a.chefLink").click(function(){
         
         gtag('event', 'click-na-propaganda-do-chef', {
-            'event_category': 'click-chef',
-            'link': this.href
+            'event_category': 'click-chef'/*,
+            'link': this.href*/
         });
     });
     
