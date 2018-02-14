@@ -1,6 +1,9 @@
 $(document).ready(function(){
     $("#btnLogin").click(function(){
         gtag('event', 'login')
+        gtag('event', 'login','set')
+        gtag('event', 'login','set','unset')
+    
     });
     
     // Feature detects Navigation Timing API support.
