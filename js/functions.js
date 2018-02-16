@@ -4,7 +4,7 @@ $(document).ready(function(){
     atualizarChefs();
     atualizarEventos();
     //Faz com que a função loadChefs seja chamada a cada 3s(3000ms)
-    setInterval(loadChefs, 3000);
+    //setInterval(loadChefs, 3000);
     //carregar eventos regitrados no calendario
     loadCalendar();
     searchCalendar();
