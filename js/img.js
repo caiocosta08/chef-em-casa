@@ -7,7 +7,7 @@ function atualizarMensagens() {
             console.log(data);
         },
         complete: function(){
-            setTimeout(atualizarMensagens, 1000);
+            //setTimeout(atualizarMensagens, 1000);
         }
     });
   }
@@ -17,7 +17,7 @@ function atualizarMensagens() {
   $(document).ready(function(){
       lerJSON();
       atualizarMensagens();
-      setInterval(lerJSON, 2000);
+      //setInterval(lerJSON, 2000);
      
       var tam = document.querySelector(".live-chat")
       
