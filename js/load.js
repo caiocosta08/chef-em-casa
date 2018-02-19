@@ -232,7 +232,7 @@ function atualizarChefs() {
           console.log(data);
       },
       complete: function(){
-          setTimeout(atualizarChefs, 3000);
+          //setTimeout(atualizarChefs, 3000);
       }
   });
 }
@@ -246,7 +246,7 @@ function atualizarEventos() {
           console.log(data);
       },
       complete: function(){
-          setTimeout(atualizarEventos, 3000);
+          //setTimeout(atualizarEventos, 3000);
       }
   });
 }
