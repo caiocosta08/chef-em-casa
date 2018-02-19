@@ -230,9 +230,6 @@ function atualizarChefs() {
       dataType: 'json',
       success: function (data) {
           console.log(data);
-      },
-      complete: function(){
-          //setTimeout(atualizarChefs, 3000);
       }
   });
 }
@@ -244,9 +241,6 @@ function atualizarEventos() {
       dataType: 'json',
       success: function (data) {
           console.log(data);
-      },
-      complete: function(){
-          //setTimeout(atualizarEventos, 3000);
       }
   });
 }
