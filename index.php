@@ -76,13 +76,19 @@
 							echo '<button id="btnLogout" type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>';
 						}else include('forms/login.php');
 					?>
-                    <div class="carousel carousel-item">
-                      <img src="img/crucifixo-1.jpg" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        <h5>...</h5>
-                        <p>...</p>
-                        </div>
-                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="..." alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide">
+    </div>
+  </div>
+</div>
 				</div>
 				<div class="col-md-2 sidenav">
 					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
