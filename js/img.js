@@ -14,6 +14,8 @@ function atualizarMensagens() {
   $(document).ready(function(){
       lerJSON();
       atualizarMensagens();
+      $('.carousel').carousel()
+      
      
       var tam = document.querySelector(".live-chat")
       

@@ -27,9 +27,6 @@
     </head>
 	
 	<body>
-        <script type="text/javascript">
-            $('.carousel').carousel()
-        </script>
         
 		<nav class="navbar navbar-expand-sm navbar-dark" style="background: coral; margin-bottom: 20px;">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +76,7 @@
 							echo '<button id="btnLogout" type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>';
 						}else include('forms/login.php');
 					?>
-                    <div class="carousel-item">
+                    <div class="carousel carousel-item">
                       <img src="img/crucifixo-1.jpg" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>...</h5>
