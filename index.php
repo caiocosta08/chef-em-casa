@@ -80,7 +80,7 @@
 						}else include('forms/login.php');
 					?>
                     <div class="carousel-item">
-                      <img src="crucifixo-1.jpg" alt="...">
+                      <img src="img/crucifixo-1.jpg" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>...</h5>
                         <p>...</p>
