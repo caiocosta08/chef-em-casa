@@ -27,13 +27,16 @@
     </head>
 	
 	<body>
-	   <div class="carousel-item">
-  <img src="..." alt="...">
-  <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
-  </div>
-</div>
+        <script type="text/javascript">
+            $('.carousel').carousel()
+        </script>
+        <div class="carousel-item">
+          <img src="..." alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>...</h5>
+            <p>...</p>
+            </div>
+        </div>
 		<nav class="navbar navbar-expand-sm navbar-dark" style="background: coral; margin-bottom: 20px;">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
