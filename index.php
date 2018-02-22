@@ -65,10 +65,10 @@
 	
 		<div class="container-fluid text-center">
 			<div class="row">
-				<div class="col-md-2 sidenav">
+				<div class="col-md-0 sidenav">
 					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
 				</div>
-				<div class="col-md-8 text-left">
+				<div class="col-md-12 text-left">
 					<?php
 						if($logado != '' && $logado != null){
 							echo '<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>';
@@ -117,7 +117,7 @@
                       </a>
                     </div>
 				</div>
-				<div class="col-md-2 sidenav">
+				<div class="col-md-0 sidenav">
 					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
 				</div>
 			</div>
