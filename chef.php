@@ -123,8 +123,6 @@
 							</form>
 						</div>
 					</div>
-                    <a href="#" id="ga">CLIQUE</a>
-                    
 				</div>
 				<div class="col-md-2 sidenav">
 					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
