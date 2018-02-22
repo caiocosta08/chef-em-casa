@@ -91,6 +91,6 @@ input {
 
 /* DIV DO CAROUSEL */
 
-div .carousel-caption .d-none .d-md-block{
+.carousel-caption .d-none .d-md-block{
     background-color: rgba(0,0,0,0.5);
 }
