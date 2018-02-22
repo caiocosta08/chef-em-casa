@@ -71,8 +71,8 @@
           </a>
         </div>-->
         
-        <div>
-            <img src="img/burger.jpg" class="img-fluid" alt="Responsive image">
+        <div style="background-image: url('img/burger.jpg'); width: 100%; height: auto;" >
+            <!--<img src="img/burger.jpg" class="img-fluid" alt="Responsive image">-->
             <h1> CHEF EM CASA</h1>
             <h3> O maior portal de Chefs de cozinha do Brasil! <a href="sobre.php">Saiba mais...</a></h3>
         </div>
