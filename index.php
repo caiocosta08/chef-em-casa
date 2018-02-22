@@ -65,9 +65,6 @@
 	
 		<div class="container-fluid text-center">
 			<div class="row">
-				<div class="col-md-0 sidenav">
-					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
-				</div>
 				<div class="col-md-12 text-left">
 					<?php
 						if($logado != '' && $logado != null){
@@ -116,9 +113,6 @@
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
-				</div>
-				<div class="col-md-0 sidenav">
-					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
 				</div>
 			</div>
 		</div>
