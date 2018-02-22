@@ -34,13 +34,11 @@ function loadChefs(){
         feed += 'BLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLA'
         feed += '</a></p></div></div>'
       }
-
+        
     }
 
-    //document.getElementById('contentNews').innerHTML = feed;
     $('#contentNews').html(feed);
     if(document.title == 'Chef em Casa - CHEFS'){
-      //document.querySelector('#chefsRegistrados').innerHTML = chefs;
       $('#chefsRegistrados').html(chefs);
     }
   })
