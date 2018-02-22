@@ -17,7 +17,13 @@ function atualizarMensagens() {
       window.scrollTo(0,0);//ir para o topo
       lerJSON();
       atualizarMensagens();
-      $('.carousel').carousel();
+      
+      $('#contentNews').infiniteScroll({
+        // options
+        path: '.pagination__next',
+        append: '#list-group-item',
+        history: false,
+      });
       
       
      
