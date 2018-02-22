@@ -19,16 +19,11 @@ if ($con->connect_error) {
 //str_replace(procurar, substituto, origem, $ocorrencias)
 $resumo = str_replace(';', '<br>', $resumo);
 
-$sql = "SELECT * FROM news ORDER BY id DESC LIMIT 1"; //Pega o último ID registrado para que seja incrementado
+$sql = "SELECT id FROM news ORDER BY id DESC LIMIT 1"; //Pega o último ID registrado para que seja incrementado
 $result = pg_query($pg_conn,$sql);
 
-if (pg_num_rows($result)) {
-    echo "RESULTADO: " . $result;
-    echo "alert(".$result.")";
-}else{
-    echo "ERRO";
-}
-
+$id = $result;
+$link = "chef.php?id=" . &id;
 
 $sql = '';
 $result = '';
