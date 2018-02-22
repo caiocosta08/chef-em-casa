@@ -30,7 +30,7 @@
         
 		<?php include('modal/modal-add-user.php'); ?>
 	
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block w-100" src="img/burger.jpg" alt="Second slide">
@@ -69,6 +69,12 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+        </div>-->
+        
+        <div>
+            <img src="img/burger.jpg" class="img-fluid" alt="Responsive image">
+            <h1> CHEF EM CASA</h1>
+            <h3> O maior portal de Chefs de cozinha do Brasil! <a href="sobre.php">Saiba mais...</a></h3>
         </div>
 		
         <nav class="navbar navbar-expand-sm navbar-dark" style="background: coral; margin-bottom: 20px;">
