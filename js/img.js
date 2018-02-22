@@ -13,7 +13,7 @@ function atualizarMensagens() {
 
   $(document).ready(function(){
       $("input#login.form-control").blur();//tirar foco do input para ir para o topo
-      scrollTo(0,0);//ir para o topo
+      window.scrollTo(0,0);//ir para o topo
       lerJSON();
       atualizarMensagens();
       $('.carousel').carousel();
