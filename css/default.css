@@ -98,8 +98,19 @@ input {
 	top:0;
 	left:0;
 	z-index:11;
-	background-color:#000;
 	width:100%;
 	height:100%;
-    overflow: hidden;
+    overflow: hidden;    
+    background-repeat: no-repeat;
+    padding: 0;
+    background-position: top;
+    background-size: 325%;
+    background-image: url("img/burger.jpg");
+
+}
+
+@media screen and (max-width: 1000px){
+    .row{
+        background-size: 140%;
+    }
 }
