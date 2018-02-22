@@ -12,9 +12,11 @@ function atualizarMensagens() {
   //enviar formulario sem refresh
 
   $(document).ready(function(){
+      parent.scroll(0,0);
       lerJSON();
       atualizarMensagens();
-      $('.carousel').carousel()
+      $('.carousel').carousel();
+      
       
      
       var tam = document.querySelector(".live-chat")
