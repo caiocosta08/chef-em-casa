@@ -76,20 +76,14 @@
 					</div>
 				</div>
 				<div class="col-md-8 text-left">
-					<h1>Bem-vindo!</h1>
-					<p>
-						Olá! Nós somos o <code>CENTRO DE ESTUDOS</code> e damos a você as boas vindas ao
-						nosso website oficial! Após muitas orações e dedicação de muitos, nós
-						alcançamos a graça de publicar o nosso portal para os nossos membros
-						terem acesso a todo conteúdo formativo disponibilizado por nós. Para ter
-						acesso você precisa possuir um <kbd>login</kbd> e uma <kbd>senha</kbd>.
-					</p>
+					<h1>Área Administrativa - Chef em Casa</h1>
+					<h3>Você está logado como: <? echo $logado; ?></h3>
 					<hr>
 					<ul class="nav nav-tabs">
-						<li id="id1" class="active"><a id="linkAula">Cadastrar Aula</a></li>
+						<li id="id1" class="active"><a id="linkChef">Cadastrar Chef</a></li>
 						<li id="id0"><a id="linkEvento">Adicionar Evento</a></li>
 						<br><br>
-						<?php include('forms/add-aula.php') ?>
+						<?php include('forms/add-chef.php') ?>
 						<?php include('forms/add-event-calendar.php') ?>
 					</ul>
 					<hr>
