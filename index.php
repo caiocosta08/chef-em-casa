@@ -32,7 +32,7 @@
 	
 		<div class="container-fluid text-center">
 			<div class="row">
-				<div class="col-md-12 text-left">
+				<div class="col-md-12 text-left" style="padding: 0;">
 					
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
@@ -82,11 +82,7 @@
 				</div>
 			</div>
 		</div>
-
-		<footer class="container-fluid text-center">
-			<p>Copyright &copy; 2017 Chef em Casa. All Rights Reserved.</p>
-			<p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
-		</footer>
+        
         <script src="js/load.js" type="text/javascript"></script>
 		<script src="js/functions.js" type="text/javascript"></script>
 		<script src="js/validator.js" type="text/javascript"></script>
