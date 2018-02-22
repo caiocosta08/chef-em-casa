@@ -88,3 +88,9 @@ input {
     margin: 5px 5px 5px 5px;
     border-radius: 15px;
 }
+
+/* DIV DO CAROUSEL */
+
+div .carousel-caption .d-none .d-md-block{
+    background-color: rgba(0,0,0,0.5);
+}
