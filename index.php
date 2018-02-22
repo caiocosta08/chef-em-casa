@@ -71,9 +71,9 @@
 		</nav>
         
         <div class="container-fluid text-center">
-			<div class="row">
-                <div class="col-md-12 text-left" style="padding: 0;">
-                    <div class="row">
+			<div class="row"><!--
+                <div class="col-md-8 text-left" style="padding: 0;">
+                    <div class="row">-->
 				<div class="col-md-2 sidenav">
 					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
 				</div>
@@ -90,10 +90,8 @@
 					<h3>asasasasadasdsadad<br>sdfdsfsdfds<br>sdsdfsdf<br></h3>
 				</div>
 			</div>
-				</div>
-			</div>
-		</div>
-        
+        </div>
+		
         <script src="js/load.js" type="text/javascript"></script>
 		<script src="js/functions.js" type="text/javascript"></script>
 		<script src="js/validator.js" type="text/javascript"></script>
