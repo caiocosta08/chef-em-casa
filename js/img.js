@@ -12,7 +12,8 @@ function atualizarMensagens() {
   //enviar formulario sem refresh
 
   $(document).ready(function(){
-      scrollTo(0,0);
+      $("input#login.form-control").blur();//tirar foco do input para ir para o topo
+      scrollTo(0,0);//ir para o topo
       lerJSON();
       atualizarMensagens();
       $('.carousel').carousel();
