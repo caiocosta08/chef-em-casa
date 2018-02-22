@@ -23,7 +23,7 @@ $sql = "SELECT id FROM news ORDER BY id DESC LIMIT 1"; //Pega o último ID regis
 $result = pg_query($pg_conn,$sql);
 
 while($row = pg_fetch_array($result)){
-    $id = $row;
+    $id = $row['id'];
 }
 
 $link = "chef.php?id=". $id;
