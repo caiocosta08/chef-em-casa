@@ -37,7 +37,7 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="img/burger.jpg" alt="Second slide">
+                          <img class="img-responsive" src="img/burger.jpg" alt="Second slide">
                           <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.4)">
                             <h5>Título do item 1</h5>
                             <p>Descrição lorem lorem lorem ipsum lorem </p>
