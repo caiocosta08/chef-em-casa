@@ -31,8 +31,10 @@
 		<?php include('modal/modal-add-user.php'); ?>
         
         <div style="background-image: url('img/burger.jpg'); width: 100%; height: 700px; background-size: 300%; background-position: top; background-repeat: no-repeat; display: flex; flex-direction: column; align-items: center; align-content: center; padding-top: 30%; color: #ffffff;" >
-            <h1 style="background-color: rgba(0,0,0,0.4)"> CHEF EM CASA</h1>
-            <h3> O maior portal de Chefs de cozinha do Brasil! <a href="sobre.php">Saiba mais...</a></h3>
+            <div style="background-color: rgba(0,0,0,0.5); color: #FFFFFF;">
+                <h1> CHEF EM CASA</h1>
+                <h3> O maior portal de Chefs de cozinha do Brasil! <a href="sobre.php">Saiba mais...</a></h3>
+            </div>
         </div>
 		
         <nav class="navbar navbar-expand-sm navbar-dark" style="background: coral; margin-bottom: 20px;">
