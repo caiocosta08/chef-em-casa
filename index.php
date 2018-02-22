@@ -87,7 +87,7 @@
 					?>
 				</div>
 				<div class="col-md-2 sidenav">
-					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
+					<h3>asasasasadasdsadad<br>sdfdsfsdfds<br>sdsdfsdf<br></h3>
 				</div>
 			</div>
 				</div>
