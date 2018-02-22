@@ -44,21 +44,21 @@
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="img/cake.jpg" alt="Second slide">
+                          <img class="img-responsive" src="img/cake.jpg" alt="Second slide">
                           <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.4)">
                             <h5>Título do item 2</h5>
                             <p>Descrição lorem lorem lorem ipsum lorem </p>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="img/pizza.jpg" alt="Second slide">
+                          <img class="img-responsive" src="img/pizza.jpg" alt="Second slide">
                           <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.4)">
                             <h5>Título do item 3</h5>
                             <p>Descrição lorem lorem lorem ipsum lorem </p>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="img/food.jpg" alt="Second slide">
+                          <img class="img-responsive" src="img/food.jpg" alt="Second slide">
                           <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.4)">
                             <h5>Título do item 4</h5>
                             <p>Descrição lorem lorem lorem ipsum lorem </p>
