@@ -22,8 +22,8 @@ $resumo = str_replace(';', '<br>', $resumo);
 $sql = "SELECT id FROM news ORDER BY id DESC LIMIT 1"; //Pega o último ID registrado para que seja incrementado
 $result = pg_query($pg_conn,$sql);
 
-$id = $result;
-$link = "chef.php?id=" . &id;
+//$id = $result;
+$link = "chef.php?id=100";
 
 $sql = '';
 $result = '';
