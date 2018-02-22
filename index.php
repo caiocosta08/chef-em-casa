@@ -28,6 +28,39 @@
 	
 	<body>
         
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background: coral; margin-bottom: 20px;">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Brand/Título -->
+			<a class="navbar-brand" href="index.php">Chef em Casa</a>
+
+			<!-- Links -->
+			<div class="collapse navbar-collapse" id="nav-content">   
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.php">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="chefs.php">Chefs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="calendario.php">Calendário</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin.php">Admin</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sobre.php">Sobre</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<?php if($logado == '' || $logado == null) echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'?>
+				</ul>
+			</div>
+		</nav>
+        
 		<?php include('modal/modal-add-user.php'); ?>
 	
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
