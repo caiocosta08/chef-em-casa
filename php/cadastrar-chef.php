@@ -25,7 +25,7 @@ $result = pg_query($pg_conn,$sql);
 while($row = pg_fetch_array($result)){
     $id = $row['id'];
 }
-
+$id++;
 $link = "chef.php?id=". $id;
 
 $sql = '';
