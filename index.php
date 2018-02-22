@@ -39,13 +39,8 @@
                         <div class="carousel-item active">
                           <img class="d-block w-100" src="img/burger.jpg" alt="Second slide">
                           <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.4)">
-                            <?php
-                                if($logado != '' && $logado != null){
-                                    echo '<span style="font-size: 50px;" class="glyphicon glyphicon-user"></span>';
-                                    echo '<h3>Olá, <b>' . $logado . '</b>!</h3>';
-                                    echo '<button id="btnLogout" type="button" name="button"><a href="php/logout.php">LOGOUT</a> </button>';
-                                }else include('forms/login.php');
-                            ?>
+                            <h5>Título do item 1</h5>
+                            <p>Descrição lorem lorem lorem ipsum lorem </p>
                           </div>
                         </div>
                         <div class="carousel-item">
