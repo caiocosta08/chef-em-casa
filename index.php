@@ -65,7 +65,7 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<?php if($logado != '' && $logado != null) echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'?>
+					<?php if($logado == '' && $logado == null) echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>'?>
 				</ul>
 			</div>
 		</nav>
