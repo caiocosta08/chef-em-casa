@@ -29,50 +29,8 @@
 	<body>
         
 		<?php include('modal/modal-add-user.php'); ?>
-	
-        <!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/burger.jpg" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.4)">
-                <h5>Título do item 1</h5>
-                <p>Descrição lorem lorem lorem ipsum lorem </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/cake.jpg" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.4)">
-                <h5>Título do item 2</h5>
-                <p>Descrição lorem lorem lorem ipsum lorem </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/pizza.jpg" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.4)">
-                <h5>Título do item 3</h5>
-                <p>Descrição lorem lorem lorem ipsum lorem </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/food.jpg" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0,0,0,0.4)">
-                <h5>Título do item 4</h5>
-                <p>Descrição lorem lorem lorem ipsum lorem </p>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>-->
         
-        <div style="background-image: url('img/burger.jpg'); width: 100%; height: auto;" >
-            <!--<img src="img/burger.jpg" class="img-fluid" alt="Responsive image">-->
+        <div style="background-image: url('img/burger.jpg'); width: 100%; height: 700px; background-size: 300%; background-position: top; background-repeat: no-repeat;" >
             <h1> CHEF EM CASA</h1>
             <h3> O maior portal de Chefs de cozinha do Brasil! <a href="sobre.php">Saiba mais...</a></h3>
         </div>
