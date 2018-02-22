@@ -188,7 +188,6 @@ function editChef(){
               +  '<button type="submit" class="btn btn-default">Editar <span class="glyphicon glyphicon-plus"></span></button>'
               + '</div></form></div>'
 
-       //document.getElementById('edit-chef').innerHTML = form;//coloca todo o texto na div com id informado
        $('#edit-chef').html(form);//coloca todo o texto na div com id informado
     })
     .fail(function(){

@@ -20,7 +20,7 @@ if ($con->connect_error) {
 //str_replace(procurar, substituto, origem, $ocorrencias)
 $resumo = str_replace(';', '<br>', $resumo);
 
-$sql = "UPDATE news SET referencias='$referencias', linksuteis='$linksuteis', resumo='$resumo', titulo='$titulo', data='$data', link='$link', local='$local', topicos='$topicos' WHERE id='$id'";
+$sql = "UPDATE news SET referencias='$referencias', linksuteis='$linksuteis', resumo='$resumo', titulo='$titulo', data='$data', local='$local', topicos='$topicos' WHERE id='$id'";
 $result = pg_query($con, $sql);
 
 if($result){
