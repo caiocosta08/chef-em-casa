@@ -45,9 +45,12 @@ function loadChefs(){
       $('#chefsRegistrados').html(chefs);
         $("#pag").click(function(){
             for(let i=0; i<vetor.length; i = i+3){
-                 if(vetor[i] !+ '' && vetor[i] != null) $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i].id + vetor[i].titulo + '</li');
-                 if(vetor[i+1] !+ '' && vetor[i+1] != null) $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i+1].id + vetor[i+1].titulo + '</li');
-                 if(vetor[i+2] !+ '' && vetor[i+2] != null) $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i+2].id + vetor[i+2].titulo + '</li');
+                 if(vetor[i] != '' && vetor[i] != null) 
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i].id + vetor[i].titulo + '</li>');
+                 if(vetor[i+1] != '' && vetor[i+1] != null) 
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i+1].id + vetor[i+1].titulo + '</li>');
+                 if(vetor[i+2] != '' && vetor[i+2] != null) 
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i+2].id + vetor[i+2].titulo + '</li>');
             }    
         })
         
