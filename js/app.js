@@ -25,8 +25,8 @@ loadCalendar()
 searchCalendar()
 searchChef()
 editChef()
-$("#btnLogin").click(sendLoginToAnalythics())
-$("#btnLogout").click(sendLogoutToAnalythics())
+$("#btnLogin").click(sendLoginToAnalytics())
+$("#btnLogout").click(sendLogoutToAnalytics())
 $("input#login.form-control").blur()//tirar foco do input para ir para o topo
 $("input#senha.form-control").blur()
 window.scrollTo(0,0)//ir para o topo
