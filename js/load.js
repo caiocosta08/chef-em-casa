@@ -46,13 +46,13 @@ function loadChefs(){
         for(let i=0; i<vetor.length; i = i+5){
             alert(vetor[i].id + vetor[i].titulo 
                   + "\n" 
-                  + vetor[i+1].id + vetor[i+1].titulo
+                 if(vetor[i+1] !+ '' && vetor[i+1] != null) + vetor[i+1].id + vetor[i+1].titulo
                   + "\n" 
-                  + vetor[i+2].id + vetor[i+2].titulo
+                 if(vetor[i+2] !+ '' && vetor[i+2] != null) + vetor[i+2].id + vetor[i+2].titulo
                   + "\n" 
-                  + vetor[i+3].id + vetor[i+3].titulo
+                 if(vetor[i+3] !+ '' && vetor[i+3] != null) + vetor[i+3].id + vetor[i+3].titulo
                   + "\n" 
-                  + vetor[i+4].id + vetor[i+4].titulo
+                 if(vetor[i+4] !+ '' && vetor[i+4] != null) + vetor[i+4].id + vetor[i+4].titulo
                     
             );
         
