@@ -35,7 +35,7 @@ function loadChefs(){
         feed += link
         feed += '">'
         feed += 'Ver perfil'
-        feed += '</a></p></div></div>'
+        feed += '</a></p></div></div><br>'
       }
         
     }
