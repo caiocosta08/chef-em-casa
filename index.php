@@ -87,10 +87,24 @@
 				</div>
 				<div class="col-md-2 sidenav">
 					<div class="card" style="width: 100%;"> 
+                	    <div class="card-body">
+                            <h5 class="card-title"> Hambúrguer! </h5>
+                            <h6 class="card-subtitle mb-2 text-muted"> Hambúrguer artesanal </h6>
+                            <p class="card-text"><a href="#"> <img src="img/burger.jpg"> link </a></p>
+                        </div>
+                    </div>
+					<div class="card" style="width: 100%;"> 
                         <div class="card-body">
-                            <h5 class="card-title"> titulo do card </h5>
-                            <h6 class="card-subtitle mb-2 text-muted"> descrição </h6>
-                            <p class="card-text"><a href="#"> link </a></p>
+                            <h5 class="card-title"> Torta! </h5>
+                            <h6 class="card-subtitle mb-2 text-muted"> Melhores confeiteiros</h6>
+                            <p class="card-text"><a href="#"> <img src="img/cake.jpg"></a></p>
+                        </div>
+                    </div>
+					<div class="card" style="width: 100%;"> 
+                        <div class="card-body">
+                            <h5 class="card-title"> Pizza! </h5>
+                            <h6 class="card-subtitle mb-2 text-muted"> Veja os Chefs italianos no Brasil </h6>
+                            <p class="card-text"><a href="#"> <img src="img/pizza.jpg"></a></p>
                         </div>
                     </div>
 				</div>
