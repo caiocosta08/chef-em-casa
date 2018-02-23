@@ -43,29 +43,30 @@ function loadChefs(){
     if(document.title == 'Chef em Casa - CHEFS'){
     //  $('#chefsRegistrados').html(chefs);
         
-        $("#pag").click(function(){
-            
-            if(vetor[0] != null || vetor[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[0].id + vetor[0].titulo + '</li>');
-                vetor.shift();
+        function(loadSearch(arr){
+            if(arr[0] != null || arr[0] != ''){    
+                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                arr.shift();
             }
-            if(vetor[0] != null || vetor[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[0].id + vetor[0].titulo + '</li>');
-                vetor.shift();
+            ifarrvetor[0] != null || arr[0] != ''){    
+                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                arr.shift();
             }
-            if(vetor[0] != null || vetor[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[0].id + vetor[0].titulo + '</li>');
-                vetor.shift();
+            if(arr[0] != null || arr[0] != ''){    
+                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                arr.shift();
             }
-            if(vetor[0] != null || vetor[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[0].id + vetor[0].titulo + '</li>');
-                vetor.shift();
+            if(arr[0] != null || arr[0] != ''){    
+                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                arr.shift();
             }
-            if(vetor[0] != null || vetor[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[0].id + vetor[0].titulo + '</li>');
-                vetor.shift();
+            if(arr[0] != null || arr[0] != ''){    
+                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                arr.shift();
             }
-        })        
+        })
+        
+        $("#pag").click(loadSearch(vetor))        
     }
   })
 }
