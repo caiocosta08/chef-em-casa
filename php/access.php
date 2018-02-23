@@ -10,8 +10,8 @@ if (isset($_POST['g-recaptcha-response'])) {
 // Se nenhum valor foi recebido, o usuário não realizou o captcha
 if (!$captcha_data) {
     echo "Por favor, confirme o captcha.";
-    exit;
 	header('location: ../index.php');    
+//    exit;
 }
 
 $resposta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LfmhEUUAAAAAK9QTn89wV-svlorn2yM2sez4YVj&response=".$captcha_data."&remoteip=".$_SERVER['REMOTE_ADDR']);
