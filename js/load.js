@@ -21,11 +21,12 @@ function loadChefs(){
       chefs += id
       chefs += '</h6><br> Local: '
       chefs += local
-      chefs += '<br> Tópicos: '
+      chefs += '<br> Especialidades: '
       chefs += topicos
       chefs += '</p></li>'
 
       vetor.push(dados[x]);
+        
       if(x<3){
         feed += '<div class="card" style="width: 100%;"> <div class="card-body">'
         feed += '<h5 class="card-title">'+titulo+'</h5>'
@@ -51,7 +52,12 @@ function loadChefs(){
 
 function loadSearch(arr){
             if(arr[0] != null || arr[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                $('#chefsRegistrados')
+                    .append('<li class="list-group-item">' 
+                        + '<h3><a href="' + arr[0].link + '">Chef - ' arr[0].titulo + '</a></h3>'
+                        + '<h4> Local: ' + arr[0].local + '</h4>'
+                        +'</li>');
+                
                 arr.shift();
             }
             if(arr[0] != null || arr[0] != ''){    
