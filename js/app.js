@@ -1,7 +1,7 @@
-//import 'jquery'
+/*import 'jquery'
 import 'bootstrap'
 import 'popper.js'
-//import 'recaptcha'
+import 'recaptcha'*/
 import {sendLogoutToAnalytics, sendLoginToAnalytics} from 'ana.js'
 import {atualizarMensagens, toggleChat, sendMessage, getHora, lerJSON} from 'img.js'
 import {
