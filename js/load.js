@@ -34,7 +34,7 @@ function loadChefs(){
         feed += '<p class="card-text"><a class="chefLink" href="'
         feed += link
         feed += '">'
-        feed += 'BLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLA'
+        feed += 'Ver perfil'
         feed += '</a></p></div></div>'
       }
         
