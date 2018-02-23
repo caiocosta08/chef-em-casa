@@ -92,7 +92,7 @@
 			</div>
         </div>
 		
-		<script src="js/app.js" type="text/javascript"></script>
+		<script src="dist/js/bundle.js" type="text/javascript"></script>
 <!--        <script src='https://www.google.com/recaptcha/api.js'></script> -->
 	</body>
 </html>

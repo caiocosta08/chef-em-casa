@@ -2,18 +2,18 @@ import 'jquery'
 import 'bootstrap'
 import 'popper.js'
 //import 'recaptcha'
-import {sendLogoutToAnalytics, sendLoginToAnalytics} from ana.js
-import {atualizarMensagens, toggleChat, sendMessage, getHora, lerJSON} from img.js
+import {sendLogoutToAnalytics, sendLoginToAnalytics} from 'ana.js'
+import {atualizarMensagens, toggleChat, sendMessage, getHora, lerJSON} from 'img.js'
 import {
   validaEvento, validaChef, validLogin, validNewUser,validUser,
   validPassword, validLinks, validTopics, validRes, validReferences,
   validPlace, validTitle, validHour, validDate
-} from validator.js
+} from 'validator.js'
 import {
   loadChefs, loadSearch, loadChef, editChef, loadCalendar, 
   atualizarChefs, atualizarEventos, searchCalendar, searchChef
-} from load.js
-import {sendContactChef, toggleLinks} from functions.js
+} from 'load.js'
+import {sendContactChef, toggleLinks} from 'functions.js'
 
 $("#linkChef").click(toggleLinks('chef'));
 $("#linkEvento").click(toggleLinks('event'));

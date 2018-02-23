@@ -143,12 +143,10 @@ export function validHour(hora){
 }
 
 export function validDate(data){
-  data = data.split('/');
-  if((data[0]=='')||(data[0]==null)||(data[0].length < 2)||(data[0] < 01)
-     ||(data[0] > 31)||(data[1] == '')||(data[1]==null)||(data[1].length < 2)
-     ||(data[1] < 01)||(data[1] > 12)||(data[2]=='')||(data[2]==null)
-     ||(data[2].length < 4)||(data[2] < 2017)
-    ){
+
+  var reg = /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/
+
+  if(str.search(reg) == 0){
     alert('Data incorreta. Por favor, digite novamente.');
     return false;
   }else{
