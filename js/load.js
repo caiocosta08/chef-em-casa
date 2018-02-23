@@ -26,7 +26,6 @@ function loadChefs(){
       chefs += '</p></li>'
 
       vetor.push(dados[x]);
-        console.log("valor de x: " + x)
       if(x<3){
         feed += '<div class="card" style="width: 100%;"> <div class="card-body">'
         feed += '<h5 class="card-title">'+titulo+'</h5>'
@@ -44,6 +43,21 @@ function loadChefs(){
     if(document.title == 'Chef em Casa - CHEFS'){
     //  $('#chefsRegistrados').html(chefs);
         $("#pag").click(function(){
+            
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[0].id + vetor[0].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[1].id + vetor[1].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[2].id + vetor[2].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[3].id + vetor[3].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[4].id + vetor[4].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[5].id + vetor[5].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[6].id + vetor[6].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[7].id + vetor[7].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[8].id + vetor[8].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[9].id + vetor[9].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[10].id + vetor[10].titulo + '</li>');
+                     $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[11].id + vetor[11].titulo + '</li>');
+
+            
             for(let i=0; i<vetor.length; i++){
                 if(vetor[i] != '' || vetor[i] != null){ 
                      $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i].id + vetor[i].titulo + '</li>');
