@@ -42,8 +42,9 @@ function loadChefs(){
     $('#contentNews').html(feed);
     if(document.title == 'Chef em Casa - CHEFS'){
     //  $('#chefsRegistrados').html(chefs);
-        
-        $("#pag").click(loadSearch(vetor))        
+        $("#pag").click(function(){
+            loadSearch(vetor)        
+        })
     }
   })
 }
