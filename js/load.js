@@ -25,7 +25,7 @@ function loadChefs(){
       chefs += topicos
       chefs += '</p></li>'
 
-      vetor[x] = chefs
+      if(x>0)vetor[x] = chefs
         
       if(x<3){
         feed += '<div class="card" style="width: 100%;"> <div class="card-body">'
