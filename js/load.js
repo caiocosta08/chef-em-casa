@@ -52,11 +52,7 @@ function loadChefs(){
 
 function loadSearch(arr){
             if(arr[0] != null || arr[0] != ''){    
-                $('#chefsRegistrados')
-                    .append('<li class="list-group-item">' 
-                        + '<h3><a href="' + arr[0].link + '">Chef - ' arr[0].titulo + '</a></h3>'
-                        + '<h4> Local: ' + arr[0].local + '</h4>'
-                        +'</li>');
+                $('#chefsRegistrados').append('<li class="list-group-item">' + '<h3><a href="' + arr[0].link + '">Chef - ' arr[0].titulo + '</a></h3>'+ '<h4> Local: ' + arr[0].local + '</h4>' + '</li>');
                 
                 arr.shift();
             }
