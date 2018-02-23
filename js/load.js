@@ -43,32 +43,32 @@ function loadChefs(){
     if(document.title == 'Chef em Casa - CHEFS'){
     //  $('#chefsRegistrados').html(chefs);
         
-        function(loadSearch(arr){
-            if(arr[0] != null || arr[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
-                arr.shift();
-            }
-            ifarrvetor[0] != null || arr[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
-                arr.shift();
-            }
-            if(arr[0] != null || arr[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
-                arr.shift();
-            }
-            if(arr[0] != null || arr[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
-                arr.shift();
-            }
-            if(arr[0] != null || arr[0] != ''){    
-                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
-                arr.shift();
-            }
-        })
-        
         $("#pag").click(loadSearch(vetor))        
     }
   })
+}
+
+function loadSearch(arr){
+            if(arr[0] != null || arr[0] != ''){    
+                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                arr.shift();
+            }
+            if(arr[0] != null || arr[0] != ''){    
+                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                arr.shift();
+            }
+            if(arr[0] != null || arr[0] != ''){    
+                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                arr.shift();
+            }
+            if(arr[0] != null || arr[0] != ''){    
+                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                arr.shift();
+            }
+            if(arr[0] != null || arr[0] != ''){    
+                $('#chefsRegistrados').append('<li class="list-group-item">' + arr[0].id + arr[0].titulo + '</li>');
+                arr.shift();
+            }
 }
 
 function loadChef(){
