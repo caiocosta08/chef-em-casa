@@ -2,10 +2,10 @@
   "name": "site",
   "version": "1.0.0",
   "description": "",
-  "main": "js/main.js",
+  "main": "js/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build",
+    "start": "npm run build ",
     "build": "npm run clean && npx webpack",
     "clean": "rm -rf dist/"
   },
