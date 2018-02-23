@@ -52,23 +52,23 @@ function loadChefs(){
 
 function loadSearch(arr){
     if(arr[0] != null || arr[0] != ''){    
-        $('#chefsRegistrados').append('<li class="list-group-item">' + '<h3><a href="' + arr[0].link + '">Chef - ' + arr[0].titulo + '</a></h3>'+ '<h5> Local: ' + arr[0].local + ' - Especialidade(s): ' + arr[0].topicos +' </h5>' + '</li>');        
+        $('#chefsRegistrados').append('<li class="list-group-item">' + '<h4><a href="' + arr[0].link + '">Chef - ' + arr[0].titulo + '</a></h4>'+ '<h6> Local: ' + arr[0].local + ' - Especialidade(s): ' + arr[0].topicos +' </h6>' + '</li>');        
         arr.shift();
     }
     if(arr[0] != null || arr[0] != ''){    
-        $('#chefsRegistrados').append('<li class="list-group-item">' + '<h3><a href="' + arr[0].link + '">Chef - ' + arr[0].titulo + '</a></h3>'+ '<h5> Local: ' + arr[0].local + ' - Especialidade(s): ' + arr[0].topicos +' </h5>' + '</li>');        
+        $('#chefsRegistrados').append('<li class="list-group-item">' + '<h4><a href="' + arr[0].link + '">Chef - ' + arr[0].titulo + '</a></h4>'+ '<h6> Local: ' + arr[0].local + ' - Especialidade(s): ' + arr[0].topicos +' </h6>' + '</li>');        
         arr.shift();
     }
     if(arr[0] != null || arr[0] != ''){    
-        $('#chefsRegistrados').append('<li class="list-group-item">' + '<h3><a href="' + arr[0].link + '">Chef - ' + arr[0].titulo + '</a></h3>'+ '<h5> Local: ' + arr[0].local + ' - Especialidade(s): ' + arr[0].topicos +' </h5>' + '</li>');        
+        $('#chefsRegistrados').append('<li class="list-group-item">' + '<h4><a href="' + arr[0].link + '">Chef - ' + arr[0].titulo + '</a></h4>'+ '<h6> Local: ' + arr[0].local + ' - Especialidade(s): ' + arr[0].topicos +' </h6>' + '</li>');        
         arr.shift();
     }
     if(arr[0] != null || arr[0] != ''){    
-        $('#chefsRegistrados').append('<li class="list-group-item">' + '<h3><a href="' + arr[0].link + '">Chef - ' + arr[0].titulo + '</a></h3>'+ '<h5> Local: ' + arr[0].local + ' - Especialidade(s): ' + arr[0].topicos +' </h5>' + '</li>');        
+        $('#chefsRegistrados').append('<li class="list-group-item">' + '<h4><a href="' + arr[0].link + '">Chef - ' + arr[0].titulo + '</a></h4>'+ '<h6> Local: ' + arr[0].local + ' - Especialidade(s): ' + arr[0].topicos +' </h6>' + '</li>');        
         arr.shift();
     }
     if(arr[0] != null || arr[0] != ''){    
-        $('#chefsRegistrados').append('<li class="list-group-item">' + '<h3><a href="' + arr[0].link + '">Chef - ' + arr[0].titulo + '</a></h3>'+ '<h5> Local: ' + arr[0].local + ' - Especialidade(s): ' + arr[0].topicos +' </h5>' + '</li>');        
+        $('#chefsRegistrados').append('<li class="list-group-item">' + '<h4><a href="' + arr[0].link + '">Chef - ' + arr[0].titulo + '</a></h4>'+ '<h6> Local: ' + arr[0].local + ' - Especialidade(s): ' + arr[0].topicos +' </h6>' + '</li>');        
         arr.shift();
     }
 }
