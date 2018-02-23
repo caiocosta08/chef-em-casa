@@ -12,7 +12,7 @@ export function validaEvento(evento){
 
 }
 
-export function validachef(chef){
+export function validaChef(chef){
 
   let data = chef.data.value
   let titulo = chef.titulo.value
