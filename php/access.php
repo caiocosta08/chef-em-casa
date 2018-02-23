@@ -11,6 +11,7 @@ if (isset($_POST['g-recaptcha-response'])) {
 if (!$captcha_data) {
     echo "Por favor, confirme o captcha.";
     exit;
+	header('location: ../index.php');    
 }
 
 $resposta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LfmhEUUAAAAAK9QTn89wV-svlorn2yM2sez4YVj&response=".$captcha_data."&remoteip=".$_SERVER['REMOTE_ADDR']);
