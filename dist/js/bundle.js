@@ -16893,10 +16893,6 @@ function sendLoginToAnalytics(){
 /* unused harmony export sendMessage */
 /* unused harmony export getHora */
 /* harmony export (immutable) */ __webpack_exports__["b"] = lerJSON;
-$(document).ready(function(){
-      
-        return false;
-});
 
 function atualizarMensagens() {
     $.ajax({
