@@ -43,8 +43,19 @@ function loadChefs(){
     $('#contentNews').html(feed);
     if(document.title == 'Chef em Casa - CHEFS'){
       $('#chefsRegistrados').html(chefs);
-        for(let i=0; i<vetor.length; i++){
-            alert(vetor[i].id + vetor[i].titulo + "<br>" + vetor[i+1].id + vetor[i+1].titulo);
+        for(let i=0; i<vetor.length; i+5){
+            alert(vetor[i].id + vetor[i].titulo 
+                  + "\n" 
+                  + vetor[i+1].id + vetor[i+1].titulo
+                  + "\n" 
+                  + vetor[i+2].id + vetor[i+2].titulo
+                  + "\n" 
+                  + vetor[i+3].id + vetor[i+3].titulo
+                  + "\n" 
+                  + vetor[i+4].id + vetor[i+4].titulo
+                    
+            );
+        
         }
     }
   })
