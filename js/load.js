@@ -25,7 +25,7 @@ function loadChefs(){
       chefs += topicos
       chefs += '</p></li>'
 
-      if(x>0)vetor.push(dados[x]);
+      /*if(x>0)*/ vetor.push(dados[x]);
         
       if(x<3){
         feed += '<div class="card" style="width: 100%;"> <div class="card-body">'
@@ -44,7 +44,7 @@ function loadChefs(){
     if(document.title == 'Chef em Casa - CHEFS'){
       $('#chefsRegistrados').html(chefs);
         for(let i=0; i<vetor.length; i++){
-            alert(vetor[i]);
+            alert(vetor[i].id + vetor[i].titulo + "<br>" + vetor[i++].id + vetor[i++].titulo);
         }
     }
   })
