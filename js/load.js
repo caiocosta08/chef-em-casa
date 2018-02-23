@@ -72,7 +72,7 @@ function loadChefs(){
             });
              mostrar(filtrados);
         });
-        mostrar(restaurants); // para iniciar
+        mostrar(dados); // para iniciar
         
     }
   })
