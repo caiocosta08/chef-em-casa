@@ -5,6 +5,7 @@ function loadChefs(){
     //no id contentNews os dados que recebeu do servidor no dados.json
     let feed = ''
     let chefs = ''
+    let vetor
     for (var x of Object.keys(dados)) {
       let titulo = dados[x].titulo
       let data = dados[x].data
@@ -24,6 +25,8 @@ function loadChefs(){
       chefs += topicos
       chefs += '</p></li>'
 
+      vetor[x] = chefs
+        
       if(x<3){
         feed += '<div class="card" style="width: 100%;"> <div class="card-body">'
         feed += '<h5 class="card-title">'+titulo+'</h5>'
@@ -40,6 +43,9 @@ function loadChefs(){
     $('#contentNews').html(feed);
     if(document.title == 'Chef em Casa - CHEFS'){
       $('#chefsRegistrados').html(chefs);
+        for(let i=0; i<vetor.length; i++){
+            alert(vetor[i]);
+        }
     }
   })
 }
