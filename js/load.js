@@ -12,7 +12,7 @@ function loadChefs(){
       let local = dados[x].local
       let topicos = dados[x].topicos
       let id = dados[x].id
-      chefs += '<li class="list-group-item"><a href="'
+      chefs += '<li class="list-group-item"><a  class="pagination__next" href="'
       chefs += link + '"><h3>'
       chefs += titulo + '</h3></a>'
       chefs += data
