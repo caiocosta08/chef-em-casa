@@ -10,5 +10,5 @@
 	<button id="btnLogin" class="btn btn-default" type="submit">
 		<i class="glyphicon glyphicon-log-in">LOGIN</i>
 	</button>
-	<!--<div class="g-recaptcha" data-sitekey="6LfmhEUUAAAAAJGArrnIR-9FoavD80dm_iUh4AxP"></div>-->
+	<div class="g-recaptcha" data-sitekey="6LfmhEUUAAAAAJGArrnIR-9FoavD80dm_iUh4AxP"></div>
 </form>
