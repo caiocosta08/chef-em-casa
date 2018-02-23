@@ -52,6 +52,9 @@
 						<a class="nav-link" href="index.php">Home</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="sobre.php">Sobre</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="chefs.php">Chefs</a>
 					</li>
 					<li class="nav-item">
@@ -59,9 +62,6 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="admin.php">Admin</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="sobre.php">Sobre</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -76,7 +76,7 @@
 					<ul id="contentNews" style="list-style: none; padding: 0;"></ul>
 				</div>
 				<div class="col-md-8 text-left">
-					<h2>Olá! Seja bem vindo ao nosso portal Chef em Casa.</h2>
+					<h2>Olá! Seja bem vindo ao portal Chef em Casa.</h2>
 					<hr>
 					<h2>Quem somos?</h2>
 					<h3>

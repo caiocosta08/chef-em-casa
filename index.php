@@ -52,6 +52,9 @@
 						<a class="nav-link" href="index.php">Home</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="sobre.php">Sobre</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="chefs.php">Chefs</a>
 					</li>
 					<li class="nav-item">
@@ -59,9 +62,6 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="admin.php">Admin</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="sobre.php">Sobre</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
