@@ -44,7 +44,7 @@ function loadChefs(){
     if(document.title == 'Chef em Casa - CHEFS'){
     //  $('#chefsRegistrados').html(chefs);
         $("#pag").click(function(){
-            for(let i=0; i<3; i++){
+            for(let i=0; i<vetor.length; i++){
                 if(vetor[i] != '' || vetor[i] != null){ 
                      $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i].id + vetor[i].titulo + '</li>');
                     console.log("valor: " + i)
