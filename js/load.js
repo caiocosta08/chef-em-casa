@@ -47,6 +47,7 @@ function loadChefs(){
             for(let i=0; i<3; i++){
                  //if(vetor[i] != '' || vetor[i] != null){ 
                      $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i].id + vetor[i].titulo + '</li>');
+                    console.log("valor: " + i)
                 //}
                 vetor.shift();
             }    
