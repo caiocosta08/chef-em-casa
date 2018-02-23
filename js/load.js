@@ -13,7 +13,7 @@ function loadChefs(){
       let local = dados[x].local
       let topicos = dados[x].topicos
       let id = dados[x].id
-      chefs += '<li class="list-group-item"><a  class="pagination__next" href="'
+      chefs += '<li class="list-group-item"><a href="'
       chefs += link + '"><h3>'
       chefs += titulo + '</h3></a>'
       chefs += data
@@ -25,7 +25,7 @@ function loadChefs(){
       chefs += topicos
       chefs += '</p></li>'
 
-      /*if(x>0)*/ vetor.push(dados[x]);
+      vetor.push(dados[x]);
         
       if(x<3){
         feed += '<div class="card" style="width: 100%;"> <div class="card-body">'
@@ -43,20 +43,14 @@ function loadChefs(){
     $('#contentNews').html(feed);
     if(document.title == 'Chef em Casa - CHEFS'){
       $('#chefsRegistrados').html(chefs);
-        for(let i=0; i<vetor.length; i = i+5){
-            alert(vetor[i].id + vetor[i].titulo 
-                  + "\n" 
-                 if(vetor[i+1] !+ '' && vetor[i+1] != null) + vetor[i+1].id + vetor[i+1].titulo
-                  + "\n" 
-                 if(vetor[i+2] !+ '' && vetor[i+2] != null) + vetor[i+2].id + vetor[i+2].titulo
-                  + "\n" 
-                 if(vetor[i+3] !+ '' && vetor[i+3] != null) + vetor[i+3].id + vetor[i+3].titulo
-                  + "\n" 
-                 if(vetor[i+4] !+ '' && vetor[i+4] != null) + vetor[i+4].id + vetor[i+4].titulo
-                    
-            );
+        $("#pag").click(function(){
+            for(let i=0; i<vetor.length; i = i+3){
+                 if(vetor[i] !+ '' && vetor[i] != null) $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i].id + vetor[i].titulo + '</li');
+                 if(vetor[i+1] !+ '' && vetor[i+1] != null) $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i+1].id + vetor[i+1].titulo + '</li');
+                 if(vetor[i+2] !+ '' && vetor[i+2] != null) $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[i+2].id + vetor[i+2].titulo + '</li');
+            }    
+        })
         
-        }
     }
   })
 }

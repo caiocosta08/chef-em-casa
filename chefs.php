@@ -98,6 +98,7 @@
 					<div>
 						<input class="form-control" id="myInput" type="text" placeholder="Pesquisar...">
 						<ul style="list-style:none;" class="list-group" id="chefsRegistrados"></ul>
+                        <button id="pag">ADD NEXT CHEF</button>
 					</div>
 					<hr>
 				</div>
