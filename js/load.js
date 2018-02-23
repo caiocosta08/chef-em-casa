@@ -56,24 +56,7 @@ function loadChefs(){
                 $('#chefsRegistrados').append('<li class="list-group-item">' + vetor[0].id + vetor[0].titulo + '</li>');
                 vetor.shift();
             }
-        })
-        function mostrar(arr) {
-        var lista = $('#chefsRegistrados'); // coloquei em cache aqui para não ter $('#lista').append() dentro do loop
-        lista.html(''); // para limpar antes de voltar a colocar a lista
-
-            arr.forEach(function (rest) {
-                lista.append('<div>' + rest.name + '</div>');
-            });
-        }
-        $('#myInput').on('keyup', function () {
-            var busca = this.value;
-            var filtrados = dados.filter(function (rest) {
-                return rest.name.toLowerCase().indexOf(busca) != -1;
-            });
-             mostrar(filtrados);
-        });
-        mostrar(dados); // para iniciar
-        
+        })        
     }
   })
 }
