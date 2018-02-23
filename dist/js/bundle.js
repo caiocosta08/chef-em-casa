@@ -12913,7 +12913,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-$("#linkChef").click(Object(__WEBPACK_IMPORTED_MODULE_7_functions_js__["a" /* toggleLinks */])('chef'));
+jQuery("#linkChef").click(Object(__WEBPACK_IMPORTED_MODULE_7_functions_js__["a" /* toggleLinks */])('chef'));
 $("#linkEvento").click(Object(__WEBPACK_IMPORTED_MODULE_7_functions_js__["a" /* toggleLinks */])('event'));
 Object(__WEBPACK_IMPORTED_MODULE_6_load_js__["e" /* loadChef */])()
 Object(__WEBPACK_IMPORTED_MODULE_6_load_js__["f" /* loadChefs */])()
