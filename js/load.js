@@ -44,7 +44,7 @@ function loadChefs(){
     if(document.title == 'Chef em Casa - CHEFS'){
       $('#chefsRegistrados').html(chefs);
         for(let i=0; i<vetor.length; i++){
-            alert(vetor[i].id + vetor[i].titulo + "<br>" + vetor[i++].id + vetor[i++].titulo);
+            alert(vetor[i].id + vetor[i].titulo + "<br>" + vetor[i+1].id + vetor[i+1].titulo);
         }
     }
   })
