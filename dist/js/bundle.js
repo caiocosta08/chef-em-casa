@@ -12913,7 +12913,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-jQuery("#linkChef").click(Object(__WEBPACK_IMPORTED_MODULE_7_functions_js__["a" /* toggleLinks */])('chef'));
+$("#linkChef").click(Object(__WEBPACK_IMPORTED_MODULE_7_functions_js__["a" /* toggleLinks */])('chef'));
 $("#linkEvento").click(Object(__WEBPACK_IMPORTED_MODULE_7_functions_js__["a" /* toggleLinks */])('event'));
 Object(__WEBPACK_IMPORTED_MODULE_6_load_js__["e" /* loadChef */])()
 Object(__WEBPACK_IMPORTED_MODULE_6_load_js__["f" /* loadChefs */])()
@@ -16893,6 +16893,10 @@ function sendLoginToAnalytics(){
 /* unused harmony export sendMessage */
 /* unused harmony export getHora */
 /* harmony export (immutable) */ __webpack_exports__["b"] = lerJSON;
+$(document).ready(function(){
+      
+        return false;
+});
 
 function atualizarMensagens() {
     $.ajax({
