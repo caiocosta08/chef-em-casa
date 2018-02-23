@@ -9,7 +9,7 @@ if (isset($_POST['g-recaptcha-response'])) {
 
 // Se nenhum valor foi recebido, o usuário não realizou o captcha
 if (!$captcha_data) {
-    echo "Por favor, confirme o captcha.";
+    echo "alert('Por favor, confirme o recaptcha!')";
     echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=/admin.php'>";       
     exit;
 }
