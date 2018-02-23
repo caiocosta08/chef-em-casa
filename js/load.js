@@ -26,7 +26,7 @@ function loadChefs(){
       chefs += '</p></li>'
 
       vetor.push(dados[x]);
-        console.log("valor de x: " x)
+        console.log("valor de x: " + x)
       if(x<3){
         feed += '<div class="card" style="width: 100%;"> <div class="card-body">'
         feed += '<h5 class="card-title">'+titulo+'</h5>'
