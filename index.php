@@ -92,14 +92,16 @@
                             <h6 class="card-subtitle mb-2 text-muted"> Hambúrguer artesanal </h6>
                             <p class="card-text"><a href="#"> <img src="img/burger.jpg"></a></p>
                         </div>
-                    </div>
+					</div>
+					<br>
 					<div class="card" style="width: 100%;"> 
                         <div class="card-body">
                             <h5 class="card-title"> Torta! </h5>
                             <h6 class="card-subtitle mb-2 text-muted"> Melhores confeiteiros</h6>
                             <p class="card-text"><a href="#"> <img src="img/cake.jpg"></a></p>
                         </div>
-                    </div>
+					</div>
+					<br>
 					<div class="card" style="width: 100%;"> 
                         <div class="card-body">
                             <h5 class="card-title"> Pizza! </h5>
