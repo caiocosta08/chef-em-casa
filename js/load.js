@@ -43,7 +43,7 @@ function loadChefs(){
     $('#contentNews').html(feed);
     if(document.title == 'Chef em Casa - CHEFS'){
       $('#chefsRegistrados').html(chefs);
-        for(let i=0; i<vetor.length; i+5){
+        for(let i=0; i<vetor.length; i = i+5){
             alert(vetor[i].id + vetor[i].titulo 
                   + "\n" 
                   + vetor[i+1].id + vetor[i+1].titulo
