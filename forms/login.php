@@ -7,8 +7,10 @@
 		<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 		<input id="senha" type="password" class="form-control" name="senha" placeholder="senha">
 	</div>
+	<br>
 	<button id="btnLogin" class="btn btn-default" type="submit">
 		<i class="glyphicon glyphicon-log-in">LOGIN</i>
 	</button>
+	<br>
 	<div class="g-recaptcha" data-sitekey="6LfmhEUUAAAAAJGArrnIR-9FoavD80dm_iUh4AxP"></div>
 </form>
