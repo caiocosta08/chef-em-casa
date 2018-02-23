@@ -73,10 +73,10 @@
 					<hr>
 					<ul class="nav nav-tabs">
 						<li id="id1" class="active"><a id="linkChef">Cadastrar Chef</a></li>
-						<li id="id0"><a id="linkEvento">Adicionar Evento</a></li>
+						<!-- <li id="id0"><a id="linkEvento">Adicionar Evento</a></li> -->
 						<br><br>
 						<?php include('forms/add-chef.php') ?>
-						<?php include('forms/add-event-calendar.php') ?> 
+						<?php /*include('forms/add-event-calendar.php') */?> 
 					</ul>
 					<hr>
 				</div>
