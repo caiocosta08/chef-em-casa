@@ -1,4 +1,4 @@
-function validaEvento(evento){
+export function validaEvento(evento){
 
   let data = evento.data.value
   let titulo = evento.titulo.value
@@ -12,7 +12,7 @@ function validaEvento(evento){
 
 }
 
-function validachef(chef){
+export function validachef(chef){
 
   let data = chef.data.value
   let titulo = chef.titulo.value
@@ -33,7 +33,7 @@ function validachef(chef){
   if(!validHour(hora)) return false;
 }
 
-function validLogin(){
+export function validLogin(){
   let login = formLogin.login.value
   let senha = formLogin.senha.value
 
@@ -44,7 +44,7 @@ function validLogin(){
   }
 }
 
-function validNewUser(){
+export function validNewUser(){
   let login = form1.login.value
   let senha = form1.senha.value
   let confirmSenha = form1.senhaConfirm.value
@@ -56,7 +56,7 @@ function validNewUser(){
   }
 }
 
-function validUser(user){
+export function validUser(user){
 
   let arrayProibidos = [',','.',':',';','`','´','^','~','[',']','{','}','?','/','*','-','+','=','_','!','@','#','$','%','¨','&','*','(','§',')','|',"'",'"'];
   for(let i=0; i<user.length; i++){
@@ -74,7 +74,7 @@ function validUser(user){
   else return true;
 }
 
-function validPassword(pass,conf){
+export function validPassword(pass,conf){
 
   let arrayProibidos = [',','.',':',';','`','´','^','~','[',']','{','}','?','/','*','-','+','=','_','!','@','#','$','%','¨','&','*','(','§',')','|',"'",'"'];
   for(let i=0; i<pass.length; i++){
@@ -93,20 +93,19 @@ function validPassword(pass,conf){
   else return true;
 }
 
-function validLinks(links){
-
-}
-function validTopics(topicos){
-
-}
-function validRes(resumo){
-
-}
-function validReferences(referencias){
-
+export function validLinks(links){
 }
 
-function validPlace(local){
+export function validTopics(topicos){
+}
+
+export function validRes(resumo){
+}
+
+export function validReferences(referencias){
+}
+
+export function validPlace(local){
   if((local == '')||(local == null)||(local.length < 3)){
     alert("Por favor, digite corretamente o local do evento");
      //Foi definido um focus no campo.
@@ -118,7 +117,7 @@ function validPlace(local){
   }
 }
 
-function validTitle(titulo){
+export function validTitle(titulo){
   if((titulo == '')||(titulo == null)||(titulo.length < 3)){
     alert("Por favor, digite corretamente o titulo do evento");
     //Foi definido um focus no campo.
@@ -130,7 +129,7 @@ function validTitle(titulo){
   }
 }
 
-function validHour(hora){
+export function validHour(hora){
   hora = hora.split(':')
   if((hora[0]=='')||(hora[0]==null)||(hora[0].length < 2)||(hora[1]=='')
   ||(hora[1]==null)||(hora[1].length < 2)||(hora[0] >= 24)||(hora[0] < 0)
@@ -143,7 +142,7 @@ function validHour(hora){
   }
 }
 
-function validDate(data){
+export function validDate(data){
   data = data.split('/');
   if((data[0]=='')||(data[0]==null)||(data[0].length < 2)||(data[0] < 01)
      ||(data[0] > 31)||(data[1] == '')||(data[1]==null)||(data[1].length < 2)

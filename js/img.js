@@ -1,79 +1,64 @@
-function atualizarMensagens() {
+$(document).ready(function(){
+      
+        return false;
+});
+
+export function atualizarMensagens() {
     $.ajax({
         url: "salvar-msg.php",
         method: 'POST',
         dataType: 'json',
-        success: function (data) {
-            console.log(data);
+        success: function(){
         }
     });
-  }
+}
 
-  //enviar formulario sem refresh
+export function toggleChat(){
 
-  $(document).ready(function(){
-      $("input#login.form-control").blur();//tirar foco do input para ir para o topo
-      $("input#senha.form-control").blur();
-      window.scrollTo(0,0);//ir para o topo
-      lerJSON();
-      atualizarMensagens();
-      
-      $('#contentNews').infiniteScroll({
-        // options
-        path: '.pagination__next',
-        append: '#list-group-item',
-        history: false,
+    var tam = $(".live-chat") 
+    //abrir ou fechar chat
+    $(".chatTitle").click(function(){
+      $(".show-chat").toggle()
+      $(".input-chat").toggle()
+      //$(".live-chat").toggle()          
+        if(tam.style.height == ""){
+            tam.style.height = "30px"
+          console.log("diminuiu")
+        }else{
+            tam.style.height = ""
+            console.log("aumentou")
+        }
+  })
+}
+
+export function sendMessage(){
+  $('.send-message').submit(function(e){
+      e.preventDefault();
+      var dados = $( this ).serialize();
+      $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: dados,
+          cache: false,
+          success: function(data)
+          {
+              atualizarMensagens();
+              lerJSON();
+              $("#message-to-send").value = ""
+          },
       });
-      
-      
-     
-      var tam = document.querySelector(".live-chat")
-      
-      //abrir ou fechar chat
-      $(".chatTitle").click(function(){
-        $(".show-chat").toggle()
-        $(".input-chat").toggle()
-        //$(".live-chat").toggle()          
-          if(tam.style.height == ""){
-              tam.style.height = "30px"
-            console.log("diminuiu")
-          }else{
-              tam.style.height = ""
-              console.log("aumentou")
-          }
-    })
+  });
+}
 
+export function getHora(){
+    var data = new Date();
+    var hora    = data.getHours();
+    var min     = data.getMinutes();
+    var str_hora = hora + ':' + min;
+    var horario = '<h6 style="font-size: 10px;">'+ str_hora +'</h6>'
+}
 
-    $('.send-message').submit(function(e){
-        e.preventDefault();
-        var dados = $( this ).serialize();
-        $.ajax({
-            type: "POST",
-            url: "send.php",
-            data: dados,
-            cache: false,
-            success: function(data)
-            {
-                atualizarMensagens();
-                lerJSON();
-                document.querySelector("#message-to-send").value = ""
-            },
-        });
-    });
-        return false;
-});
-
-// Obtém a data/hora atual
-var data = new Date();
-
-// Guarda cada pedaço em uma variável
-var hora    = data.getHours();          // 0-23
-var min     = data.getMinutes();        // 0-59
-
-var str_hora = hora + ':' + min;
-var horario = '<h6 style="font-size: 10px;">'+ str_hora +'</h6>'
-
-function lerJSON(){
+export function lerJSON(){
     $.getJSON("json/messages.json", function(){
     })
     .done(function(dados){
@@ -87,9 +72,9 @@ function lerJSON(){
         
         if(autor != autorAnterior){
             if(autor == userlogado)
-                msgs += '<li class="userMessage"><i class="fas fa-comment-alt"></i> ' + /*autor*/'' + ' ' + mensagens + horario + '</li>'
+                msgs += '<li class="userMessage"><i class="fas fa-comment-alt"></i> ' + autor + ' ' + mensagens + horario + '</li>'
             else
-                msgs += '<li class="visitMessage">' + /*autor*/'' + ' ' + mensagens + ' <i class="fas fa-comment-alt"></i>' +horario+'</li>'
+                msgs += '<li class="visitMessage">' + autor + ' ' + mensagens + ' <i class="fas fa-comment-alt"></i>' +horario+'</li>'
         }else{
             if(autor == userlogado)
                 msgs += '<li class="userMessage">   '+ mensagens + horario + '</li>'
@@ -102,7 +87,7 @@ function lerJSON(){
 
     msgs += '</ul>'
     if(document.title == 'Chef em Casa - CHEF')
-        document.querySelector(".show-chat").innerHTML = msgs;
+        $(".show-chat").innerHTML = msgs;
     });
 }
 

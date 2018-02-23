@@ -1,15 +1,20 @@
 $(document).ready(function(){
-    loadChef();
-    loadChefs();
-    atualizarChefs();
-    atualizarEventos();
-    //Faz com que a função loadChefs seja chamada a cada 3s(3000ms)
-    //setInterval(loadChefs, 3000);
-    //carregar eventos regitrados no calendario
-    loadCalendar();
-    searchCalendar();
-    searchChef();
-    editChef();
+    loadChef()
+    loadChefs()
+    atualizarChefs()
+    atualizarEventos()
+    loadCalendar()
+    searchCalendar()
+    searchChef()
+    editChef()
+    $("#btnLogin").click(sendLoginToAnalythics())
+    $("#btnLogout").click(sendLogoutToAnalythics())
+    $("input#login.form-control").blur()//tirar foco do input para ir para o topo
+    $("input#senha.form-control").blur()
+    window.scrollTo(0,0)//ir para o topo
+    lerJSON()
+    atualizarMensagens()
+    toggleChat()
 })
 
 $(document).ready(function(){
@@ -17,7 +22,7 @@ $(document).ready(function(){
         $(this).button('toggle');
     });
 
-    $("#linkAula").click(function() {
+    $("#linkChef").click(function() {
       $(".post-aula").toggle();
       $(".post-calendar").toggle();
       $("li#id1").addClass('active');
@@ -33,20 +38,20 @@ $(document).ready(function(){
 
 });
 
-$(document).ready(function(){
-		$('#contact-chef').submit(function(){
-			var dados = $( this ).serialize();
+export function sendContactChef(){
+    $('#contact-chef').submit(function(){
+        var dados = $( this ).serialize();
 
-			$.ajax({
-				type: "POST",
-				url: "",
-				data: dados,
-				success: function()
-				{
-					alert('CONTRATADO COM SUCESSO');
-				}
-			});
+        $.ajax({
+            type: "POST",
+            url: "",
+            data: dados,
+            success: function()
+            {
+                alert('CONTRATADO COM SUCESSO');
+            }
+        });
 
-			return false;
-		});
-	});
+        return false;
+    });
+}
