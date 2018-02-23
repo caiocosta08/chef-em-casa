@@ -86,7 +86,7 @@
 					<hr>
 					<p>
 						Nesta página você pode encontrar a lista completa de <code>todos</code>
-						os Chefs registradas! Ao digitar asmum texto no campo <code>Pesquisar</code>
+						os Chefs registradas! Ao digitar algum texto no campo <code>Pesquisar</code>
 						abaixo você pode encontrar a aula desejada a partir de <code>qualquer</code>
 						informação sobre o Chef.
 					</p>
