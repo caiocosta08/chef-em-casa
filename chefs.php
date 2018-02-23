@@ -97,6 +97,7 @@
 					<hr>
 					<div>
 						<input class="form-control" id="myInput" type="text" placeholder="Pesquisar...">
+                        <br>
 						<ul style="list-style:none;" class="list-group" id="chefsRegistrados"></ul>
                         <br>
                         <button id="pag">MOSTRAR MAIS CHEFS</button>
