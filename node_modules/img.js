@@ -1,7 +1,3 @@
-$(document).ready(function(){
-      
-        return false;
-});
 
 export function atualizarMensagens() {
     $.ajax({
